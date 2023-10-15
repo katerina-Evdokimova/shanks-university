@@ -1,3 +1,0 @@
-﻿  main.cpp
-D:\Documents\uni_stuff\7sem\code optimization\project\shanks_series_acceleration\shanks_transformation\main.cpp(5,19): warning C4244: return: преобразование "double" в "float", возможна потеря данных
-  shanks_transformation.vcxproj -> D:\Documents\uni_stuff\7sem\code optimization\project\shanks_series_acceleration\x64\Debug\shanks_transformation.exe
