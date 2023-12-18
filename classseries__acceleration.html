@@ -140,9 +140,9 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a41c7a92e00eee56d26cae8d5d0a76989"><td class="memItemLeft" align="right" valign="top">virtual T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classseries__acceleration.html#a41c7a92e00eee56d26cae8d5d0a76989">transform</a> (const K n, const int order) const</td></tr>
-<tr class="memdesc:a41c7a92e00eee56d26cae8d5d0a76989"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual method that returns the partial sum after transformation of the series.  <a href="classseries__acceleration.html#a41c7a92e00eee56d26cae8d5d0a76989">More...</a><br /></td></tr>
-<tr class="separator:a41c7a92e00eee56d26cae8d5d0a76989"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afce08b8d1f6fe1edf63df64fbaa333bc"><td class="memItemLeft" align="right" valign="top">virtual T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classseries__acceleration.html#afce08b8d1f6fe1edf63df64fbaa333bc">operator()</a> (const K n, const int order) const</td></tr>
+<tr class="memdesc:afce08b8d1f6fe1edf63df64fbaa333bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual operator() that returns the partial sum after transformation of the series.  <a href="classseries__acceleration.html#afce08b8d1f6fe1edf63df64fbaa333bc">More...</a><br /></td></tr>
+<tr class="separator:afce08b8d1f6fe1edf63df64fbaa333bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18d69f3300e92d4da9c580c55dea9db8"><td class="memItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classseries__acceleration.html#a18d69f3300e92d4da9c580c55dea9db8">S_n</a> (K n) const</td></tr>
 <tr class="memdesc:a18d69f3300e92d4da9c580c55dea9db8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Partial sum of the series up to n terms.  <a href="classseries__acceleration.html#a18d69f3300e92d4da9c580c55dea9db8">More...</a><br /></td></tr>
 <tr class="separator:a18d69f3300e92d4da9c580c55dea9db8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -209,6 +209,64 @@ template&lt;typename T , typename K &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="afce08b8d1f6fe1edf63df64fbaa333bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afce08b8d1f6fe1edf63df64fbaa333bc">&#9670;&nbsp;</a></span>operator()()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename K &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T <a class="el" href="classseries__acceleration.html">series_acceleration</a>&lt; T, K &gt;::operator() </td>
+          <td>(</td>
+          <td class="paramtype">const K&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>order</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Virtual operator() that returns the partial sum after transformation of the series. </p>
+<p>Calculate the transformation of the partial sum.</p>
+<dl class="section author"><dt>Authors</dt><dd>Bolshakov M.P., Pashkov B.B. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>The number of terms </td></tr>
+    <tr><td class="paramname">order</td><td>The order </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The transformed partial sum</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>The number of terms. </td></tr>
+    <tr><td class="paramname">order</td><td>The order of transformation. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Default value for undefined transformation. </dd></dl>
+
+</div>
+</div>
 <a id="a1a33fac182b82822a52091ad151ebc5c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1a33fac182b82822a52091ad151ebc5c">&#9670;&nbsp;</a></span>print_diff_t_s() <span class="overload">[1/2]</span></h2>
 
@@ -562,64 +620,6 @@ template&lt;typename T , typename K &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The partial sum S_n. </dd></dl>
-
-</div>
-</div>
-<a id="a41c7a92e00eee56d26cae8d5d0a76989"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41c7a92e00eee56d26cae8d5d0a76989">&#9670;&nbsp;</a></span>transform()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , typename K &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">T <a class="el" href="classseries__acceleration.html">series_acceleration</a>&lt; T, K &gt;::transform </td>
-          <td>(</td>
-          <td class="paramtype">const K&#160;</td>
-          <td class="paramname"><em>n</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>order</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Virtual method that returns the partial sum after transformation of the series. </p>
-<p>Calculate the transformation of the partial sum.</p>
-<dl class="section author"><dt>Authors</dt><dd>Bolshakov M.P., Pashkov B.B. </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">n</td><td>The number of terms </td></tr>
-    <tr><td class="paramname">order</td><td>The order </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The transformed partial sum</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">n</td><td>The number of terms. </td></tr>
-    <tr><td class="paramname">order</td><td>The order of transformation. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Default value for undefined transformation. </dd></dl>
 
 </div>
 </div>

@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('shanks__transformation_8h_source.html'
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="classshanks__transform.html#a2e6067e957ba52c7894008e5a780688e">~shanks_transform</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    T transform(<span class="keyword">const</span> K n, <span class="keyword">const</span> <span class="keywordtype">int</span> order) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    T operator()(<span class="keyword">const</span> K n, <span class="keyword">const</span> <span class="keywordtype">int</span> order) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> K&gt;</div>
@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('shanks__transformation_8h_source.html'
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> K&gt;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;T <a class="code" href="classshanks__transform.html">shanks_transform&lt;T, K&gt;::transform</a>(<span class="keyword">const</span> K n, <span class="keyword">const</span> <span class="keywordtype">int</span> order)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;T <a class="code" href="classshanks__transform.html">shanks_transform&lt;T, K&gt;::operator()</a>(<span class="keyword">const</span> K n, <span class="keyword">const</span> <span class="keywordtype">int</span> order)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">if</span> (n &lt; 0)</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordflow">throw</span> std::domain_error(<span class="stringliteral">&quot;negative integer in the input&quot;</span>);</div>
