@@ -123,35 +123,35 @@ $(document).ready(function(){initNavTree('epsilon__algorithm_8h_source.html','')
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> K&gt;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;T <a class="code" href="classepsilon__algorithm.html">epsilon_algorithm&lt;T, K&gt;::operator()</a>(<span class="keyword">const</span> K n, <span class="keyword">const</span> <span class="keywordtype">int</span> order)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="comment">// computing eps_(2*order)(S_n) as it is Shanks&#39;s transformation e_order(S_n) </span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">int</span> m = 2 * order;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">if</span> (n &lt; 0)</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordflow">throw</span> std::domain_error(<span class="stringliteral">&quot;negative integer in the input&quot;</span>);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (n == 0)</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordflow">return</span> DEF_UNDEFINED_SUM;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (order == 0)</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">return</span> this-&gt;S_n(n);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    std::vector&lt;T&gt; e(m + 1, 0);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    T diff, temp1, temp2;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    e[m] = this-&gt;S_n(n + m);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    temp2 = 0;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = m; j &gt; 0; j--)</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    {</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        temp1 = temp2;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        temp2 = e[j - 1];</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        diff = e[j] - temp2;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keywordflow">if</span> (!std::isfinite(abs(diff)))</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="keywordflow">throw</span> std::overflow_error(<span class="stringliteral">&quot;division by zero&quot;</span>);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        e[j - 1] = std::fma(1, 1 / diff, temp1);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    }</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">return</span> e[0];</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> K&gt;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;T <a class="code" href="classepsilon__algorithm.html">epsilon_algorithm&lt;T, K&gt;::operator()</a>(<span class="keyword">const</span> K n, <span class="keyword">const</span> <span class="keywordtype">int</span> order)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">// computing eps_(2*order)(S_n) as it is Shanks&#39;s transformation e_order(S_n) </span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">int</span> m = 2 * order;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">if</span> (n &lt; 0)</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordflow">throw</span> std::domain_error(<span class="stringliteral">&quot;negative integer in the input&quot;</span>);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (n == 0)</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordflow">return</span> DEF_UNDEFINED_SUM;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (order == 0)</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordflow">return</span> this-&gt;S_n(n);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    std::vector&lt;T&gt; e(m + 1, 0);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    T diff, temp1, temp2;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    e[m] = this-&gt;S_n(n + m);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    temp2 = 0;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = m; j &gt; 0; j--)</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        temp1 = temp2;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        temp2 = e[j - 1];</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        diff = e[j] - temp2;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keywordflow">if</span> (!std::isfinite(abs(diff)))</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <span class="keywordflow">throw</span> std::overflow_error(<span class="stringliteral">&quot;division by zero&quot;</span>);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        e[j - 1] = std::fma(1, 1 / diff, temp1);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    }</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordflow">return</span> e[0];</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}</div>
 <div class="ttc" id="aclassepsilon__algorithm_html"><div class="ttname"><a href="classepsilon__algorithm.html">epsilon_algorithm</a></div><div class="ttdoc">Epsilon Algorithm class template.</div><div class="ttdef"><b>Definition:</b> epsilon_algorithm.h:19</div></div>
 <div class="ttc" id="aclassepsilon__algorithm_html_aa20fa45cc597f2c7ad09eb9c0e094ca0"><div class="ttname"><a href="classepsilon__algorithm.html#aa20fa45cc597f2c7ad09eb9c0e094ca0">epsilon_algorithm::~epsilon_algorithm</a></div><div class="ttdeci">~epsilon_algorithm() override</div><div class="ttdoc">Destructor to clean up resources.</div><div class="ttdef"><b>Definition:</b> epsilon_algorithm.h:74</div></div>
 <div class="ttc" id="aclassepsilon__algorithm_html_ad1223f65b255f49abe976da6e721fad7"><div class="ttname"><a href="classepsilon__algorithm.html#ad1223f65b255f49abe976da6e721fad7">epsilon_algorithm::epsilon_algorithm</a></div><div class="ttdeci">epsilon_algorithm()</div><div class="ttdoc">Default constructor.</div><div class="ttdef"><b>Definition:</b> epsilon_algorithm.h:53</div></div>
