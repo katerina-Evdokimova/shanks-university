@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['Метод_20Шенкса_20_28shanks_20transform_29_20на_20c_2b_2b_19',['Метод Шенкса (Shanks Transform) на C++',['../index.html',1,'']]]
+  ['_7eepsilon_5falgorithm_20',['~epsilon_algorithm',['../classepsilon__algorithm.html#a674b676a0a8d3db6989b8e50e5df8075',1,'epsilon_algorithm']]],
+  ['_7eseries_5facceleration_21',['~series_acceleration',['../classseries__acceleration.html#a9d1d3f8a5aed2196f5ac82360281f136',1,'series_acceleration']]],
+  ['_7eshanks_5ftransform_22',['~shanks_transform',['../classshanks__transform.html#a0d0185a8449916fd8c2b68b1912a9ce1',1,'shanks_transform']]]
 ];

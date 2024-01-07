@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['s_5fn_34',['S_n',['../classseries__acceleration.html#a18d69f3300e92d4da9c580c55dea9db8',1,'series_acceleration']]],
-  ['series_5facceleration_35',['series_acceleration',['../classseries__acceleration.html#a037b7c477c3921dab15b8a25296feaa2',1,'series_acceleration::series_acceleration()'],['../classseries__acceleration.html#a86d898102fe74903f290a318d1605f20',1,'series_acceleration::series_acceleration(const std::function&lt; T(const T, const K)&gt; &amp;series, const T x)']]],
-  ['shanks_5ftransform_36',['shanks_transform',['../classshanks__transform.html#addfb5322346b5151157d3c6314378b3b',1,'shanks_transform::shanks_transform()'],['../classshanks__transform.html#ae5d818639f0cbb69f39eb9369ecc7890',1,'shanks_transform::shanks_transform(const std::function&lt; T(const T, const K)&gt; &amp;series, const T x)']]]
+  ['series_5facceleration_41',['series_acceleration',['../classseries__acceleration.html#a8e5b786cd4f81b64b730b4c47843b046',1,'series_acceleration::series_acceleration()'],['../classseries__acceleration.html#a1df90a926913831d683a8845a45bdbab',1,'series_acceleration::series_acceleration(const series_templ &amp;series)']]],
+  ['shanks_5ftransform_42',['shanks_transform',['../classshanks__transform.html#ab2877b58268422235af686e9988874ce',1,'shanks_transform::shanks_transform()'],['../classshanks__transform.html#a7895e7732ab2b125ab53e9244b478508',1,'shanks_transform::shanks_transform(const series_templ &amp;series)']]]
 ];

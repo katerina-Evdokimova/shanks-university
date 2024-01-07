@@ -1,6 +1,6 @@
 var classepsilon__algorithm =
 [
-    [ "epsilon_algorithm", "classepsilon__algorithm.html#ad1223f65b255f49abe976da6e721fad7", null ],
-    [ "epsilon_algorithm", "classepsilon__algorithm.html#afc8b2c8e466d2a0c256b1538f5f97b8a", null ],
-    [ "~epsilon_algorithm", "classepsilon__algorithm.html#aa20fa45cc597f2c7ad09eb9c0e094ca0", null ]
+    [ "epsilon_algorithm", "classepsilon__algorithm.html#a549ec01478ffb5206770c545e042ffac", null ],
+    [ "epsilon_algorithm", "classepsilon__algorithm.html#a704d1d36236997f38d2c4d7d1057a131", null ],
+    [ "~epsilon_algorithm", "classepsilon__algorithm.html#a674b676a0a8d3db6989b8e50e5df8075", null ]
 ];

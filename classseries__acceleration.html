@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Shanks: series_acceleration&lt; T, K &gt; Class Template Reference</title>
+<title>Shanks: series_acceleration&lt; T, K, series_templ &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -87,108 +87,91 @@ $(document).ready(function(){initNavTree('classseries__acceleration.html',''); i
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classseries__acceleration-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">series_acceleration&lt; T, K &gt; Class Template Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">series_acceleration&lt; T, K, series_templ &gt; Class Template Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p>Base class <a class="el" href="classseries__acceleration.html" title="Base class series_acceleration.">series_acceleration</a>.  
  <a href="classseries__acceleration.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="series_8h_source.html">series.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="series__acceleration_8h_source.html">series_acceleration.h</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for series_acceleration&lt; T, K &gt;:</div>
+Inheritance diagram for series_acceleration&lt; T, K, series_templ &gt;:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="classseries__acceleration.png" usemap="#series_5Facceleration_3C_20T_2C_20K_20_3E_map" alt=""/>
-  <map id="series_5Facceleration_3C_20T_2C_20K_20_3E_map" name="series_5Facceleration_3C_20T_2C_20K_20_3E_map">
-<area href="classepsilon__algorithm.html" title="Epsilon Algorithm class template." alt="epsilon_algorithm&lt; T, K &gt;" shape="rect" coords="0,56,171,80"/>
-<area href="classshanks__transform.html" title="Shanks transformation class." alt="shanks_transform&lt; T, K &gt;" shape="rect" coords="181,56,352,80"/>
+  <img src="classseries__acceleration.png" usemap="#series_5Facceleration_3C_20T_2C_20K_2C_20series_5Ftempl_20_3E_map" alt=""/>
+  <map id="series_5Facceleration_3C_20T_2C_20K_2C_20series_5Ftempl_20_3E_map" name="series_5Facceleration_3C_20T_2C_20K_2C_20series_5Ftempl_20_3E_map">
+<area href="classepsilon__algorithm.html" title="Epsilon Algorithm class template." alt="epsilon_algorithm&lt; T, K, series_templ &gt;" shape="rect" coords="0,56,250,80"/>
+<area href="classshanks__transform.html" title="Shanks transformation class." alt="shanks_transform&lt; T, K, series_templ &gt;" shape="rect" coords="260,56,510,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a037b7c477c3921dab15b8a25296feaa2"><td class="memItemLeft" align="right" valign="top"><a id="a037b7c477c3921dab15b8a25296feaa2"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classseries__acceleration.html#a037b7c477c3921dab15b8a25296feaa2">series_acceleration</a> ()</td></tr>
-<tr class="memdesc:a037b7c477c3921dab15b8a25296feaa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for the <a class="el" href="classseries__acceleration.html" title="Base class series_acceleration.">series_acceleration</a> class. Initializes the series function with a lambda function returning NO_SERIES_GIVEN. <br /></td></tr>
-<tr class="separator:a037b7c477c3921dab15b8a25296feaa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86d898102fe74903f290a318d1605f20"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classseries__acceleration.html#a86d898102fe74903f290a318d1605f20">series_acceleration</a> (const std::function&lt; T(const T, const K)&gt; &amp;<a class="el" href="classseries__acceleration.html#af6c3660b1c616f5b4564e9836c53878f">series</a>, const T <a class="el" href="classseries__acceleration.html#ac41feac98dcb038ae7cd1ee722a5c759">x</a>)</td></tr>
-<tr class="memdesc:a86d898102fe74903f290a318d1605f20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor that receives a series function and a point x.  <a href="classseries__acceleration.html#a86d898102fe74903f290a318d1605f20">More...</a><br /></td></tr>
-<tr class="separator:a86d898102fe74903f290a318d1605f20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e949a20f5c9a255ec12b38e10a714f8"><td class="memItemLeft" align="right" valign="top"><a id="a3e949a20f5c9a255ec12b38e10a714f8"></a>
-virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classseries__acceleration.html#a3e949a20f5c9a255ec12b38e10a714f8">~series_acceleration</a> ()=0</td></tr>
-<tr class="memdesc:a3e949a20f5c9a255ec12b38e10a714f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for the <a class="el" href="classseries__acceleration.html" title="Base class series_acceleration.">series_acceleration</a> class. Provides cleanup for the series acceleration. <br /></td></tr>
-<tr class="separator:a3e949a20f5c9a255ec12b38e10a714f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a807bd6308bae475569dbba9b473a2cc4"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classseries__acceleration.html#a807bd6308bae475569dbba9b473a2cc4">print_s_n</a> (const K n) const</td></tr>
-<tr class="memdesc:a807bd6308bae475569dbba9b473a2cc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method for printing out the partial sum of the given series up to n terms.  <a href="classseries__acceleration.html#a807bd6308bae475569dbba9b473a2cc4">More...</a><br /></td></tr>
-<tr class="separator:a807bd6308bae475569dbba9b473a2cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a377bf33bc3e1f3d6b65072e299e26b38"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classseries__acceleration.html#a377bf33bc3e1f3d6b65072e299e26b38">print_s_n</a> (const K n, std::ostream &amp;out) const</td></tr>
-<tr class="memdesc:a377bf33bc3e1f3d6b65072e299e26b38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method for printing out the partial sum of the given series up to n terms to a specified output stream.  <a href="classseries__acceleration.html#a377bf33bc3e1f3d6b65072e299e26b38">More...</a><br /></td></tr>
-<tr class="separator:a377bf33bc3e1f3d6b65072e299e26b38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e15ddaf2f83b8be404c2d2d994ff5a7"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classseries__acceleration.html#a9e15ddaf2f83b8be404c2d2d994ff5a7">print_t_n</a> (const K n, const int order) const</td></tr>
-<tr class="memdesc:a9e15ddaf2f83b8be404c2d2d994ff5a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method for printing out the nth term of the given series up to n terms and a specified order.  <a href="classseries__acceleration.html#a9e15ddaf2f83b8be404c2d2d994ff5a7">More...</a><br /></td></tr>
-<tr class="separator:a9e15ddaf2f83b8be404c2d2d994ff5a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a004cdfc4f1ed66798b9497ca36c10a92"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classseries__acceleration.html#a004cdfc4f1ed66798b9497ca36c10a92">print_t_n</a> (const K n, const int order, std::ostream &amp;out) const</td></tr>
-<tr class="memdesc:a004cdfc4f1ed66798b9497ca36c10a92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method for printing out the nth term of the given series up to n terms and a specified order to a specified output stream.  <a href="classseries__acceleration.html#a004cdfc4f1ed66798b9497ca36c10a92">More...</a><br /></td></tr>
-<tr class="separator:a004cdfc4f1ed66798b9497ca36c10a92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a33fac182b82822a52091ad151ebc5c"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classseries__acceleration.html#a1a33fac182b82822a52091ad151ebc5c">print_diff_t_s</a> (const K n, const int order) const</td></tr>
-<tr class="memdesc:a1a33fac182b82822a52091ad151ebc5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method for printing out the difference between the partial sum after transformation and the original partial sum up to n terms and a specified order.  <a href="classseries__acceleration.html#a1a33fac182b82822a52091ad151ebc5c">More...</a><br /></td></tr>
-<tr class="separator:a1a33fac182b82822a52091ad151ebc5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16716bd2d80e6b2acbc2db073b02a4ff"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classseries__acceleration.html#a16716bd2d80e6b2acbc2db073b02a4ff">print_diff_t_s</a> (const K n, const int order, std::ostream &amp;out) const</td></tr>
-<tr class="memdesc:a16716bd2d80e6b2acbc2db073b02a4ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method for printing out the difference between the partial sum after transformation and the original partial sum up to n terms and a specified order to a specified output stream.  <a href="classseries__acceleration.html#a16716bd2d80e6b2acbc2db073b02a4ff">More...</a><br /></td></tr>
-<tr class="separator:a16716bd2d80e6b2acbc2db073b02a4ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e5b786cd4f81b64b730b4c47843b046"><td class="memItemLeft" align="right" valign="top"><a id="a8e5b786cd4f81b64b730b4c47843b046"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classseries__acceleration.html#a8e5b786cd4f81b64b730b4c47843b046">series_acceleration</a> ()</td></tr>
+<tr class="memdesc:a8e5b786cd4f81b64b730b4c47843b046"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for the <a class="el" href="classseries__acceleration.html" title="Base class series_acceleration.">series_acceleration</a> class. Initializes the series function with a lambda function returning NO_SERIES_GIVEN. <br /></td></tr>
+<tr class="separator:a8e5b786cd4f81b64b730b4c47843b046"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1df90a926913831d683a8845a45bdbab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classseries__acceleration.html#a1df90a926913831d683a8845a45bdbab">series_acceleration</a> (const series_templ &amp;<a class="el" href="classseries__acceleration.html#a79e096bcc3434265a9c99522a41ff820">series</a>)</td></tr>
+<tr class="memdesc:a1df90a926913831d683a8845a45bdbab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor that receives a series function and a point x.  <a href="classseries__acceleration.html#a1df90a926913831d683a8845a45bdbab">More...</a><br /></td></tr>
+<tr class="separator:a1df90a926913831d683a8845a45bdbab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d1d3f8a5aed2196f5ac82360281f136"><td class="memItemLeft" align="right" valign="top"><a id="a9d1d3f8a5aed2196f5ac82360281f136"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classseries__acceleration.html#a9d1d3f8a5aed2196f5ac82360281f136">~series_acceleration</a> ()=0</td></tr>
+<tr class="memdesc:a9d1d3f8a5aed2196f5ac82360281f136"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for the <a class="el" href="classseries__acceleration.html" title="Base class series_acceleration.">series_acceleration</a> class. Provides cleanup for the series acceleration. <br /></td></tr>
+<tr class="separator:a9d1d3f8a5aed2196f5ac82360281f136"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abae7e669849987566eb04e0717757173"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classseries__acceleration.html#abae7e669849987566eb04e0717757173">print_s_n</a> (const K n) const</td></tr>
+<tr class="memdesc:abae7e669849987566eb04e0717757173"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method for printing out the partial sum of the given series up to n terms.  <a href="classseries__acceleration.html#abae7e669849987566eb04e0717757173">More...</a><br /></td></tr>
+<tr class="separator:abae7e669849987566eb04e0717757173"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35133ef5e3b994877bbcc1f736d9fc10"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classseries__acceleration.html#a35133ef5e3b994877bbcc1f736d9fc10">print_s_n</a> (const K n, std::ostream &amp;out) const</td></tr>
+<tr class="memdesc:a35133ef5e3b994877bbcc1f736d9fc10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method for printing out the partial sum of the given series up to n terms to a specified output stream.  <a href="classseries__acceleration.html#a35133ef5e3b994877bbcc1f736d9fc10">More...</a><br /></td></tr>
+<tr class="separator:a35133ef5e3b994877bbcc1f736d9fc10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8facbdc74fbf33ef0caa1c93cfa65642"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classseries__acceleration.html#a8facbdc74fbf33ef0caa1c93cfa65642">print_t_n</a> (const K n, const int order) const</td></tr>
+<tr class="memdesc:a8facbdc74fbf33ef0caa1c93cfa65642"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method for printing out the nth term of the given series up to n terms and a specified order.  <a href="classseries__acceleration.html#a8facbdc74fbf33ef0caa1c93cfa65642">More...</a><br /></td></tr>
+<tr class="separator:a8facbdc74fbf33ef0caa1c93cfa65642"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae27c18f131dd0697e54ef2b341f9cb69"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classseries__acceleration.html#ae27c18f131dd0697e54ef2b341f9cb69">print_t_n</a> (const K n, const int order, std::ostream &amp;out) const</td></tr>
+<tr class="memdesc:ae27c18f131dd0697e54ef2b341f9cb69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method for printing out the nth term of the given series up to n terms and a specified order to a specified output stream.  <a href="classseries__acceleration.html#ae27c18f131dd0697e54ef2b341f9cb69">More...</a><br /></td></tr>
+<tr class="separator:ae27c18f131dd0697e54ef2b341f9cb69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a104bd3a99597dabc5ab6638f5589b4aa"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classseries__acceleration.html#a104bd3a99597dabc5ab6638f5589b4aa">print_diff_t_s</a> (const K n, const int order) const</td></tr>
+<tr class="memdesc:a104bd3a99597dabc5ab6638f5589b4aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method for printing out the difference between the partial sum after transformation and the original partial sum up to n terms and a specified order.  <a href="classseries__acceleration.html#a104bd3a99597dabc5ab6638f5589b4aa">More...</a><br /></td></tr>
+<tr class="separator:a104bd3a99597dabc5ab6638f5589b4aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad10a65f4a4d8184e46444d8150de1d6a"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classseries__acceleration.html#ad10a65f4a4d8184e46444d8150de1d6a">print_diff_t_s</a> (const K n, const int order, std::ostream &amp;out) const</td></tr>
+<tr class="memdesc:ad10a65f4a4d8184e46444d8150de1d6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method for printing out the difference between the partial sum after transformation and the original partial sum up to n terms and a specified order to a specified output stream.  <a href="classseries__acceleration.html#ad10a65f4a4d8184e46444d8150de1d6a">More...</a><br /></td></tr>
+<tr class="separator:ad10a65f4a4d8184e46444d8150de1d6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:afce08b8d1f6fe1edf63df64fbaa333bc"><td class="memItemLeft" align="right" valign="top">virtual T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classseries__acceleration.html#afce08b8d1f6fe1edf63df64fbaa333bc">operator()</a> (const K n, const int order) const</td></tr>
-<tr class="memdesc:afce08b8d1f6fe1edf63df64fbaa333bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual operator() that returns the partial sum after transformation of the series.  <a href="classseries__acceleration.html#afce08b8d1f6fe1edf63df64fbaa333bc">More...</a><br /></td></tr>
-<tr class="separator:afce08b8d1f6fe1edf63df64fbaa333bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18d69f3300e92d4da9c580c55dea9db8"><td class="memItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classseries__acceleration.html#a18d69f3300e92d4da9c580c55dea9db8">S_n</a> (K n) const</td></tr>
-<tr class="memdesc:a18d69f3300e92d4da9c580c55dea9db8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Partial sum of the series up to n terms.  <a href="classseries__acceleration.html#a18d69f3300e92d4da9c580c55dea9db8">More...</a><br /></td></tr>
-<tr class="separator:a18d69f3300e92d4da9c580c55dea9db8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaf0b870a17601b08e01a03b226915a9"><td class="memItemLeft" align="right" valign="top">virtual T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classseries__acceleration.html#acaf0b870a17601b08e01a03b226915a9">operator()</a> (const K n, const int order) const</td></tr>
+<tr class="memdesc:acaf0b870a17601b08e01a03b226915a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual operator() that returns the partial sum after transformation of the series.  <a href="classseries__acceleration.html#acaf0b870a17601b08e01a03b226915a9">More...</a><br /></td></tr>
+<tr class="separator:acaf0b870a17601b08e01a03b226915a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:af6c3660b1c616f5b4564e9836c53878f"><td class="memItemLeft" align="right" valign="top"><a id="af6c3660b1c616f5b4564e9836c53878f"></a>
-std::function&lt; T(const T, const K)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classseries__acceleration.html#af6c3660b1c616f5b4564e9836c53878f">series</a></td></tr>
-<tr class="memdesc:af6c3660b1c616f5b4564e9836c53878f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Series function which returns the nth term of the given series at point x. <br /></td></tr>
-<tr class="separator:af6c3660b1c616f5b4564e9836c53878f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac41feac98dcb038ae7cd1ee722a5c759"><td class="memItemLeft" align="right" valign="top"><a id="ac41feac98dcb038ae7cd1ee722a5c759"></a>
-T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classseries__acceleration.html#ac41feac98dcb038ae7cd1ee722a5c759">x</a></td></tr>
-<tr class="memdesc:ac41feac98dcb038ae7cd1ee722a5c759"><td class="mdescLeft">&#160;</td><td class="mdescRight">Point x. <br /></td></tr>
-<tr class="separator:ac41feac98dcb038ae7cd1ee722a5c759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79e096bcc3434265a9c99522a41ff820"><td class="memItemLeft" align="right" valign="top"><a id="a79e096bcc3434265a9c99522a41ff820"></a>
+series_templ&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classseries__acceleration.html#a79e096bcc3434265a9c99522a41ff820">series</a></td></tr>
+<tr class="memdesc:a79e096bcc3434265a9c99522a41ff820"><td class="mdescLeft">&#160;</td><td class="mdescRight">Series function which returns the nth term of the given series at point x. <br /></td></tr>
+<tr class="separator:a79e096bcc3434265a9c99522a41ff820"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename T, typename K&gt;<br />
-class series_acceleration&lt; T, K &gt;</h3>
+<div class="textblock"><h3>template&lt;typename T, typename K, typename series_templ&gt;<br />
+class series_acceleration&lt; T, K, series_templ &gt;</h3>
 
 <p>Base class <a class="el" href="classseries__acceleration.html" title="Base class series_acceleration.">series_acceleration</a>. </p>
 <p>It is not used on it's own, but it is inherited by shanks_transformation and <a class="el" href="classepsilon__algorithm.html" title="Epsilon Algorithm class template.">epsilon_algorithm</a> to implement the corresponding methods. The class implementation provides everything needed for construction of an arbitrary series up to n terms and printing out the partial sum, the partial sum after transformation is used, and the difference between the latter and the former. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a86d898102fe74903f290a318d1605f20"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a86d898102fe74903f290a318d1605f20">&#9670;&nbsp;</a></span>series_acceleration()</h2>
+<a id="a1df90a926913831d683a8845a45bdbab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1df90a926913831d683a8845a45bdbab">&#9670;&nbsp;</a></span>series_acceleration()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename K &gt; </div>
+template&lt;typename T , typename K , typename series_templ &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classseries__acceleration.html">series_acceleration</a>&lt; T, K &gt;::<a class="el" href="classseries__acceleration.html">series_acceleration</a> </td>
+          <td class="memname"><a class="el" href="classseries__acceleration.html">series_acceleration</a>&lt; T, K, series_templ &gt;::<a class="el" href="classseries__acceleration.html">series_acceleration</a> </td>
           <td>(</td>
-          <td class="paramtype">const std::function&lt; T(const T, const K)&gt; &amp;&#160;</td>
-          <td class="paramname"><em>series</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const series_templ &amp;&#160;</td>
+          <td class="paramname"><em>series</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const T&#160;</td>
-          <td class="paramname"><em>x</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -209,19 +192,19 @@ template&lt;typename T , typename K &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="afce08b8d1f6fe1edf63df64fbaa333bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afce08b8d1f6fe1edf63df64fbaa333bc">&#9670;&nbsp;</a></span>operator()()</h2>
+<a id="acaf0b870a17601b08e01a03b226915a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acaf0b870a17601b08e01a03b226915a9">&#9670;&nbsp;</a></span>operator()()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename K &gt; </div>
+template&lt;typename T , typename K , typename series_templ &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">T <a class="el" href="classseries__acceleration.html">series_acceleration</a>&lt; T, K &gt;::operator() </td>
+          <td class="memname">T <a class="el" href="classseries__acceleration.html">series_acceleration</a>&lt; T, K, series_templ &gt;::operator() </td>
           <td>(</td>
           <td class="paramtype">const K&#160;</td>
           <td class="paramname"><em>n</em>, </td>
@@ -267,19 +250,19 @@ template&lt;typename T , typename K &gt; </div>
 
 </div>
 </div>
-<a id="a1a33fac182b82822a52091ad151ebc5c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a33fac182b82822a52091ad151ebc5c">&#9670;&nbsp;</a></span>print_diff_t_s() <span class="overload">[1/2]</span></h2>
+<a id="a104bd3a99597dabc5ab6638f5589b4aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a104bd3a99597dabc5ab6638f5589b4aa">&#9670;&nbsp;</a></span>print_diff_t_s() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename K &gt; </div>
+template&lt;typename T , typename K , typename series_templ &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr void <a class="el" href="classseries__acceleration.html">series_acceleration</a>&lt; T, K &gt;::print_diff_t_s </td>
+          <td class="memname">constexpr void <a class="el" href="classseries__acceleration.html">series_acceleration</a>&lt; T, K, series_templ &gt;::print_diff_t_s </td>
           <td>(</td>
           <td class="paramtype">const K&#160;</td>
           <td class="paramname"><em>n</em>, </td>
@@ -318,19 +301,19 @@ template&lt;typename T , typename K &gt; </div>
 
 </div>
 </div>
-<a id="a16716bd2d80e6b2acbc2db073b02a4ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16716bd2d80e6b2acbc2db073b02a4ff">&#9670;&nbsp;</a></span>print_diff_t_s() <span class="overload">[2/2]</span></h2>
+<a id="ad10a65f4a4d8184e46444d8150de1d6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad10a65f4a4d8184e46444d8150de1d6a">&#9670;&nbsp;</a></span>print_diff_t_s() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename K &gt; </div>
+template&lt;typename T , typename K , typename series_templ &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr void <a class="el" href="classseries__acceleration.html">series_acceleration</a>&lt; T, K &gt;::print_diff_t_s </td>
+          <td class="memname">constexpr void <a class="el" href="classseries__acceleration.html">series_acceleration</a>&lt; T, K, series_templ &gt;::print_diff_t_s </td>
           <td>(</td>
           <td class="paramtype">const K&#160;</td>
           <td class="paramname"><em>n</em>, </td>
@@ -377,19 +360,19 @@ template&lt;typename T , typename K &gt; </div>
 
 </div>
 </div>
-<a id="a807bd6308bae475569dbba9b473a2cc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a807bd6308bae475569dbba9b473a2cc4">&#9670;&nbsp;</a></span>print_s_n() <span class="overload">[1/2]</span></h2>
+<a id="abae7e669849987566eb04e0717757173"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abae7e669849987566eb04e0717757173">&#9670;&nbsp;</a></span>print_s_n() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename K &gt; </div>
+template&lt;typename T , typename K , typename series_templ &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr void <a class="el" href="classseries__acceleration.html">series_acceleration</a>&lt; T, K &gt;::print_s_n </td>
+          <td class="memname">constexpr void <a class="el" href="classseries__acceleration.html">series_acceleration</a>&lt; T, K, series_templ &gt;::print_s_n </td>
           <td>(</td>
           <td class="paramtype">const K&#160;</td>
           <td class="paramname"><em>n</em></td><td>)</td>
@@ -416,19 +399,19 @@ template&lt;typename T , typename K &gt; </div>
 
 </div>
 </div>
-<a id="a377bf33bc3e1f3d6b65072e299e26b38"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a377bf33bc3e1f3d6b65072e299e26b38">&#9670;&nbsp;</a></span>print_s_n() <span class="overload">[2/2]</span></h2>
+<a id="a35133ef5e3b994877bbcc1f736d9fc10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35133ef5e3b994877bbcc1f736d9fc10">&#9670;&nbsp;</a></span>print_s_n() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename K &gt; </div>
+template&lt;typename T , typename K , typename series_templ &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr void <a class="el" href="classseries__acceleration.html">series_acceleration</a>&lt; T, K &gt;::print_s_n </td>
+          <td class="memname">constexpr void <a class="el" href="classseries__acceleration.html">series_acceleration</a>&lt; T, K, series_templ &gt;::print_s_n </td>
           <td>(</td>
           <td class="paramtype">const K&#160;</td>
           <td class="paramname"><em>n</em>, </td>
@@ -467,19 +450,19 @@ template&lt;typename T , typename K &gt; </div>
 
 </div>
 </div>
-<a id="a9e15ddaf2f83b8be404c2d2d994ff5a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e15ddaf2f83b8be404c2d2d994ff5a7">&#9670;&nbsp;</a></span>print_t_n() <span class="overload">[1/2]</span></h2>
+<a id="a8facbdc74fbf33ef0caa1c93cfa65642"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8facbdc74fbf33ef0caa1c93cfa65642">&#9670;&nbsp;</a></span>print_t_n() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename K &gt; </div>
+template&lt;typename T , typename K , typename series_templ &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr void <a class="el" href="classseries__acceleration.html">series_acceleration</a>&lt; T, K &gt;::print_t_n </td>
+          <td class="memname">constexpr void <a class="el" href="classseries__acceleration.html">series_acceleration</a>&lt; T, K, series_templ &gt;::print_t_n </td>
           <td>(</td>
           <td class="paramtype">const K&#160;</td>
           <td class="paramname"><em>n</em>, </td>
@@ -518,19 +501,19 @@ template&lt;typename T , typename K &gt; </div>
 
 </div>
 </div>
-<a id="a004cdfc4f1ed66798b9497ca36c10a92"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a004cdfc4f1ed66798b9497ca36c10a92">&#9670;&nbsp;</a></span>print_t_n() <span class="overload">[2/2]</span></h2>
+<a id="ae27c18f131dd0697e54ef2b341f9cb69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae27c18f131dd0697e54ef2b341f9cb69">&#9670;&nbsp;</a></span>print_t_n() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T , typename K &gt; </div>
+template&lt;typename T , typename K , typename series_templ &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr void <a class="el" href="classseries__acceleration.html">series_acceleration</a>&lt; T, K &gt;::print_t_n </td>
+          <td class="memname">constexpr void <a class="el" href="classseries__acceleration.html">series_acceleration</a>&lt; T, K, series_templ &gt;::print_t_n </td>
           <td>(</td>
           <td class="paramtype">const K&#160;</td>
           <td class="paramname"><em>n</em>, </td>
@@ -577,54 +560,8 @@ template&lt;typename T , typename K &gt; </div>
 
 </div>
 </div>
-<a id="a18d69f3300e92d4da9c580c55dea9db8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18d69f3300e92d4da9c580c55dea9db8">&#9670;&nbsp;</a></span>S_n()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , typename K &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr T <a class="el" href="classseries__acceleration.html">series_acceleration</a>&lt; T, K &gt;::S_n </td>
-          <td>(</td>
-          <td class="paramtype">K&#160;</td>
-          <td class="paramname"><em>n</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Partial sum of the series up to n terms. </p>
-<p>Calculate the partial sum of the series up to n terms. Formula [21].</p>
-<dl class="section author"><dt>Authors</dt><dd>Bolshakov M.P. </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">n</td><td>The number of terms </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The partial sum</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">n</td><td>The number of terms. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The partial sum S_n. </dd></dl>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>shanks_transformation/<a class="el" href="series_8h_source.html">series.h</a></li>
+<li>shanks_transformation/<a class="el" href="series__acceleration_8h_source.html">series_acceleration.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
