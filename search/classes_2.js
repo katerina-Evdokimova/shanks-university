@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['half_5fasin_5ftwo_5fx_5fseries_34',['half_asin_two_x_series',['../classhalf__asin__two__x__series.html',1,'']]]
+  ['series_5facceleration_39',['series_acceleration',['../classseries__acceleration.html',1,'']]],
+  ['series_5fbase_40',['series_base',['../classseries__base.html',1,'']]],
+  ['shanks_5ftransform_41',['shanks_transform',['../classshanks__transform.html',1,'']]]
 ];

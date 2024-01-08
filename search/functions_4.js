@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['print_5fdiff_5ft_5fs_50',['print_diff_t_s',['../classseries__acceleration.html#a104bd3a99597dabc5ab6638f5589b4aa',1,'series_acceleration::print_diff_t_s(const K n, const int order) const'],['../classseries__acceleration.html#ad10a65f4a4d8184e46444d8150de1d6a',1,'series_acceleration::print_diff_t_s(const K n, const int order, std::ostream &amp;out) const']]],
-  ['print_5fs_5fn_51',['print_s_n',['../classseries__acceleration.html#abae7e669849987566eb04e0717757173',1,'series_acceleration::print_s_n(const K n) const'],['../classseries__acceleration.html#a35133ef5e3b994877bbcc1f736d9fc10',1,'series_acceleration::print_s_n(const K n, std::ostream &amp;out) const']]],
-  ['print_5ft_5fn_52',['print_t_n',['../classseries__acceleration.html#a8facbdc74fbf33ef0caa1c93cfa65642',1,'series_acceleration::print_t_n(const K n, const int order) const'],['../classseries__acceleration.html#ae27c18f131dd0697e54ef2b341f9cb69',1,'series_acceleration::print_t_n(const K n, const int order, std::ostream &amp;out) const']]]
+  ['get_5fsum_55',['get_sum',['../classseries__base.html#ab99eee502832656ea006ed521673af4d',1,'series_base']]],
+  ['get_5fx_56',['get_x',['../classseries__base.html#a363e0c7ecd194dc11eb4985cc2fd4756',1,'series_base']]]
 ];
