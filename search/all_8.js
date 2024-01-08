@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['operator_28_29_15',['operator()',['../classepsilon__algorithm.html#afe49c0aa063f036e12aad48cc3a32914',1,'epsilon_algorithm::operator()()'],['../classseries__acceleration.html#acaf0b870a17601b08e01a03b226915a9',1,'series_acceleration::operator()()'],['../classshanks__transform.html#af80dc3a235785023ece1bcabdd07b466',1,'shanks_transform::operator()()']]]
+  ['main_2ecpp_17',['main.cpp',['../main_8cpp.html',1,'']]],
+  ['mean_5fsinh_5fsin_5fseries_18',['mean_sinh_sin_series',['../classmean__sinh__sin__series.html',1,'']]]
 ];

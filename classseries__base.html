@@ -101,8 +101,14 @@ Inheritance diagram for series_base&lt; T, K &gt;:</div>
  <div class="center">
   <img src="classseries__base.png" usemap="#series_5Fbase_3C_20T_2C_20K_20_3E_map" alt=""/>
   <map id="series_5Fbase_3C_20T_2C_20K_20_3E_map" name="series_5Fbase_3C_20T_2C_20K_20_3E_map">
-<area href="classexp__series.html" title="Maclaurin series for exponent." alt="exp_series&lt; T, K &gt;" shape="rect" coords="0,56,167,80"/>
-<area href="classfour__arctan__series.html" title="Maclaurin series for arctan multiplied by four." alt="four_arctan_series&lt; T, K &gt;" shape="rect" coords="177,56,344,80"/>
+<area href="classcosh__series.html" alt="cosh_series&lt; T, K &gt;" shape="rect" coords="206,56,402,80"/>
+<area href="classexp__series.html" title="Maclaurin series for exponent." alt="exp_series&lt; T, K &gt;" shape="rect" coords="206,112,402,136"/>
+<area href="classexp__squared__erf__series.html" alt="exp_squared_erf_series&lt; T, K &gt;" shape="rect" coords="206,168,402,192"/>
+<area href="classfour__arctan__series.html" title="Maclaurin series for arctan multiplied by four." alt="four_arctan_series&lt; T, K &gt;" shape="rect" coords="206,224,402,248"/>
+<area href="classhalf__asin__two__x__series.html" alt="half_asin_two_x_series&lt; T, K &gt;" shape="rect" coords="206,280,402,304"/>
+<area href="classln1mx__series.html" alt="ln1mx_series&lt; T, K &gt;" shape="rect" coords="206,336,402,360"/>
+<area href="classmean__sinh__sin__series.html" alt="mean_sinh_sin_series&lt; T, K &gt;" shape="rect" coords="206,392,402,416"/>
+<area href="classxmb__Jb__two__series.html" alt="xmb_Jb_two_series&lt; T, K &gt;" shape="rect" coords="206,448,402,472"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -135,6 +141,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a42b6c38ba4fb197990696a62ff2c949c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classseries__base.html#a42b6c38ba4fb197990696a62ff2c949c">series_base</a> (T <a class="el" href="classseries__base.html#affe93b6bae5f228e08d56b16518a86be">x</a>, T <a class="el" href="classseries__base.html#a6d335f2f5f2ac0decb157a7d54a19087">sum</a>)</td></tr>
 <tr class="memdesc:a42b6c38ba4fb197990696a62ff2c949c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameterized constructor to initialize the series with function argument and sum of the series.  <a href="classseries__base.html#a42b6c38ba4fb197990696a62ff2c949c">More...</a><br /></td></tr>
 <tr class="separator:a42b6c38ba4fb197990696a62ff2c949c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9ba67010bbc7291fad1f139b984a703"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classseries__base.html#ae9ba67010bbc7291fad1f139b984a703">fact</a> (const K n) const</td></tr>
+<tr class="memdesc:ae9ba67010bbc7291fad1f139b984a703"><td class="mdescLeft">&#160;</td><td class="mdescRight">factorial  <a href="classseries__base.html#ae9ba67010bbc7291fad1f139b984a703">More...</a><br /></td></tr>
+<tr class="separator:ae9ba67010bbc7291fad1f139b984a703"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -318,7 +327,39 @@ template&lt;typename T , typename K &gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>nth term of the series </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classfour__arctan__series.html#a9ed5eb117d839ec3712ddeb663dc100e">four_arctan_series&lt; T, K &gt;</a>, and <a class="el" href="classexp__series.html#af61a1cae75decff81417a9378f92d370">exp_series&lt; T, K &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="classhalf__asin__two__x__series.html#a706fe0f3f95890531c8cc90c2218961c">half_asin_two_x_series&lt; T, K &gt;</a>, <a class="el" href="classxmb__Jb__two__series.html#aab7d590ec95c3aa51791a352604e0a20">xmb_Jb_two_series&lt; T, K &gt;</a>, <a class="el" href="classexp__squared__erf__series.html#ab744608ee84f047e11cf2e032890239a">exp_squared_erf_series&lt; T, K &gt;</a>, <a class="el" href="classmean__sinh__sin__series.html#acc3a7f6de4559c5e2705e7b6ab454b7a">mean_sinh_sin_series&lt; T, K &gt;</a>, <a class="el" href="classln1mx__series.html#ae58a6fa22787d74d21b917499a9eb936">ln1mx_series&lt; T, K &gt;</a>, <a class="el" href="classcosh__series.html#a6b9bc065c6d0ae909f516d1f674efc9a">cosh_series&lt; T, K &gt;</a>, <a class="el" href="classfour__arctan__series.html#a9ed5eb117d839ec3712ddeb663dc100e">four_arctan_series&lt; T, K &gt;</a>, and <a class="el" href="classexp__series.html#af61a1cae75decff81417a9378f92d370">exp_series&lt; T, K &gt;</a>.</p>
+
+</div>
+</div>
+<a id="ae9ba67010bbc7291fad1f139b984a703"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9ba67010bbc7291fad1f139b984a703">&#9670;&nbsp;</a></span>fact()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename K &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int <a class="el" href="classseries__base.html">series_base</a>&lt; T, K &gt;::fact </td>
+          <td>(</td>
+          <td class="paramtype">const K&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>factorial </p>
+<dl class="section author"><dt>Authors</dt><dd>Bolshakov M.P. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>n! </dd></dl>
 
 </div>
 </div>

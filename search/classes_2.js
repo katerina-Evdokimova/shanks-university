@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['series_5facceleration_39',['series_acceleration',['../classseries__acceleration.html',1,'']]],
-  ['series_5fbase_40',['series_base',['../classseries__base.html',1,'']]],
-  ['shanks_5ftransform_41',['shanks_transform',['../classshanks__transform.html',1,'']]]
+  ['four_5farctan_5fseries_46',['four_arctan_series',['../classfour__arctan__series.html',1,'']]]
 ];
