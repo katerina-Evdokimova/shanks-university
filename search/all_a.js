@@ -1,4 +1,8 @@
 var searchData=
 [
-  ['Метод_20Шенкса_20_28shanks_20transform_29_20на_20c_2b_2b_23',['Метод Шенкса (Shanks Transform) на C++',['../index.html',1,'']]]
+  ['series_20',['series',['../classseries__acceleration.html#a79e096bcc3434265a9c99522a41ff820',1,'series_acceleration']]],
+  ['series_5facceleration_21',['series_acceleration',['../classseries__acceleration.html',1,'series_acceleration&lt; T, K, series_templ &gt;'],['../classseries__acceleration.html#a8e5b786cd4f81b64b730b4c47843b046',1,'series_acceleration::series_acceleration()'],['../classseries__acceleration.html#a1df90a926913831d683a8845a45bdbab',1,'series_acceleration::series_acceleration(const series_templ &amp;series)']]],
+  ['series_5facceleration_2eh_22',['series_acceleration.h',['../series__acceleration_8h.html',1,'']]],
+  ['series_5fbase_23',['series_base',['../classseries__base.html',1,'']]],
+  ['shanks_5ftransform_24',['shanks_transform',['../classshanks__transform.html',1,'shanks_transform&lt; T, K, series_templ &gt;'],['../classshanks__transform.html#ab2877b58268422235af686e9988874ce',1,'shanks_transform::shanks_transform()'],['../classshanks__transform.html#a7895e7732ab2b125ab53e9244b478508',1,'shanks_transform::shanks_transform(const series_templ &amp;series)']]]
 ];

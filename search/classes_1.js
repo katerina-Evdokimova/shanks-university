@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['series_5facceleration_26',['series_acceleration',['../classseries__acceleration.html',1,'']]],
-  ['series_5fbase_27',['series_base',['../classseries__base.html',1,'']]],
-  ['shanks_5ftransform_28',['shanks_transform',['../classshanks__transform.html',1,'']]]
+  ['epsilon_5falgorithm_31',['epsilon_algorithm',['../classepsilon__algorithm.html',1,'']]],
+  ['exp_5fseries_32',['exp_series',['../classexp__series.html',1,'']]],
+  ['exp_5fsquared_5ferf_5fseries_33',['exp_squared_erf_series',['../classexp__squared__erf__series.html',1,'']]]
 ];

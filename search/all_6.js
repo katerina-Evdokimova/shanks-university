@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['operator_28_29_11',['operator()',['../classseries__acceleration.html#acaf0b870a17601b08e01a03b226915a9',1,'series_acceleration']]]
+  ['main_2ecpp_13',['main.cpp',['../main_8cpp.html',1,'']]],
+  ['mean_5fsinh_5fsin_5fseries_14',['mean_sinh_sin_series',['../classmean__sinh__sin__series.html',1,'']]]
 ];

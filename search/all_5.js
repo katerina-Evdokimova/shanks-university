@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['no_5fseries_5fgiven_10',['NO_SERIES_GIVEN',['../series__acceleration_8h.html#a23b96fc0547a2f8be003cc9dbd108c69',1,'series_acceleration.h']]]
+  ['ln1mx_5fseries_12',['ln1mx_series',['../classln1mx__series.html',1,'']]]
 ];
