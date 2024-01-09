@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['_7eepsilon_5falgorithm_80',['~epsilon_algorithm',['../classepsilon__algorithm.html#a674b676a0a8d3db6989b8e50e5df8075',1,'epsilon_algorithm']]],
-  ['_7eexp_5fseries_81',['~exp_series',['../classexp__series.html#a446272d45b88d62c80236b5c17673797',1,'exp_series']]],
-  ['_7efour_5farctan_5fseries_82',['~four_arctan_series',['../classfour__arctan__series.html#a845abca078471881932876013ef39e91',1,'four_arctan_series']]],
-  ['_7eseries_5fbase_83',['~series_base',['../classseries__base.html#afdc26ab18de2d8d9a67e02442cd4013e',1,'series_base']]],
-  ['_7eshanks_5ftransform_84',['~shanks_transform',['../classshanks__transform.html#a0d0185a8449916fd8c2b68b1912a9ce1',1,'shanks_transform']]]
+  ['print_5fdiff_5ft_5fs_83',['print_diff_t_s',['../classseries__acceleration.html#a104bd3a99597dabc5ab6638f5589b4aa',1,'series_acceleration::print_diff_t_s(const K n, const int order) const'],['../classseries__acceleration.html#ad10a65f4a4d8184e46444d8150de1d6a',1,'series_acceleration::print_diff_t_s(const K n, const int order, std::ostream &amp;out) const']]],
+  ['print_5fs_5fn_84',['print_s_n',['../classseries__acceleration.html#abae7e669849987566eb04e0717757173',1,'series_acceleration::print_s_n(const K n) const'],['../classseries__acceleration.html#a35133ef5e3b994877bbcc1f736d9fc10',1,'series_acceleration::print_s_n(const K n, std::ostream &amp;out) const']]],
+  ['print_5fseries_5finfo_85',['print_series_info',['../main_8cpp.html#a42c85f8aff1b5ec2ec8777d58f2fcba6',1,'main.cpp']]],
+  ['print_5ft_5fn_86',['print_t_n',['../classseries__acceleration.html#a8facbdc74fbf33ef0caa1c93cfa65642',1,'series_acceleration::print_t_n(const K n, const int order) const'],['../classseries__acceleration.html#ae27c18f131dd0697e54ef2b341f9cb69',1,'series_acceleration::print_t_n(const K n, const int order, std::ostream &amp;out) const']]],
+  ['print_5ftest_5ffunction_5finfo_87',['print_test_function_info',['../main_8cpp.html#aa3f0b49a814a91be476ed29658cf6617',1,'main.cpp']]],
+  ['print_5ftransformation_5finfo_88',['print_transformation_info',['../main_8cpp.html#a6d88fd71d648cb4f0ff5e1daa0c9ba92',1,'main.cpp']]]
 ];

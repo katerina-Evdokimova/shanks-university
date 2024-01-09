@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['main_5ftesting_5ffunction_67',['main_testing_function',['../main_8cpp.html#ab0aa60f46efc4a4bb0b5cc3d8e9dc9bc',1,'main.cpp']]]
+  ['get_5fsum_76',['get_sum',['../classseries__base.html#ab99eee502832656ea006ed521673af4d',1,'series_base']]],
+  ['get_5fx_77',['get_x',['../classseries__base.html#a363e0c7ecd194dc11eb4985cc2fd4756',1,'series_base']]]
 ];

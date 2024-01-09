@@ -11,5 +11,6 @@ var annotated_dup =
     [ "series_acceleration", "classseries__acceleration.html", "classseries__acceleration" ],
     [ "series_base", "classseries__base.html", "classseries__base" ],
     [ "shanks_transform", "classshanks__transform.html", "classshanks__transform" ],
+    [ "shanks_transform_alternating", "classshanks__transform__alternating.html", "classshanks__transform__alternating" ],
     [ "xmb_Jb_two_series", "classxmb__Jb__two__series.html", "classxmb__Jb__two__series" ]
 ];
