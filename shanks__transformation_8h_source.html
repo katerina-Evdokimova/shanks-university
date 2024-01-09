@@ -129,33 +129,33 @@ $(document).ready(function(){initNavTree('shanks__transformation_8h_source.html'
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">if</span> (n &lt; 0)</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">throw</span> std::domain_error(<span class="stringliteral">&quot;negative integer in the input&quot;</span>);</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (order == 0) <span class="comment">/*it is convenient to assume that transformation of order 0 is no transformation at all*/</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">return</span> this-&gt;series.S_n(n);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">return</span> this-&gt;series-&gt;S_n(n);</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (n &lt; order || n == 0)</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">return</span> DEF_UNDEFINED_SUM;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (order == 1)</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span> a_n = this-&gt;series.a_n(n);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span> a_n_plus_1 = this-&gt;series.a_n(n + 1);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span> a_n = this-&gt;series-&gt;a_n(n);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span> a_n_plus_1 = this-&gt;series-&gt;a_n(n + 1);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">if</span> (!std::isfinite(abs(a_n - a_n_plus_1)))</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordflow">throw</span> std::overflow_error(<span class="stringliteral">&quot;division by zero&quot;</span>);</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span> tmp = -a_n_plus_1 * a_n_plus_1;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">return</span> std::fma(a_n * a_n_plus_1, (a_n + a_n_plus_1) / (std::fma(a_n, a_n, tmp) - std::fma(a_n_plus_1, a_n_plus_1, tmp)), this-&gt;series.S_n(n));</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">return</span> std::fma(a_n * a_n_plus_1, (a_n + a_n_plus_1) / (std::fma(a_n, a_n, tmp) - std::fma(a_n_plus_1, a_n_plus_1, tmp)), this-&gt;series-&gt;S_n(n));</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">else</span> <span class="comment">//n &gt; order &gt;= 1</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    {</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        std::vector&lt;T&gt; T_n(n + order, 0);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keyword">auto</span> a_n = this-&gt;series.a_n(n - order);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keyword">auto</span> a_n_plus_1 = this-&gt;series.a_n(n - order + 1);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keyword">auto</span> a_n = this-&gt;series-&gt;a_n(n - order);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keyword">auto</span> a_n_plus_1 = this-&gt;series-&gt;a_n(n - order + 1);</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = n - order + 1; i &lt;= n + order - 1; ++i) <span class="comment">// if we got to this branch then we know that n &gt;= order - see previous branches</span></div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        {</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            a_n = this-&gt;series.a_n(i);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            a_n_plus_1 = this-&gt;series.a_n(i + 1);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            a_n = this-&gt;series-&gt;a_n(i);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            a_n_plus_1 = this-&gt;series-&gt;a_n(i + 1);</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keywordflow">if</span> (!std::isfinite(abs(a_n - a_n_plus_1)))</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                <span class="keywordflow">throw</span> std::overflow_error(<span class="stringliteral">&quot;division by zero&quot;</span>);</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keyword">const</span> <span class="keyword">auto</span> tmp = -a_n_plus_1 * a_n_plus_1;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <span class="comment">// formula [6]</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            T_n[i] = std::fma(a_n * a_n_plus_1, (a_n + a_n_plus_1) / (std::fma(a_n, a_n, tmp) - std::fma(a_n_plus_1, a_n_plus_1, tmp)), this-&gt;series.S_n(i));</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            T_n[i] = std::fma(a_n * a_n_plus_1, (a_n + a_n_plus_1) / (std::fma(a_n, a_n, tmp) - std::fma(a_n_plus_1, a_n_plus_1, tmp)), this-&gt;series-&gt;S_n(i));</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        }</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        std::vector&lt;T&gt; T_n_plus_1(n + order, 0);</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        T a, b, c;</div>

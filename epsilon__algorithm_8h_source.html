@@ -133,13 +133,13 @@ $(document).ready(function(){initNavTree('epsilon__algorithm_8h_source.html','')
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (n == 0)</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">return</span> DEF_UNDEFINED_SUM;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (order == 0)</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">return</span> this-&gt;series.S_n(n);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">return</span> this-&gt;series-&gt;S_n(n);</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    std::vector&lt;T&gt; e(m + 1, 0);</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    T diff, temp1, temp2;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = m; j &gt; 0; j--)</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    {</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        e[j] = this-&gt;series.S_n(n + j);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        e[j] = this-&gt;series-&gt;S_n(n + j);</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    temp2 = 0;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['epsilon_5falgorithm_61',['epsilon_algorithm',['../classepsilon__algorithm.html#a549ec01478ffb5206770c545e042ffac',1,'epsilon_algorithm::epsilon_algorithm()'],['../classepsilon__algorithm.html#a704d1d36236997f38d2c4d7d1057a131',1,'epsilon_algorithm::epsilon_algorithm(const series_templ &amp;series)']]],
-  ['exp_5fseries_62',['exp_series',['../classexp__series.html#aef81386ba9548f76fe224fb51f2ebe2f',1,'exp_series::exp_series()'],['../classexp__series.html#a67f0a756f42479057ff324bc317c58d9',1,'exp_series::exp_series(T x)']]],
-  ['exp_5fx_63',['exp_x',['../main_8cpp.html#a4302b6048ae6dfb95afae3b87741a1d3',1,'main.cpp']]]
+  ['fact_63',['fact',['../classseries__base.html#ae9ba67010bbc7291fad1f139b984a703',1,'series_base']]],
+  ['four_5farctan_5fseries_64',['four_arctan_series',['../classfour__arctan__series.html#aac306d35db24bf5c0adf6a6b6f58dc4a',1,'four_arctan_series::four_arctan_series()'],['../classfour__arctan__series.html#a2516a73be1cfe8e830a543e0d63c5ae8',1,'four_arctan_series::four_arctan_series(T x)']]]
 ];
