@@ -107,10 +107,79 @@ template&lt;typename series_templ , typename transform_type &gt; </td></tr>
 <tr class="memitem:ab6ba403fc3fb51ee8ad8a2a7eb52bda5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="test__functions_8h.html#ab6ba403fc3fb51ee8ad8a2a7eb52bda5">transformation_remainders</a> (const int n, const int order, const series_templ &amp;series, const transform_type &amp;test)</td></tr>
 <tr class="memdesc:ab6ba403fc3fb51ee8ad8a2a7eb52bda5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that prints out the remainders At first it prints out the type of transformation, series that are being transformed, type of enumerating integer and type of series terms Then it prints out remainders of the series from 1 to n.  <a href="test__functions_8h.html#ab6ba403fc3fb51ee8ad8a2a7eb52bda5">More...</a><br /></td></tr>
 <tr class="separator:ab6ba403fc3fb51ee8ad8a2a7eb52bda5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a8662e9c001fac8228c6970b2e5853d"><td class="memTemplParams" colspan="2">template&lt;typename series_templ , typename transform_type_1 , typename transform_type_2 &gt; </td></tr>
+<tr class="memitem:a7a8662e9c001fac8228c6970b2e5853d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="test__functions_8h.html#a7a8662e9c001fac8228c6970b2e5853d">cmp_transformations</a> (const int n, const int order, const series_templ &amp;series, const transform_type_1 &amp;test_1, const transform_type_2 &amp;test_2)</td></tr>
+<tr class="memdesc:a7a8662e9c001fac8228c6970b2e5853d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that showcases the difference between 2 transformations At first it prints out the type of transformations, series that are being transformed, type of enumerating integer and type of series terms Then it prints out remainders of the series sum from 1 to n transformed 2 different ways and also tells which one got closer to the sum of the series.  <a href="test__functions_8h.html#a7a8662e9c001fac8228c6970b2e5853d">More...</a><br /></td></tr>
+<tr class="separator:a7a8662e9c001fac8228c6970b2e5853d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains the testing functions. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a7a8662e9c001fac8228c6970b2e5853d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a8662e9c001fac8228c6970b2e5853d">&#9670;&nbsp;</a></span>cmp_transformations()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename series_templ , typename transform_type_1 , typename transform_type_2 &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void cmp_transformations </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>order</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const series_templ &amp;&#160;</td>
+          <td class="paramname"><em>series</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const transform_type_1 &amp;&#160;</td>
+          <td class="paramname"><em>test_1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const transform_type_2 &amp;&#160;</td>
+          <td class="paramname"><em>test_2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function that showcases the difference between 2 transformations At first it prints out the type of transformations, series that are being transformed, type of enumerating integer and type of series terms Then it prints out remainders of the series sum from 1 to n transformed 2 different ways and also tells which one got closer to the sum of the series. </p>
+<dl class="section author"><dt>Authors</dt><dd>Bolshakov M.P. </dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">series_templ</td><td>is the type of series whose convergence we accelerate, transform_type_1 is the first type of transformation we are using, transform_type_2 is the second type of transformation we are using </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>The number of terms for the last remainder </td></tr>
+    <tr><td class="paramname">order</td><td>The order of the transformation </td></tr>
+    <tr><td class="paramname">series</td><td>The series class object to be accelerated </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ab6ba403fc3fb51ee8ad8a2a7eb52bda5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab6ba403fc3fb51ee8ad8a2a7eb52bda5">&#9670;&nbsp;</a></span>transformation_remainders()</h2>
 
