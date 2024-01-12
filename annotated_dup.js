@@ -1,5 +1,6 @@
 var annotated_dup =
 [
+    [ "cos_series", "classcos__series.html", "classcos__series" ],
     [ "cosh_series", "classcosh__series.html", "classcosh__series" ],
     [ "epsilon_algorithm", "classepsilon__algorithm.html", "classepsilon__algorithm" ],
     [ "exp_series", "classexp__series.html", "classexp__series" ],
