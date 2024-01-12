@@ -13,6 +13,7 @@ var hierarchy =
       [ "half_asin_two_x_series< T, K >", "classhalf__asin__two__x__series.html", null ],
       [ "ln1mx_series< T, K >", "classln1mx__series.html", null ],
       [ "mean_sinh_sin_series< T, K >", "classmean__sinh__sin__series.html", null ],
+      [ "sin_series< T, K >", "classsin__series.html", null ],
       [ "xmb_Jb_two_series< T, K >", "classxmb__Jb__two__series.html", null ]
     ] ]
 ];
