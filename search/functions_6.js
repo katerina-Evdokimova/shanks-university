@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ln1mx_5fseries_88',['ln1mx_series',['../classln1mx__series.html#a0d33eb1241779ece7defb3b9116f019d',1,'ln1mx_series::ln1mx_series()'],['../classln1mx__series.html#a576262e04da81d016c0b7ff468da8f9c',1,'ln1mx_series::ln1mx_series(T x)']]]
+  ['half_5fasin_5ftwo_5fx_5fseries_94',['half_asin_two_x_series',['../classhalf__asin__two__x__series.html#a10b7e0432ab401894402137596d70480',1,'half_asin_two_x_series::half_asin_two_x_series()'],['../classhalf__asin__two__x__series.html#a85be079f7ae4b17811d6788690e429aa',1,'half_asin_two_x_series::half_asin_two_x_series(T x)']]]
 ];

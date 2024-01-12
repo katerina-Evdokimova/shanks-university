@@ -1,13 +1,9 @@
 var searchData=
 [
-  ['s_5fn_27',['S_n',['../classseries__base.html#acaff7c9f11abe62fd6f8ac622578025d',1,'series_base']]],
-  ['series_28',['series',['../classseries__acceleration.html#a79e096bcc3434265a9c99522a41ff820',1,'series_acceleration']]],
-  ['series_2eh_29',['series.h',['../series_8h.html',1,'']]],
-  ['series_5facceleration_30',['series_acceleration',['../classseries__acceleration.html',1,'series_acceleration&lt; T, K, series_templ &gt;'],['../classseries__acceleration.html#a8e5b786cd4f81b64b730b4c47843b046',1,'series_acceleration::series_acceleration()'],['../classseries__acceleration.html#a1df90a926913831d683a8845a45bdbab',1,'series_acceleration::series_acceleration(const series_templ &amp;series)']]],
-  ['series_5facceleration_2eh_31',['series_acceleration.h',['../series__acceleration_8h.html',1,'']]],
-  ['series_5fbase_32',['series_base',['../classseries__base.html',1,'series_base&lt; T, K &gt;'],['../classseries__base.html#a42b6c38ba4fb197990696a62ff2c949c',1,'series_base::series_base(T x, T sum)'],['../classseries__base.html#aeb803a28007292df232c62c1311bfc3d',1,'series_base::series_base(T x)'],['../classseries__base.html#aaa1aff44735f74d0ca15f0559699970e',1,'series_base::series_base()']]],
-  ['shanks_5ftransform_33',['shanks_transform',['../classshanks__transform.html',1,'shanks_transform&lt; T, K, series_templ &gt;'],['../classshanks__transform.html#ab2877b58268422235af686e9988874ce',1,'shanks_transform::shanks_transform()'],['../classshanks__transform.html#a7895e7732ab2b125ab53e9244b478508',1,'shanks_transform::shanks_transform(const series_templ &amp;series)']]],
-  ['shanks_5ftransform_5falternating_34',['shanks_transform_alternating',['../classshanks__transform__alternating.html',1,'shanks_transform_alternating&lt; T, K, series_templ &gt;'],['../classshanks__transform__alternating.html#a03a6ce12f96b36297451da8ad0e440e8',1,'shanks_transform_alternating::shanks_transform_alternating()'],['../classshanks__transform__alternating.html#ab52133bb8db98faf07c8c3a48ad1b65b',1,'shanks_transform_alternating::shanks_transform_alternating(const series_templ &amp;series)']]],
-  ['sin_5fseries_35',['sin_series',['../classsin__series.html',1,'sin_series&lt; T, K &gt;'],['../classsin__series.html#a02ed382de5347c28325b848d1d170814',1,'sin_series::sin_series()'],['../classsin__series.html#a7eafc845053598147175f51ef919e968',1,'sin_series::sin_series(T x)']]],
-  ['sum_36',['sum',['../classseries__base.html#a6d335f2f5f2ac0decb157a7d54a19087',1,'series_base']]]
+  ['print_5fdiff_5ft_5fs_22',['print_diff_t_s',['../classseries__acceleration.html#a104bd3a99597dabc5ab6638f5589b4aa',1,'series_acceleration::print_diff_t_s(const K n, const int order) const'],['../classseries__acceleration.html#ad10a65f4a4d8184e46444d8150de1d6a',1,'series_acceleration::print_diff_t_s(const K n, const int order, std::ostream &amp;out) const']]],
+  ['print_5fs_5fn_23',['print_s_n',['../classseries__acceleration.html#abae7e669849987566eb04e0717757173',1,'series_acceleration::print_s_n(const K n) const'],['../classseries__acceleration.html#a35133ef5e3b994877bbcc1f736d9fc10',1,'series_acceleration::print_s_n(const K n, std::ostream &amp;out) const']]],
+  ['print_5fseries_5finfo_24',['print_series_info',['../main_8cpp.html#a42c85f8aff1b5ec2ec8777d58f2fcba6',1,'main.cpp']]],
+  ['print_5ft_5fn_25',['print_t_n',['../classseries__acceleration.html#a8facbdc74fbf33ef0caa1c93cfa65642',1,'series_acceleration::print_t_n(const K n, const int order) const'],['../classseries__acceleration.html#ae27c18f131dd0697e54ef2b341f9cb69',1,'series_acceleration::print_t_n(const K n, const int order, std::ostream &amp;out) const']]],
+  ['print_5ftest_5ffunction_5finfo_26',['print_test_function_info',['../main_8cpp.html#aa3f0b49a814a91be476ed29658cf6617',1,'main.cpp']]],
+  ['print_5ftransformation_5finfo_27',['print_transformation_info',['../main_8cpp.html#a6d88fd71d648cb4f0ff5e1daa0c9ba92',1,'main.cpp']]]
 ];

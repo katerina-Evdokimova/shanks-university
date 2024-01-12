@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['operator_28_29_91',['operator()',['../classepsilon__algorithm.html#afe49c0aa063f036e12aad48cc3a32914',1,'epsilon_algorithm::operator()()'],['../classseries__acceleration.html#acaf0b870a17601b08e01a03b226915a9',1,'series_acceleration::operator()()'],['../classshanks__transform.html#af80dc3a235785023ece1bcabdd07b466',1,'shanks_transform::operator()()'],['../classshanks__transform__alternating.html#ad897277a301666218954421d440f1b6d',1,'shanks_transform_alternating::operator()()']]]
+  ['main_5ftesting_5ffunction_96',['main_testing_function',['../main_8cpp.html#ab0aa60f46efc4a4bb0b5cc3d8e9dc9bc',1,'main.cpp']]],
+  ['mean_5fsinh_5fsin_5fseries_97',['mean_sinh_sin_series',['../classmean__sinh__sin__series.html#ae02295e25910fb37a6c2734aa40a0538',1,'mean_sinh_sin_series::mean_sinh_sin_series()'],['../classmean__sinh__sin__series.html#affb3220de11c00a141c623f081b982fe',1,'mean_sinh_sin_series::mean_sinh_sin_series(T x)']]]
 ];

@@ -1,5 +1,6 @@
 var annotated_dup =
 [
+    [ "bin_series", "classbin__series.html", "classbin__series" ],
     [ "cos_series", "classcos__series.html", "classcos__series" ],
     [ "cosh_series", "classcosh__series.html", "classcosh__series" ],
     [ "epsilon_algorithm", "classepsilon__algorithm.html", "classepsilon__algorithm" ],
@@ -14,5 +15,6 @@ var annotated_dup =
     [ "shanks_transform", "classshanks__transform.html", "classshanks__transform" ],
     [ "shanks_transform_alternating", "classshanks__transform__alternating.html", "classshanks__transform__alternating" ],
     [ "sin_series", "classsin__series.html", "classsin__series" ],
+    [ "sinh_series", "classsinh__series.html", "classsinh__series" ],
     [ "xmb_Jb_two_series", "classxmb__Jb__two__series.html", "classxmb__Jb__two__series" ]
 ];

@@ -1,8 +1,4 @@
 var searchData=
 [
-  ['series_5facceleration_65',['series_acceleration',['../classseries__acceleration.html',1,'']]],
-  ['series_5fbase_66',['series_base',['../classseries__base.html',1,'']]],
-  ['shanks_5ftransform_67',['shanks_transform',['../classshanks__transform.html',1,'']]],
-  ['shanks_5ftransform_5falternating_68',['shanks_transform_alternating',['../classshanks__transform__alternating.html',1,'']]],
-  ['sin_5fseries_69',['sin_series',['../classsin__series.html',1,'']]]
+  ['mean_5fsinh_5fsin_5fseries_69',['mean_sinh_sin_series',['../classmean__sinh__sin__series.html',1,'']]]
 ];
