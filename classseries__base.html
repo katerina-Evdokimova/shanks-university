@@ -145,9 +145,12 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a42b6c38ba4fb197990696a62ff2c949c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classseries__base.html#a42b6c38ba4fb197990696a62ff2c949c">series_base</a> (T <a class="el" href="classseries__base.html#affe93b6bae5f228e08d56b16518a86be">x</a>, T <a class="el" href="classseries__base.html#a6d335f2f5f2ac0decb157a7d54a19087">sum</a>)</td></tr>
 <tr class="memdesc:a42b6c38ba4fb197990696a62ff2c949c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameterized constructor to initialize the series with function argument and sum of the series.  <a href="classseries__base.html#a42b6c38ba4fb197990696a62ff2c949c">More...</a><br /></td></tr>
 <tr class="separator:a42b6c38ba4fb197990696a62ff2c949c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9ba67010bbc7291fad1f139b984a703"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classseries__base.html#ae9ba67010bbc7291fad1f139b984a703">fact</a> (const K n) const</td></tr>
-<tr class="memdesc:ae9ba67010bbc7291fad1f139b984a703"><td class="mdescLeft">&#160;</td><td class="mdescRight">factorial  <a href="classseries__base.html#ae9ba67010bbc7291fad1f139b984a703">More...</a><br /></td></tr>
-<tr class="separator:ae9ba67010bbc7291fad1f139b984a703"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbb83c8b0ca71603bcfd2e9a456998c1"><td class="memItemLeft" align="right" valign="top">constexpr const K&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classseries__base.html#abbb83c8b0ca71603bcfd2e9a456998c1">fact</a> (const K n) const</td></tr>
+<tr class="memdesc:abbb83c8b0ca71603bcfd2e9a456998c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">factorial  <a href="classseries__base.html#abbb83c8b0ca71603bcfd2e9a456998c1">More...</a><br /></td></tr>
+<tr class="separator:abbb83c8b0ca71603bcfd2e9a456998c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4b76c3e457f15e689742687dc9f7d56"><td class="memItemLeft" align="right" valign="top"><a id="ac4b76c3e457f15e689742687dc9f7d56"></a>
+constexpr const T&#160;</td><td class="memItemRight" valign="bottom"><b>binomial_coefficient</b> (const T n, const K k) const</td></tr>
+<tr class="separator:ac4b76c3e457f15e689742687dc9f7d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -335,8 +338,8 @@ template&lt;typename T , typename K &gt; </div>
 
 </div>
 </div>
-<a id="ae9ba67010bbc7291fad1f139b984a703"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae9ba67010bbc7291fad1f139b984a703">&#9670;&nbsp;</a></span>fact()</h2>
+<a id="abbb83c8b0ca71603bcfd2e9a456998c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbb83c8b0ca71603bcfd2e9a456998c1">&#9670;&nbsp;</a></span>fact()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -347,7 +350,7 @@ template&lt;typename T , typename K &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const int <a class="el" href="classseries__base.html">series_base</a>&lt; T, K &gt;::fact </td>
+          <td class="memname">constexpr const K <a class="el" href="classseries__base.html">series_base</a>&lt; T, K &gt;::fact </td>
           <td>(</td>
           <td class="paramtype">const K&#160;</td>
           <td class="paramname"><em>n</em></td><td>)</td>
@@ -356,7 +359,7 @@ template&lt;typename T , typename K &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
