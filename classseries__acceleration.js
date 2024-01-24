@@ -1,5 +1,6 @@
 var classseries__acceleration =
 [
+    [ "series_acceleration", "classseries__acceleration.html#a8e5b786cd4f81b64b730b4c47843b046", null ],
     [ "series_acceleration", "classseries__acceleration.html#a1df90a926913831d683a8845a45bdbab", null ],
     [ "~series_acceleration", "classseries__acceleration.html#a9d1d3f8a5aed2196f5ac82360281f136", null ],
     [ "operator()", "classseries__acceleration.html#acaf0b870a17601b08e01a03b226915a9", null ],
