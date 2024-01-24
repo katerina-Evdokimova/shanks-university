@@ -105,15 +105,9 @@ Inheritance diagram for epsilon_algorithm&lt; T, K, series_templ &gt;:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a549ec01478ffb5206770c545e042ffac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classepsilon__algorithm.html#a549ec01478ffb5206770c545e042ffac">epsilon_algorithm</a> ()</td></tr>
-<tr class="memdesc:a549ec01478ffb5206770c545e042ffac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="classepsilon__algorithm.html#a549ec01478ffb5206770c545e042ffac">More...</a><br /></td></tr>
-<tr class="separator:a549ec01478ffb5206770c545e042ffac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a704d1d36236997f38d2c4d7d1057a131"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classepsilon__algorithm.html#a704d1d36236997f38d2c4d7d1057a131">epsilon_algorithm</a> (const series_templ &amp;<a class="el" href="classseries__acceleration.html#a79e096bcc3434265a9c99522a41ff820">series</a>)</td></tr>
 <tr class="memdesc:a704d1d36236997f38d2c4d7d1057a131"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameterized constructor to initialize the Epsilon Algorithm.  <a href="classepsilon__algorithm.html#a704d1d36236997f38d2c4d7d1057a131">More...</a><br /></td></tr>
 <tr class="separator:a704d1d36236997f38d2c4d7d1057a131"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a674b676a0a8d3db6989b8e50e5df8075"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classepsilon__algorithm.html#a674b676a0a8d3db6989b8e50e5df8075">~epsilon_algorithm</a> () override</td></tr>
-<tr class="memdesc:a674b676a0a8d3db6989b8e50e5df8075"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor to clean up resources.  <a href="classepsilon__algorithm.html#a674b676a0a8d3db6989b8e50e5df8075">More...</a><br /></td></tr>
-<tr class="separator:a674b676a0a8d3db6989b8e50e5df8075"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe49c0aa063f036e12aad48cc3a32914"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classepsilon__algorithm.html#afe49c0aa063f036e12aad48cc3a32914">operator()</a> (const K n, const int order) const</td></tr>
 <tr class="memdesc:afe49c0aa063f036e12aad48cc3a32914"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shanks multistep epsilon algorithm. Computes the partial sum after the transformation using the Epsilon Algorithm. For more information, see p. 5.3.2 in [<a href="https://e-maxx.ru/bookz/files/numerical_recipes.pdf">https://e-maxx.ru/bookz/files/numerical_recipes.pdf</a>] <br  />
   <a href="classepsilon__algorithm.html#afe49c0aa063f036e12aad48cc3a32914">More...</a><br /></td></tr>
@@ -185,27 +179,8 @@ class epsilon_algorithm&lt; T, K, series_templ &gt;</h3>
   </dd>
 </dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a549ec01478ffb5206770c545e042ffac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a549ec01478ffb5206770c545e042ffac">&#9670;&nbsp;</a></span>epsilon_algorithm() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , typename K , typename series_templ &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classepsilon__algorithm.html">epsilon_algorithm</a>&lt; T, K, series_templ &gt;::<a class="el" href="classepsilon__algorithm.html">epsilon_algorithm</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Default constructor. </p>
-<dl class="section author"><dt>Authors</dt><dd>Pashkov B.B. </dd></dl>
-
-</div>
-</div>
 <a id="a704d1d36236997f38d2c4d7d1057a131"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a704d1d36236997f38d2c4d7d1057a131">&#9670;&nbsp;</a></span>epsilon_algorithm() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a704d1d36236997f38d2c4d7d1057a131">&#9670;&nbsp;</a></span>epsilon_algorithm()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -230,33 +205,6 @@ template&lt;typename T , typename K , typename series_templ &gt; </div>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a674b676a0a8d3db6989b8e50e5df8075"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a674b676a0a8d3db6989b8e50e5df8075">&#9670;&nbsp;</a></span>~epsilon_algorithm()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , typename K , typename series_templ &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classepsilon__algorithm.html">epsilon_algorithm</a>&lt; T, K, series_templ &gt;::~<a class="el" href="classepsilon__algorithm.html">epsilon_algorithm</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Destructor to clean up resources. </p>
-<dl class="section author"><dt>Authors</dt><dd>Pashkov B.B. </dd></dl>
 
 </div>
 </div>
