@@ -87,7 +87,11 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
 <div class="title">main.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;string&gt;</code><br />
+
+<p>testing out <a class="el" href="classseries__acceleration.html" title="Base class series_acceleration.">series_acceleration</a> and series subclasses This project contains the following: 1) Series_acceleration base class in <a class="el" href="series__acceleration_8h.html" title="This file contains the declaration of the base class series_acceleration.">series_acceleration.h</a>. Its subclasses are different variations of shanks transformations: <a class="el" href="shanks__transformation_8h_source.html">shanks_transformation.h</a>, <a class="el" href="epsilon__algorithm_8h.html" title="This file contains the declaration of the Epsilon Algorithm class.">epsilon_algorithm.h</a> 2) Series base class and its subclasses in <a class="el" href="series_8h.html" title="This file contains series base class and derived classes of various serieses (e.g....">series.h</a>. They are the ones being accelerated 3) Testing functions in <a class="el" href="test__functions_8h.html" title="This file contains the testing functions.">test_functions.h</a>. Functions that can be called in main to test how <a class="el" href="classseries__acceleration.html" title="Base class series_acceleration.">series_acceleration</a> and <a class="el" href="classseries__base.html" title="Abstract class for series.">series_base</a> subclasses work and cooperate. It is recommended you look up doxygen documentation on our repository <a href="https://katerina-evdokimova.github.io/shanks-university/">https://katerina-evdokimova.github.io/shanks-university/</a> to convinently figure out what's everything for  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
 <code>#include &lt;set&gt;</code><br />
 <code>#include &quot;shanks_transformation.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="epsilon__algorithm_8h_source.html">epsilon_algorithm.h</a>&quot;</code><br />
@@ -95,145 +99,13 @@ $(document).ready(function(){initNavTree('main_8cpp.html',''); initResizable(); 
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a42c85f8aff1b5ec2ec8777d58f2fcba6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a42c85f8aff1b5ec2ec8777d58f2fcba6">print_series_info</a> ()</td></tr>
-<tr class="memdesc:a42c85f8aff1b5ec2ec8777d58f2fcba6"><td class="mdescLeft">&#160;</td><td class="mdescRight">prints out all available series for testing  <a href="main_8cpp.html#a42c85f8aff1b5ec2ec8777d58f2fcba6">More...</a><br /></td></tr>
-<tr class="separator:a42c85f8aff1b5ec2ec8777d58f2fcba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d88fd71d648cb4f0ff5e1daa0c9ba92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a6d88fd71d648cb4f0ff5e1daa0c9ba92">print_transformation_info</a> ()</td></tr>
-<tr class="memdesc:a6d88fd71d648cb4f0ff5e1daa0c9ba92"><td class="mdescLeft">&#160;</td><td class="mdescRight">prints out all available transformations for testing  <a href="main_8cpp.html#a6d88fd71d648cb4f0ff5e1daa0c9ba92">More...</a><br /></td></tr>
-<tr class="separator:a6d88fd71d648cb4f0ff5e1daa0c9ba92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3f0b49a814a91be476ed29658cf6617"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#aa3f0b49a814a91be476ed29658cf6617">print_test_function_info</a> ()</td></tr>
-<tr class="memdesc:aa3f0b49a814a91be476ed29658cf6617"><td class="mdescLeft">&#160;</td><td class="mdescRight">prints out all available fungus for testing  <a href="main_8cpp.html#aa3f0b49a814a91be476ed29658cf6617">More...</a><br /></td></tr>
-<tr class="separator:aa3f0b49a814a91be476ed29658cf6617"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0aa60f46efc4a4bb0b5cc3d8e9dc9bc"><td class="memTemplParams" colspan="2">template&lt;typename T , typename K &gt; </td></tr>
-<tr class="memitem:ab0aa60f46efc4a4bb0b5cc3d8e9dc9bc"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ab0aa60f46efc4a4bb0b5cc3d8e9dc9bc">main_testing_function</a> ()</td></tr>
-<tr class="memdesc:ab0aa60f46efc4a4bb0b5cc3d8e9dc9bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main testing function This function provides a convenient and interactive way to test out the convergence acceleration of various series.  <a href="main_8cpp.html#ab0aa60f46efc4a4bb0b5cc3d8e9dc9bc">More...</a><br /></td></tr>
-<tr class="separator:ab0aa60f46efc4a4bb0b5cc3d8e9dc9bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a840291bc02cba5474a4cb46a9b9566fe"><td class="memItemLeft" align="right" valign="top"><a id="a840291bc02cba5474a4cb46a9b9566fe"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> (void)</td></tr>
 <tr class="separator:a840291bc02cba5474a4cb46a9b9566fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="ab0aa60f46efc4a4bb0b5cc3d8e9dc9bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0aa60f46efc4a4bb0b5cc3d8e9dc9bc">&#9670;&nbsp;</a></span>main_testing_function()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , typename K &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void main_testing_function </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The main testing function This function provides a convenient and interactive way to test out the convergence acceleration of various series. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>The type of the elements in the series, K The type of enumerating integer </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section author"><dt>Authors</dt><dd>Bolshakov M.P. </dd></dl>
-
-</div>
-</div>
-<a id="a42c85f8aff1b5ec2ec8777d58f2fcba6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a42c85f8aff1b5ec2ec8777d58f2fcba6">&#9670;&nbsp;</a></span>print_series_info()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void print_series_info </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>prints out all available series for testing </p>
-<dl class="section author"><dt>Authors</dt><dd>Bolshakov M.P. </dd></dl>
-
-</div>
-</div>
-<a id="aa3f0b49a814a91be476ed29658cf6617"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3f0b49a814a91be476ed29658cf6617">&#9670;&nbsp;</a></span>print_test_function_info()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void print_test_function_info </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>prints out all available fungus for testing </p>
-<dl class="section author"><dt>Authors</dt><dd>Bolshakov M.P. </dd></dl>
-
-</div>
-</div>
-<a id="a6d88fd71d648cb4f0ff5e1daa0c9ba92"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d88fd71d648cb4f0ff5e1daa0c9ba92">&#9670;&nbsp;</a></span>print_transformation_info()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void print_transformation_info </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>prints out all available transformations for testing </p>
-<dl class="section author"><dt>Authors</dt><dd>Bolshakov M.P. </dd></dl>
-
-</div>
-</div>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>testing out <a class="el" href="classseries__acceleration.html" title="Base class series_acceleration.">series_acceleration</a> and series subclasses This project contains the following: 1) Series_acceleration base class in <a class="el" href="series__acceleration_8h.html" title="This file contains the declaration of the base class series_acceleration.">series_acceleration.h</a>. Its subclasses are different variations of shanks transformations: <a class="el" href="shanks__transformation_8h_source.html">shanks_transformation.h</a>, <a class="el" href="epsilon__algorithm_8h.html" title="This file contains the declaration of the Epsilon Algorithm class.">epsilon_algorithm.h</a> 2) Series base class and its subclasses in <a class="el" href="series_8h.html" title="This file contains series base class and derived classes of various serieses (e.g....">series.h</a>. They are the ones being accelerated 3) Testing functions in <a class="el" href="test__functions_8h.html" title="This file contains the testing functions.">test_functions.h</a>. Functions that can be called in main to test how <a class="el" href="classseries__acceleration.html" title="Base class series_acceleration.">series_acceleration</a> and <a class="el" href="classseries__base.html" title="Abstract class for series.">series_base</a> subclasses work and cooperate. It is recommended you look up doxygen documentation on our repository <a href="https://katerina-evdokimova.github.io/shanks-university/">https://katerina-evdokimova.github.io/shanks-university/</a> to convinently figure out what's everything for </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

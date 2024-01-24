@@ -146,10 +146,10 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:a42b6c38ba4fb197990696a62ff2c949c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameterized constructor to initialize the series with function argument and sum of the series.  <a href="classseries__base.html#a42b6c38ba4fb197990696a62ff2c949c">More...</a><br /></td></tr>
 <tr class="separator:a42b6c38ba4fb197990696a62ff2c949c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbb83c8b0ca71603bcfd2e9a456998c1"><td class="memItemLeft" align="right" valign="top">constexpr const K&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classseries__base.html#abbb83c8b0ca71603bcfd2e9a456998c1">fact</a> (const K n) const</td></tr>
-<tr class="memdesc:abbb83c8b0ca71603bcfd2e9a456998c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">factorial  <a href="classseries__base.html#abbb83c8b0ca71603bcfd2e9a456998c1">More...</a><br /></td></tr>
+<tr class="memdesc:abbb83c8b0ca71603bcfd2e9a456998c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">factorial n!  <a href="classseries__base.html#abbb83c8b0ca71603bcfd2e9a456998c1">More...</a><br /></td></tr>
 <tr class="separator:abbb83c8b0ca71603bcfd2e9a456998c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4b76c3e457f15e689742687dc9f7d56"><td class="memItemLeft" align="right" valign="top"><a id="ac4b76c3e457f15e689742687dc9f7d56"></a>
-constexpr const T&#160;</td><td class="memItemRight" valign="bottom"><b>binomial_coefficient</b> (const T n, const K k) const</td></tr>
+<tr class="memitem:ac4b76c3e457f15e689742687dc9f7d56"><td class="memItemLeft" align="right" valign="top">constexpr const T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classseries__base.html#ac4b76c3e457f15e689742687dc9f7d56">binomial_coefficient</a> (const T n, const K k) const</td></tr>
+<tr class="memdesc:ac4b76c3e457f15e689742687dc9f7d56"><td class="mdescLeft">&#160;</td><td class="mdescRight">binomial coefficient C^n_k  <a href="classseries__base.html#ac4b76c3e457f15e689742687dc9f7d56">More...</a><br /></td></tr>
 <tr class="separator:ac4b76c3e457f15e689742687dc9f7d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
@@ -338,6 +338,48 @@ template&lt;typename T , typename K &gt; </div>
 
 </div>
 </div>
+<a id="ac4b76c3e457f15e689742687dc9f7d56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4b76c3e457f15e689742687dc9f7d56">&#9670;&nbsp;</a></span>binomial_coefficient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename K &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const T <a class="el" href="classseries__base.html">series_base</a>&lt; T, K &gt;::binomial_coefficient </td>
+          <td>(</td>
+          <td class="paramtype">const T&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const K&#160;</td>
+          <td class="paramname"><em>k</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>binomial coefficient C^n_k </p>
+<dl class="section author"><dt>Authors</dt><dd>Bolshakov M.P. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>combinations(n,k) </dd></dl>
+
+</div>
+</div>
 <a id="abbb83c8b0ca71603bcfd2e9a456998c1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abbb83c8b0ca71603bcfd2e9a456998c1">&#9670;&nbsp;</a></span>fact()</h2>
 
@@ -364,7 +406,7 @@ template&lt;typename T , typename K &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>factorial </p>
+<p>factorial n! </p>
 <dl class="section author"><dt>Authors</dt><dd>Bolshakov M.P. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>n! </dd></dl>
 
