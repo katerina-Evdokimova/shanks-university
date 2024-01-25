@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['bin_5fseries_46',['bin_series',['../classbin__series.html',1,'']]]
+  ['bin_5fseries_47',['bin_series',['../classbin__series.html',1,'']]]
 ];
