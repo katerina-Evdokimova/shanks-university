@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('shanks__transformation_8h_source.html'
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordflow">throw</span> std::overflow_error(<span class="stringliteral">&quot;division by zero&quot;</span>);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">return</span> std::fma(a_n * a_n_plus_1, (a_n + a_n_plus_1) / (std::fma(a_n, a_n, tmp) - std::fma(a_n_plus_1, a_n_plus_1, tmp)), this-&gt;series-&gt;S_n(n));</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">else</span> <span class="comment">//n &gt; order &gt;= 1</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">else</span> [[likely]]<span class="comment">//n &gt; order &gt;= 1</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    {</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        std::vector&lt;T&gt; T_n(n + order, 0);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keyword">auto</span> a_n = this-&gt;series-&gt;a_n(n - order);</div>
@@ -200,7 +200,7 @@ $(document).ready(function(){initNavTree('shanks__transformation_8h_source.html'
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <span class="keywordflow">throw</span> std::overflow_error(<span class="stringliteral">&quot;division by zero&quot;</span>);</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <span class="keywordflow">return</span> std::fma(a_n * a_n_plus_1, 1 / (a_n - a_n_plus_1), this-&gt;series-&gt;S_n(n));</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    }</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordflow">else</span> <span class="comment">//n &gt; order &gt;= 1</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordflow">else</span> [[likely]] <span class="comment">//n &gt; order &gt;= 1</span></div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    {</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        std::vector&lt;T&gt; T_n(n + order, 0);</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        <span class="keyword">auto</span> a_n = this-&gt;series-&gt;a_n(n - order);</div>
