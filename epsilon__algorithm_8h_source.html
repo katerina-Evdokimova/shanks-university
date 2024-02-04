@@ -103,46 +103,43 @@ $(document).ready(function(){initNavTree('epsilon__algorithm_8h_source.html','')
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> K, <span class="keyword">typename</span> series_templ&gt;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classepsilon__algorithm.html#a704d1d36236997f38d2c4d7d1057a131">   41</a></span>&#160;<a class="code" href="classepsilon__algorithm.html#a704d1d36236997f38d2c4d7d1057a131">epsilon_algorithm&lt;T, K, series_templ&gt;::epsilon_algorithm</a>(<span class="keyword">const</span> series_templ&amp; series) : <a class="code" href="classseries__acceleration.html">series_acceleration</a>&lt;T, K, series_templ&gt;(series)</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> K, <span class="keyword">typename</span> series_templ&gt;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classepsilon__algorithm.html#afe49c0aa063f036e12aad48cc3a32914">   47</a></span>&#160;T <a class="code" href="classepsilon__algorithm.html#afe49c0aa063f036e12aad48cc3a32914">epsilon_algorithm&lt;T, K, series_templ&gt;::operator()</a>(<span class="keyword">const</span> K n, <span class="keyword">const</span> <span class="keywordtype">int</span> order)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// computing eps_(2*order)(S_n) as it is Shanks&#39;s transformation e_order(S_n) </span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">int</span> m = 2 * order;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">if</span> (n &lt; 0)</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">throw</span> std::domain_error(<span class="stringliteral">&quot;negative integer in the input&quot;</span>);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (n == 0)</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">return</span> DEF_UNDEFINED_SUM;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (order == 0)</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">return</span> this-&gt;series-&gt;S_n(n);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    std::vector&lt;T&gt; e(m + 1, 0);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    T diff, temp1, temp2;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = m; j &gt; 0; j--)</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        e[j] = this-&gt;series-&gt;S_n(n + j);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    temp2 = 0;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = m; j &gt; 0; j--)</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        temp1 = temp2;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        temp2 = e[j - 1];</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        diff = e[j] - temp2;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">if</span> (!std::isfinite(abs(1 / diff)))</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <span class="keywordflow">throw</span> std::overflow_error(<span class="stringliteral">&quot;division by zero&quot;</span>);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        e[j - 1] = std::fma(1, 1 / diff, temp1);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">return</span> e[0];</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classepsilon__algorithm.html#a704d1d36236997f38d2c4d7d1057a131">   41</a></span>&#160;<a class="code" href="classepsilon__algorithm.html#a704d1d36236997f38d2c4d7d1057a131">epsilon_algorithm&lt;T, K, series_templ&gt;::epsilon_algorithm</a>(<span class="keyword">const</span> series_templ&amp; series) : <a class="code" href="classseries__acceleration.html">series_acceleration</a>&lt;T, K, series_templ&gt;(series) {}</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> K, <span class="keyword">typename</span> series_templ&gt;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classepsilon__algorithm.html#afe49c0aa063f036e12aad48cc3a32914">   44</a></span>&#160;T <a class="code" href="classepsilon__algorithm.html#afe49c0aa063f036e12aad48cc3a32914">epsilon_algorithm&lt;T, K, series_templ&gt;::operator()</a>(<span class="keyword">const</span> K n, <span class="keyword">const</span> <span class="keywordtype">int</span> order)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// computing eps_(2*order)(S_n) as it is Shanks&#39;s transformation e_order(S_n) </span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">int</span> m = 2 * order;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">if</span> (n &lt; 0)</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">throw</span> std::domain_error(<span class="stringliteral">&quot;negative integer in the input&quot;</span>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (n == 0)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">return</span> DEF_UNDEFINED_SUM;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (order == 0)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">return</span> this-&gt;series-&gt;S_n(n);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    std::vector&lt;T&gt; e(m + 1, 0);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    T diff, temp1, temp2;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = m; j &gt; 0; j--)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        e[j] = this-&gt;series-&gt;S_n(n + j);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    temp2 = 0;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = m; j &gt; 0; j--)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        temp1 = temp2;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        temp2 = e[j - 1];</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        diff = e[j] - temp2;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">if</span> (!std::isfinite(abs(1 / diff)))</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordflow">throw</span> std::overflow_error(<span class="stringliteral">&quot;division by zero&quot;</span>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        e[j - 1] = std::fma(1, 1 / diff, temp1);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">return</span> e[0];</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
 <div class="ttc" id="aclassepsilon__algorithm_html"><div class="ttname"><a href="classepsilon__algorithm.html">epsilon_algorithm</a></div><div class="ttdoc">Epsilon Algorithm class template.</div><div class="ttdef"><b>Definition:</b> epsilon_algorithm.h:20</div></div>
 <div class="ttc" id="aclassepsilon__algorithm_html_a704d1d36236997f38d2c4d7d1057a131"><div class="ttname"><a href="classepsilon__algorithm.html#a704d1d36236997f38d2c4d7d1057a131">epsilon_algorithm::epsilon_algorithm</a></div><div class="ttdeci">epsilon_algorithm(const series_templ &amp;series)</div><div class="ttdoc">Parameterized constructor to initialize the Epsilon Algorithm.</div><div class="ttdef"><b>Definition:</b> epsilon_algorithm.h:41</div></div>
-<div class="ttc" id="aclassepsilon__algorithm_html_afe49c0aa063f036e12aad48cc3a32914"><div class="ttname"><a href="classepsilon__algorithm.html#afe49c0aa063f036e12aad48cc3a32914">epsilon_algorithm::operator()</a></div><div class="ttdeci">T operator()(const K n, const int order) const</div><div class="ttdoc">Shanks multistep epsilon algorithm. Computes the partial sum after the transformation using the Epsil...</div><div class="ttdef"><b>Definition:</b> epsilon_algorithm.h:47</div></div>
+<div class="ttc" id="aclassepsilon__algorithm_html_afe49c0aa063f036e12aad48cc3a32914"><div class="ttname"><a href="classepsilon__algorithm.html#afe49c0aa063f036e12aad48cc3a32914">epsilon_algorithm::operator()</a></div><div class="ttdeci">T operator()(const K n, const int order) const</div><div class="ttdoc">Shanks multistep epsilon algorithm. Computes the partial sum after the transformation using the Epsil...</div><div class="ttdef"><b>Definition:</b> epsilon_algorithm.h:44</div></div>
 <div class="ttc" id="aclassseries__acceleration_html"><div class="ttname"><a href="classseries__acceleration.html">series_acceleration</a></div><div class="ttdoc">Base class series_acceleration.</div><div class="ttdef"><b>Definition:</b> series_acceleration.h:32</div></div>
 <div class="ttc" id="aclassseries__acceleration_html_a79e096bcc3434265a9c99522a41ff820"><div class="ttname"><a href="classseries__acceleration.html#a79e096bcc3434265a9c99522a41ff820">series_acceleration::series</a></div><div class="ttdeci">series_templ series</div><div class="ttdoc">Series whose convergence is being accelerated.</div><div class="ttdef"><b>Definition:</b> series_acceleration.h:162</div></div>
 <div class="ttc" id="aseries__acceleration_8h_html"><div class="ttname"><a href="series__acceleration_8h.html">series_acceleration.h</a></div><div class="ttdoc">This file contains the declaration of the base class series_acceleration.</div></div>
