@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['xmb_5fjb_5ftwo_5fseries_102',['xmb_Jb_two_series',['../classxmb__Jb__two__series.html#ad01f9bb790d5e6377da032e47edd8acb',1,'xmb_Jb_two_series']]]
+  ['transformation_5fremainders_109',['transformation_remainders',['../test__functions_8h.html#ab6ba403fc3fb51ee8ad8a2a7eb52bda5',1,'test_functions.h']]]
 ];

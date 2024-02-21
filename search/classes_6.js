@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mean_5fsinh_5fsin_5fseries_56',['mean_sinh_sin_series',['../classmean__sinh__sin__series.html',1,'']]]
+  ['ln1mx_5fseries_60',['ln1mx_series',['../classln1mx__series.html',1,'']]]
 ];

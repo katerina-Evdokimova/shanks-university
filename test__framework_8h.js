@@ -13,7 +13,10 @@ var test__framework_8h =
       [ "mean_sinh_sin_series_id", "test__framework_8h.html#abd3004dc55b711f12ec6257f7fd57563a07bf6f2ec7f87c008105a70d4cf78b44", null ],
       [ "exp_squared_erf_series_id", "test__framework_8h.html#abd3004dc55b711f12ec6257f7fd57563a606eba1aa2e1000ddbdae011e0e7ff66", null ],
       [ "xmb_Jb_two_series_id", "test__framework_8h.html#abd3004dc55b711f12ec6257f7fd57563aabe70505d292aabbfba618eae476edc6", null ],
-      [ "half_asin_two_x_series_id", "test__framework_8h.html#abd3004dc55b711f12ec6257f7fd57563aba11202b7ed3a9c52e82766ccfb5ad59", null ]
+      [ "half_asin_two_x_series_id", "test__framework_8h.html#abd3004dc55b711f12ec6257f7fd57563aba11202b7ed3a9c52e82766ccfb5ad59", null ],
+      [ "inverse_1mx_series_id", "test__framework_8h.html#abd3004dc55b711f12ec6257f7fd57563acb58912e3ee6b935988474d657c99eaf", null ],
+      [ "x_1mx_squared_series_id", "test__framework_8h.html#abd3004dc55b711f12ec6257f7fd57563ae16d6dbef8bd6fdc0cf5f8d0738e5c3a", null ],
+      [ "erf_series_id", "test__framework_8h.html#abd3004dc55b711f12ec6257f7fd57563adecf28635fa546d4190aa3341721328d", null ]
     ] ],
     [ "test_function_id_t", "test__framework_8h.html#a1fe18b1abe7e268a664edc8919084d9e", [
       [ "null_test_function_id", "test__framework_8h.html#a1fe18b1abe7e268a664edc8919084d9ea6c051ba542d39f7e96009cbaf69180fd", null ],

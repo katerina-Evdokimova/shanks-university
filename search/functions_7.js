@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ln1mx_5fseries_84',['ln1mx_series',['../classln1mx__series.html#a576262e04da81d016c0b7ff468da8f9c',1,'ln1mx_series']]]
+  ['inverse_5f1mx_5fseries_91',['inverse_1mx_series',['../classinverse__1mx__series.html#ab211c37dedb9094bb8b1652d1b6086b1',1,'inverse_1mx_series']]]
 ];
