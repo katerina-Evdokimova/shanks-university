@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['Метод_20Шенкса_20_28shanks_20transform_29_20на_20c_2b_2b_119',['Метод Шенкса (Shanks Transform) на C++',['../index.html',1,'']]]
+  ['Метод_20Шенкса_20_28shanks_20transform_29_20на_20c_2b_2b_125',['Метод Шенкса (Shanks Transform) на C++',['../index.html',1,'']]]
 ];

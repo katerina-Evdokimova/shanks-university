@@ -225,7 +225,7 @@ $(document).ready(function(){initNavTree('series_8h_source.html',''); initResiza
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="keywordflow">if</span> (n &lt; 0)</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        <span class="keywordflow">throw</span> std::domain_error(<span class="stringliteral">&quot;negative integer in the input&quot;</span>);</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="keywordflow">return</span> MINUS_ONE_RAISED_TO_POWER_N * pow(this-&gt;x, 2 * n) / this-&gt;fact(2 * n);</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="keywordflow">return</span> MINUS_ONE_RAISED_TO_POWER_N * std::pow(this-&gt;x, 2 * n) / this-&gt;fact(2 * n);</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;}</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160; </div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> K&gt;</div>
@@ -247,7 +247,7 @@ $(document).ready(function(){initNavTree('series_8h_source.html',''); initResiza
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="keywordflow">if</span> (n &lt; 0)</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        <span class="keywordflow">throw</span> std::domain_error(<span class="stringliteral">&quot;negative integer in the input&quot;</span>);</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <span class="keywordflow">return</span> MINUS_ONE_RAISED_TO_POWER_N * pow(this-&gt;x, 2 * n + 1) / this-&gt;fact(2 * n + 1);</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <span class="keywordflow">return</span> MINUS_ONE_RAISED_TO_POWER_N * std::pow(this-&gt;x, 2 * n + 1) / this-&gt;fact(2 * n + 1);</div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;}</div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160; </div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> K&gt;</div>
@@ -269,7 +269,7 @@ $(document).ready(function(){initNavTree('series_8h_source.html',''); initResiza
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="keywordflow">if</span> (n &lt; 0)</div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        <span class="keywordflow">throw</span> std::domain_error(<span class="stringliteral">&quot;negative integer in the input&quot;</span>);</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    <span class="keywordflow">return</span> pow(this-&gt;x, 2 * n) / this-&gt;fact(2 * n);</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    <span class="keywordflow">return</span> std::pow(this-&gt;x, 2 * n) / this-&gt;fact(2 * n);</div>
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;}</div>
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160; </div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> K&gt;</div>
@@ -291,7 +291,7 @@ $(document).ready(function(){initNavTree('series_8h_source.html',''); initResiza
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    <span class="keywordflow">if</span> (n &lt; 0)</div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;        <span class="keywordflow">throw</span> std::domain_error(<span class="stringliteral">&quot;negative integer in the input&quot;</span>);</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <span class="keywordflow">return</span> pow(this-&gt;x, 2 * n + 1) / this-&gt;fact(2 * n + 1);</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <span class="keywordflow">return</span> std::pow(this-&gt;x, 2 * n + 1) / this-&gt;fact(2 * n + 1);</div>
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;}</div>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160; </div>
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> K&gt;</div>
@@ -322,7 +322,7 @@ $(document).ready(function(){initNavTree('series_8h_source.html',''); initResiza
 <div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    <span class="keywordflow">if</span> (n &lt; 0)</div>
 <div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;        <span class="keywordflow">throw</span> std::domain_error(<span class="stringliteral">&quot;negative integer in the input&quot;</span>);</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    <span class="keywordflow">return</span> binomial_coefficient(alpha, n) * pow(this-&gt;x, n);</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    <span class="keywordflow">return</span> binomial_coefficient(alpha, n) * std::pow(this-&gt;x, n);</div>
 <div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;}</div>
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160; </div>
 <div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> K&gt;</div>
@@ -348,7 +348,7 @@ $(document).ready(function(){initNavTree('series_8h_source.html',''); initResiza
 <div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;    <span class="keywordflow">if</span> (n &lt; 0)</div>
 <div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;        <span class="keywordflow">throw</span> std::domain_error(<span class="stringliteral">&quot;negative integer in the input&quot;</span>);</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;    <span class="keywordflow">return</span> 4 * MINUS_ONE_RAISED_TO_POWER_N * pow(this-&gt;x, 2 * n + 1) / (2 * n + 1);</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;    <span class="keywordflow">return</span> 4 * MINUS_ONE_RAISED_TO_POWER_N * std::pow(this-&gt;x, 2 * n + 1) / (2 * n + 1);</div>
 <div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;}</div>
 <div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160; </div>
 <div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> K&gt;</div>
@@ -374,7 +374,7 @@ $(document).ready(function(){initNavTree('series_8h_source.html',''); initResiza
 <div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;    <span class="keywordflow">if</span> (n &lt; 0)</div>
 <div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;        <span class="keywordflow">throw</span> std::domain_error(<span class="stringliteral">&quot;negative integer in the input&quot;</span>);</div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;    <span class="keywordflow">return</span> pow(this-&gt;x, n + 1) / (n + 1);</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;    <span class="keywordflow">return</span> std::pow(this-&gt;x, n + 1) / (n + 1);</div>
 <div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;}</div>
 <div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160; </div>
 <div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> K&gt;</div>
@@ -396,7 +396,7 @@ $(document).ready(function(){initNavTree('series_8h_source.html',''); initResiza
 <div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;    <span class="keywordflow">if</span> (n &lt; 0)</div>
 <div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;        <span class="keywordflow">throw</span> std::domain_error(<span class="stringliteral">&quot;negative integer in the input&quot;</span>);</div>
-<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;    <span class="keywordflow">return</span> pow(this-&gt;x, 4 * n + 1) / this-&gt;fact(4 * n + 1);</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;    <span class="keywordflow">return</span> std::pow(this-&gt;x, 4 * n + 1) / this-&gt;fact(4 * n + 1);</div>
 <div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;}</div>
 <div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160; </div>
 <div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> K&gt;</div>
@@ -418,7 +418,7 @@ $(document).ready(function(){initNavTree('series_8h_source.html',''); initResiza
 <div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;    <span class="keywordflow">if</span> (n &lt; 0)</div>
 <div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;        <span class="keywordflow">throw</span> std::domain_error(<span class="stringliteral">&quot;negative integer in the input&quot;</span>);</div>
-<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;    <span class="keywordflow">return</span> pow(this-&gt;x, 2 * n + 1) / std::tgamma(n + 1.5);</div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;    <span class="keywordflow">return</span> std::pow(this-&gt;x, 2 * n + 1) / std::tgamma(n + 1.5);</div>
 <div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;}</div>
 <div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160; </div>
 <div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> K&gt;</div>
@@ -443,7 +443,7 @@ $(document).ready(function(){initNavTree('series_8h_source.html',''); initResiza
 <div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;    <span class="keywordflow">if</span> (n &lt; 0)</div>
 <div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;        <span class="keywordflow">throw</span> std::domain_error(<span class="stringliteral">&quot;negative integer in the input&quot;</span>);</div>
-<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;    <span class="keywordflow">return</span> MINUS_ONE_RAISED_TO_POWER_N * pow(this-&gt;x, 2 * n) / (this-&gt;fact(n) * this-&gt;fact(n + this-&gt;mu));</div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;    <span class="keywordflow">return</span> MINUS_ONE_RAISED_TO_POWER_N * std::pow(this-&gt;x, 2 * n) / (this-&gt;fact(n) * this-&gt;fact(n + this-&gt;mu));</div>
 <div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;}</div>
 <div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160; </div>
 <div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> K&gt;</div>
@@ -469,7 +469,7 @@ $(document).ready(function(){initNavTree('series_8h_source.html',''); initResiza
 <div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;    <span class="keywordflow">if</span> (n &lt; 0)</div>
 <div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;        <span class="keywordflow">throw</span> std::domain_error(<span class="stringliteral">&quot;negative integer in the input&quot;</span>);</div>
-<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;    <span class="keywordflow">return</span> this-&gt;fact(2 * n) * pow(this-&gt;x, 2 * n + 1) / (this-&gt;fact(n) * this-&gt;fact(n) * (2 * n + 1));</div>
+<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;    <span class="keywordflow">return</span> this-&gt;fact(2 * n) * std::pow(this-&gt;x, 2 * n + 1) / (this-&gt;fact(n) * this-&gt;fact(n) * (2 * n + 1));</div>
 <div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;}</div>
 <div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160; </div>
 <div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> K&gt;</div>
@@ -495,7 +495,7 @@ $(document).ready(function(){initNavTree('series_8h_source.html',''); initResiza
 <div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;    <span class="keywordflow">if</span> (n &lt; 0)</div>
 <div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;        <span class="keywordflow">throw</span> std::domain_error(<span class="stringliteral">&quot;negative integer in the input&quot;</span>);</div>
-<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;    <span class="keywordflow">return</span> pow(this-&gt;x, n);</div>
+<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;    <span class="keywordflow">return</span> std::pow(this-&gt;x, n);</div>
 <div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;}</div>
 <div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160; </div>
 <div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> K&gt;</div>
@@ -521,7 +521,7 @@ $(document).ready(function(){initNavTree('series_8h_source.html',''); initResiza
 <div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;    <span class="keywordflow">if</span> (n &lt; 0)</div>
 <div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;        <span class="keywordflow">throw</span> std::domain_error(<span class="stringliteral">&quot;negative integer in the input&quot;</span>);</div>
-<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;    <span class="keywordflow">return</span> pow(this-&gt;x, n) * n;</div>
+<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;    <span class="keywordflow">return</span> std::pow(this-&gt;x, n) * n;</div>
 <div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;}</div>
 <div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160; </div>
 <div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> K&gt;</div>
@@ -538,17 +538,67 @@ $(document).ready(function(){initNavTree('series_8h_source.html',''); initResiza
 <div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> K&gt;</div>
 <div class="line"><a name="l00784"></a><span class="lineno"><a class="line" href="classerf__series.html#aca2fcdb88d5ffe92a5381b6a4c74e286">  784</a></span>&#160;<a class="code" href="classerf__series.html">erf_series&lt;T, K&gt;::erf_series</a>(T x) : <a class="code" href="classseries__base.html">series_base</a>&lt;T, K&gt;(x, std::sqrt(std::numbers::pi) * std::erf(x) / 2) </div>
 <div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;{</div>
-<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;    std::cout &lt;&lt; std::sqrt(std::numbers::pi) &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;    std::cout &lt;&lt; std::erf(<a class="code" href="classseries__base.html#affe93b6bae5f228e08d56b16518a86be">x</a>) / 2 &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;}</div>
-<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160; </div>
-<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> K&gt;</div>
-<div class="line"><a name="l00791"></a><span class="lineno"><a class="line" href="classerf__series.html#a55fc1e097ccf5c0eaa7c3ee86db080d6">  791</a></span>&#160;constexpr T <a class="code" href="classerf__series.html#a55fc1e097ccf5c0eaa7c3ee86db080d6">erf_series&lt;T, K&gt;::a_n</a>(<span class="keyword">const</span> K n)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;<span class="keyword"></span>{</div>
-<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;    <span class="keywordflow">if</span> (n &lt; 0)</div>
-<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;        <span class="keywordflow">throw</span> std::domain_error(<span class="stringliteral">&quot;negative integer in the input&quot;</span>);</div>
-<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;    <span class="keywordflow">return</span> MINUS_ONE_RAISED_TO_POWER_N * pow(this-&gt;x, 2 * n + 1) / (this-&gt;fact(n) * (2 * n + 1));</div>
-<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;}</div>
+<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160; </div>
+<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;}</div>
+<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160; </div>
+<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> K&gt;</div>
+<div class="line"><a name="l00790"></a><span class="lineno"><a class="line" href="classerf__series.html#a55fc1e097ccf5c0eaa7c3ee86db080d6">  790</a></span>&#160;constexpr T <a class="code" href="classerf__series.html#a55fc1e097ccf5c0eaa7c3ee86db080d6">erf_series&lt;T, K&gt;::a_n</a>(<span class="keyword">const</span> K n)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;    <span class="keywordflow">if</span> (n &lt; 0)</div>
+<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;        <span class="keywordflow">throw</span> std::domain_error(<span class="stringliteral">&quot;negative integer in the input&quot;</span>);</div>
+<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;    <span class="keywordflow">return</span> MINUS_ONE_RAISED_TO_POWER_N * std::pow(this-&gt;x, 2 * n + 1) / (this-&gt;fact(n) * (2 * n + 1));</div>
+<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;}</div>
+<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160; </div>
+<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> K&gt;</div>
+<div class="line"><a name="l00803"></a><span class="lineno"><a class="line" href="classm__fact__1mx__mp1__inverse__series.html">  803</a></span>&#160;<span class="keyword">class </span><a class="code" href="classm__fact__1mx__mp1__inverse__series.html">m_fact_1mx_mp1_inverse_series</a> : <span class="keyword">public</span> <a class="code" href="classseries__base.html">series_base</a>&lt;T, K&gt;</div>
+<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;{</div>
+<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;    <a class="code" href="classm__fact__1mx__mp1__inverse__series.html">m_fact_1mx_mp1_inverse_series</a>() = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160; </div>
+<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;    <a class="code" href="classm__fact__1mx__mp1__inverse__series.html">m_fact_1mx_mp1_inverse_series</a>(T <a class="code" href="classseries__base.html#affe93b6bae5f228e08d56b16518a86be">x</a>, K m);</div>
+<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160; </div>
+<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;    [[nodiscard]] constexpr <span class="keyword">virtual</span> T <a class="code" href="classm__fact__1mx__mp1__inverse__series.html#a75073520bb8c83c9cec0e9d4d7d7f2c0">a_n</a>(<span class="keyword">const</span> K n) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160; </div>
+<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;    <span class="keyword">const</span> K m;</div>
+<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;};</div>
+<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160; </div>
+<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> K&gt;</div>
+<div class="line"><a name="l00832"></a><span class="lineno"><a class="line" href="classm__fact__1mx__mp1__inverse__series.html#ad9133e5087c075ea0004d4291fd194db">  832</a></span>&#160;<a class="code" href="classm__fact__1mx__mp1__inverse__series.html">m_fact_1mx_mp1_inverse_series&lt;T, K&gt;::m_fact_1mx_mp1_inverse_series</a>(T x, K m) : <a class="code" href="classseries__base.html">series_base</a>&lt;T, K&gt;(x, this-&gt;fact(m) / pow(1 - x, m + 1)), m(m) {}</div>
+<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160; </div>
+<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> K&gt;</div>
+<div class="line"><a name="l00835"></a><span class="lineno"><a class="line" href="classm__fact__1mx__mp1__inverse__series.html#a75073520bb8c83c9cec0e9d4d7d7f2c0">  835</a></span>&#160;constexpr T <a class="code" href="classm__fact__1mx__mp1__inverse__series.html#a75073520bb8c83c9cec0e9d4d7d7f2c0">m_fact_1mx_mp1_inverse_series&lt;T, K&gt;::a_n</a>(<span class="keyword">const</span> K n)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;    <span class="keywordflow">if</span> (n &lt; 0)</div>
+<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;        <span class="keywordflow">throw</span> std::domain_error(<span class="stringliteral">&quot;negative integer in the input&quot;</span>);</div>
+<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;    <span class="keywordflow">return</span> this-&gt;fact(this-&gt;m + n) * std::pow(this-&gt;x, n) / this-&gt;fact(n);</div>
+<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;}</div>
+<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160; </div>
+<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> K&gt;</div>
+<div class="line"><a name="l00848"></a><span class="lineno"><a class="line" href="classinverse__sqrt__1m4x__series.html">  848</a></span>&#160;<span class="keyword">class </span><a class="code" href="classinverse__sqrt__1m4x__series.html">inverse_sqrt_1m4x_series</a> : <span class="keyword">public</span> <a class="code" href="classseries__base.html">series_base</a>&lt;T, K&gt;</div>
+<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;{</div>
+<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;    <a class="code" href="classinverse__sqrt__1m4x__series.html">inverse_sqrt_1m4x_series</a>() = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160; </div>
+<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;    <a class="code" href="classinverse__sqrt__1m4x__series.html">inverse_sqrt_1m4x_series</a>(T <a class="code" href="classseries__base.html#affe93b6bae5f228e08d56b16518a86be">x</a>);</div>
+<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160; </div>
+<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;    [[nodiscard]] constexpr <span class="keyword">virtual</span> T <a class="code" href="classinverse__sqrt__1m4x__series.html#a7661b05467fc4bf1254af81799dcc0d4">a_n</a>(<span class="keyword">const</span> K n) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;};</div>
+<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160; </div>
+<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> K&gt;</div>
+<div class="line"><a name="l00870"></a><span class="lineno"><a class="line" href="classinverse__sqrt__1m4x__series.html#a5068d734c094c32a19f82118e09595ff">  870</a></span>&#160;<a class="code" href="classinverse__sqrt__1m4x__series.html">inverse_sqrt_1m4x_series&lt;T, K&gt;::inverse_sqrt_1m4x_series</a>(T x) : <a class="code" href="classseries__base.html">series_base</a>&lt;T, K&gt;(x, std::pow(std::fma(-4, x, 1), -0.5)) </div>
+<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;{</div>
+<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;    <span class="keywordflow">if</span> (std::abs(this-&gt;x) &gt; 0.25 || this-&gt;x == 0.25)</div>
+<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;        <span class="keywordflow">throw</span> std::domain_error(<span class="stringliteral">&quot;series diverge&quot;</span>);</div>
+<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;}</div>
+<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160; </div>
+<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> K&gt;</div>
+<div class="line"><a name="l00877"></a><span class="lineno"><a class="line" href="classinverse__sqrt__1m4x__series.html#a7661b05467fc4bf1254af81799dcc0d4">  877</a></span>&#160;constexpr T <a class="code" href="classinverse__sqrt__1m4x__series.html#a7661b05467fc4bf1254af81799dcc0d4">inverse_sqrt_1m4x_series&lt;T, K&gt;::a_n</a>(<span class="keyword">const</span> K n)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;    <span class="keywordflow">if</span> (n &lt; 0)</div>
+<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;        <span class="keywordflow">throw</span> std::domain_error(<span class="stringliteral">&quot;negative integer in the input&quot;</span>);</div>
+<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;    <span class="keywordflow">return</span> this-&gt;fact(2 * n) * pow(this-&gt;x, n) / (this-&gt;fact(n) * this-&gt;fact(n));</div>
+<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;}</div>
 <div class="ttc" id="aclassbin__series_html"><div class="ttname"><a href="classbin__series.html">bin_series</a></div><div class="ttdoc">Binomial series ( (1+x)^a maclaurin series)</div><div class="ttdef"><b>Definition:</b> series.h:381</div></div>
 <div class="ttc" id="aclassbin__series_html_a61b070b49b3d46bdea578ed5d220a813"><div class="ttname"><a href="classbin__series.html#a61b070b49b3d46bdea578ed5d220a813">bin_series::a_n</a></div><div class="ttdeci">constexpr virtual T a_n(const K n) const</div><div class="ttdoc">Computes the nth term of the Binomial series.</div><div class="ttdef"><b>Definition:</b> series.h:418</div></div>
 <div class="ttc" id="aclasscos__series_html"><div class="ttname"><a href="classcos__series.html">cos_series</a></div><div class="ttdoc">Maclaurin series of cosine function.</div><div class="ttdef"><b>Definition:</b> series.h:229</div></div>
@@ -556,7 +606,7 @@ $(document).ready(function(){initNavTree('series_8h_source.html',''); initResiza
 <div class="ttc" id="aclasscosh__series_html"><div class="ttname"><a href="classcosh__series.html">cosh_series</a></div><div class="ttdoc">Maclaurin series of hyperbolic cosine.</div><div class="ttdef"><b>Definition:</b> series.h:305</div></div>
 <div class="ttc" id="aclasscosh__series_html_a6b9bc065c6d0ae909f516d1f674efc9a"><div class="ttname"><a href="classcosh__series.html#a6b9bc065c6d0ae909f516d1f674efc9a">cosh_series::a_n</a></div><div class="ttdeci">constexpr virtual T a_n(const K n) const</div><div class="ttdoc">Computes the nth term of the Maclaurin series of hyperbolic cosine.</div><div class="ttdef"><b>Definition:</b> series.h:329</div></div>
 <div class="ttc" id="aclasserf__series_html"><div class="ttname"><a href="classerf__series.html">erf_series</a></div><div class="ttdoc">Maclaurin series of sqrt(pi) * erf(x) / 2.</div><div class="ttdef"><b>Definition:</b> series.h:763</div></div>
-<div class="ttc" id="aclasserf__series_html_a55fc1e097ccf5c0eaa7c3ee86db080d6"><div class="ttname"><a href="classerf__series.html#a55fc1e097ccf5c0eaa7c3ee86db080d6">erf_series::a_n</a></div><div class="ttdeci">constexpr virtual T a_n(const K n) const</div><div class="ttdoc">Computes the nth term of the Maclaurin series of sqrt(pi) * erf(x) / 2.</div><div class="ttdef"><b>Definition:</b> series.h:791</div></div>
+<div class="ttc" id="aclasserf__series_html_a55fc1e097ccf5c0eaa7c3ee86db080d6"><div class="ttname"><a href="classerf__series.html#a55fc1e097ccf5c0eaa7c3ee86db080d6">erf_series::a_n</a></div><div class="ttdeci">constexpr virtual T a_n(const K n) const</div><div class="ttdoc">Computes the nth term of the Maclaurin series of sqrt(pi) * erf(x) / 2.</div><div class="ttdef"><b>Definition:</b> series.h:790</div></div>
 <div class="ttc" id="aclassexp__series_html"><div class="ttname"><a href="classexp__series.html">exp_series</a></div><div class="ttdoc">Maclaurin series of exponent.</div><div class="ttdef"><b>Definition:</b> series.h:191</div></div>
 <div class="ttc" id="aclassexp__series_html_af61a1cae75decff81417a9378f92d370"><div class="ttname"><a href="classexp__series.html#af61a1cae75decff81417a9378f92d370">exp_series::a_n</a></div><div class="ttdeci">constexpr virtual T a_n(const K n) const</div><div class="ttdoc">Computes the nth term of the Maclaurin series of the exponent.</div><div class="ttdef"><b>Definition:</b> series.h:215</div></div>
 <div class="ttc" id="aclassexp__squared__erf__series_html"><div class="ttname"><a href="classexp__squared__erf__series.html">exp_squared_erf_series</a></div><div class="ttdoc">Maclaurin series of exp(x^2)*erf(x) where erf(x) is error function of x.</div><div class="ttdef"><b>Definition:</b> series.h:554</div></div>
@@ -567,8 +617,12 @@ $(document).ready(function(){initNavTree('series_8h_source.html',''); initResiza
 <div class="ttc" id="aclasshalf__asin__two__x__series_html_a706fe0f3f95890531c8cc90c2218961c"><div class="ttname"><a href="classhalf__asin__two__x__series.html#a706fe0f3f95890531c8cc90c2218961c">half_asin_two_x_series::a_n</a></div><div class="ttdeci">constexpr virtual T a_n(const K n) const</div><div class="ttdoc">Computes the nth term of the Maclaurin series of 0.5 * asin(2x)</div><div class="ttdef"><b>Definition:</b> series.h:665</div></div>
 <div class="ttc" id="aclassinverse__1mx__series_html"><div class="ttname"><a href="classinverse__1mx__series.html">inverse_1mx_series</a></div><div class="ttdoc">Maclaurin series of 1 / (1 - x)</div><div class="ttdef"><b>Definition:</b> series.h:679</div></div>
 <div class="ttc" id="aclassinverse__1mx__series_html_a9d9f315b6bfe30c122b0b658c34b975c"><div class="ttname"><a href="classinverse__1mx__series.html#a9d9f315b6bfe30c122b0b658c34b975c">inverse_1mx_series::a_n</a></div><div class="ttdeci">constexpr virtual T a_n(const K n) const</div><div class="ttdoc">Computes the nth term of the Maclaurin series of 1 / (1 - x)</div><div class="ttdef"><b>Definition:</b> series.h:707</div></div>
+<div class="ttc" id="aclassinverse__sqrt__1m4x__series_html"><div class="ttname"><a href="classinverse__sqrt__1m4x__series.html">inverse_sqrt_1m4x_series</a></div><div class="ttdoc">Maclaurin series of (1 - 4x) ^ (-1/2)</div><div class="ttdef"><b>Definition:</b> series.h:849</div></div>
+<div class="ttc" id="aclassinverse__sqrt__1m4x__series_html_a7661b05467fc4bf1254af81799dcc0d4"><div class="ttname"><a href="classinverse__sqrt__1m4x__series.html#a7661b05467fc4bf1254af81799dcc0d4">inverse_sqrt_1m4x_series::a_n</a></div><div class="ttdeci">constexpr virtual T a_n(const K n) const</div><div class="ttdoc">Computes the nth term of the Maclaurin series of (1 - 4x) ^ (-1/2)</div><div class="ttdef"><b>Definition:</b> series.h:877</div></div>
 <div class="ttc" id="aclassln1mx__series_html"><div class="ttname"><a href="classln1mx__series.html">ln1mx_series</a></div><div class="ttdoc">Maclaurin series of -ln(1 - x)</div><div class="ttdef"><b>Definition:</b> series.h:474</div></div>
 <div class="ttc" id="aclassln1mx__series_html_ae58a6fa22787d74d21b917499a9eb936"><div class="ttname"><a href="classln1mx__series.html#ae58a6fa22787d74d21b917499a9eb936">ln1mx_series::a_n</a></div><div class="ttdeci">constexpr virtual T a_n(const K n) const</div><div class="ttdoc">Computes the nth term of the Maclaurin series of -ln(1 - x)</div><div class="ttdef"><b>Definition:</b> series.h:502</div></div>
+<div class="ttc" id="aclassm__fact__1mx__mp1__inverse__series_html"><div class="ttname"><a href="classm__fact__1mx__mp1__inverse__series.html">m_fact_1mx_mp1_inverse_series</a></div><div class="ttdoc">Maclaurin series of m! / (1 - x) ^ (m + 1)</div><div class="ttdef"><b>Definition:</b> series.h:804</div></div>
+<div class="ttc" id="aclassm__fact__1mx__mp1__inverse__series_html_a75073520bb8c83c9cec0e9d4d7d7f2c0"><div class="ttname"><a href="classm__fact__1mx__mp1__inverse__series.html#a75073520bb8c83c9cec0e9d4d7d7f2c0">m_fact_1mx_mp1_inverse_series::a_n</a></div><div class="ttdeci">constexpr virtual T a_n(const K n) const</div><div class="ttdoc">Computes the nth term of the Maclaurin series of m! / (1 - x) ^ (m + 1)</div><div class="ttdef"><b>Definition:</b> series.h:835</div></div>
 <div class="ttc" id="aclassmean__sinh__sin__series_html"><div class="ttname"><a href="classmean__sinh__sin__series.html">mean_sinh_sin_series</a></div><div class="ttdoc">Maclaurin series of (sinh(x) + sin(x)) / 2.</div><div class="ttdef"><b>Definition:</b> series.h:516</div></div>
 <div class="ttc" id="aclassmean__sinh__sin__series_html_acc3a7f6de4559c5e2705e7b6ab454b7a"><div class="ttname"><a href="classmean__sinh__sin__series.html#acc3a7f6de4559c5e2705e7b6ab454b7a">mean_sinh_sin_series::a_n</a></div><div class="ttdeci">constexpr virtual T a_n(const K n) const</div><div class="ttdoc">Computes the nth term of the Maclaurin series of (sinh(x) + sin(x)) / 2.</div><div class="ttdef"><b>Definition:</b> series.h:540</div></div>
 <div class="ttc" id="aclassseries__base_html"><div class="ttname"><a href="classseries__base.html">series_base</a></div><div class="ttdoc">Abstract class for series.</div><div class="ttdef"><b>Definition:</b> series.h:37</div></div>
