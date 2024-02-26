@@ -25,7 +25,8 @@ var test__framework_8h =
       [ "cmp_sum_and_transform_id", "test__framework_8h.html#a1fe18b1abe7e268a664edc8919084d9ea228579ae77306efd36ce5330098b4ef3", null ],
       [ "cmp_a_n_and_transform_id", "test__framework_8h.html#a1fe18b1abe7e268a664edc8919084d9ea26ea610bbdd32d123369126e6ee26fad", null ],
       [ "transformation_remainder_id", "test__framework_8h.html#a1fe18b1abe7e268a664edc8919084d9ea6d0fba5a777da1ca41162649511f85ff", null ],
-      [ "cmp_transformations_id", "test__framework_8h.html#a1fe18b1abe7e268a664edc8919084d9eaea44b29b43158a000e98bf0a83784328", null ]
+      [ "cmp_transformations_id", "test__framework_8h.html#a1fe18b1abe7e268a664edc8919084d9eaea44b29b43158a000e98bf0a83784328", null ],
+      [ "eval_transform_time_id", "test__framework_8h.html#a1fe18b1abe7e268a664edc8919084d9ea51ddbbcb8da9369af7035a37a91ab1ae", null ]
     ] ],
     [ "transformation_id_t", "test__framework_8h.html#a1d949af9c2849492a620d5a68bca54ce", [
       [ "null_transformation_id", "test__framework_8h.html#a1d949af9c2849492a620d5a68bca54cea0db7ac7d173efba969bf11a53e7e44d4", null ],
