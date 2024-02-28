@@ -19,9 +19,11 @@ var hierarchy =
       [ "ln1mx_series< T, K >", "classln1mx__series.html", null ],
       [ "m_fact_1mx_mp1_inverse_series< T, K >", "classm__fact__1mx__mp1__inverse__series.html", null ],
       [ "mean_sinh_sin_series< T, K >", "classmean__sinh__sin__series.html", null ],
+      [ "one_twelfth_3x2_pi2_series< T, K >", "classone__twelfth__3x2__pi2__series.html", null ],
       [ "sin_series< T, K >", "classsin__series.html", null ],
       [ "sinh_series< T, K >", "classsinh__series.html", null ],
       [ "x_1mx_squared_series< T, K >", "classx__1mx__squared__series.html", null ],
+      [ "x_twelfth_x2_pi2_series< T, K >", "classx__twelfth__x2__pi2__series.html", null ],
       [ "xmb_Jb_two_series< T, K >", "classxmb__Jb__two__series.html", null ]
     ] ]
 ];

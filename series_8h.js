@@ -18,6 +18,8 @@ var series_8h =
     [ "erf_series", "classerf__series.html", "classerf__series" ],
     [ "m_fact_1mx_mp1_inverse_series", "classm__fact__1mx__mp1__inverse__series.html", "classm__fact__1mx__mp1__inverse__series" ],
     [ "inverse_sqrt_1m4x_series", "classinverse__sqrt__1m4x__series.html", "classinverse__sqrt__1m4x__series" ],
+    [ "one_twelfth_3x2_pi2_series", "classone__twelfth__3x2__pi2__series.html", "classone__twelfth__3x2__pi2__series" ],
+    [ "x_twelfth_x2_pi2_series", "classx__twelfth__x2__pi2__series.html", "classx__twelfth__x2__pi2__series" ],
     [ "MINUS_ONE_RAISED_TO_POWER_N", "series_8h.html#ae86cc210a58f293d0d3b73053b55cd17", null ],
     [ "NO_SERIES_EXPRESSION_GIVEN", "series_8h.html#a4e39687831ca335e062cb165b0f12c96", null ],
     [ "NO_X_GIVEN", "series_8h.html#abae30b0b2a6e7d520403e0cc8f02d4ce", null ]

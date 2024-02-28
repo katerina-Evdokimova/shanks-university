@@ -14,6 +14,7 @@ var annotated_dup =
     [ "ln1mx_series", "classln1mx__series.html", "classln1mx__series" ],
     [ "m_fact_1mx_mp1_inverse_series", "classm__fact__1mx__mp1__inverse__series.html", "classm__fact__1mx__mp1__inverse__series" ],
     [ "mean_sinh_sin_series", "classmean__sinh__sin__series.html", "classmean__sinh__sin__series" ],
+    [ "one_twelfth_3x2_pi2_series", "classone__twelfth__3x2__pi2__series.html", "classone__twelfth__3x2__pi2__series" ],
     [ "series_acceleration", "classseries__acceleration.html", "classseries__acceleration" ],
     [ "series_base", "classseries__base.html", "classseries__base" ],
     [ "shanks_transform", "classshanks__transform.html", "classshanks__transform" ],
@@ -21,5 +22,6 @@ var annotated_dup =
     [ "sin_series", "classsin__series.html", "classsin__series" ],
     [ "sinh_series", "classsinh__series.html", "classsinh__series" ],
     [ "x_1mx_squared_series", "classx__1mx__squared__series.html", "classx__1mx__squared__series" ],
+    [ "x_twelfth_x2_pi2_series", "classx__twelfth__x2__pi2__series.html", "classx__twelfth__x2__pi2__series" ],
     [ "xmb_Jb_two_series", "classxmb__Jb__two__series.html", "classxmb__Jb__two__series" ]
 ];
