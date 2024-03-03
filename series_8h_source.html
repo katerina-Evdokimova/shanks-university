@@ -651,6 +651,94 @@ $(document).ready(function(){initNavTree('series_8h_source.html',''); initResiza
 <div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160;        <span class="keywordflow">throw</span> std::domain_error(<span class="stringliteral">&quot;negative integer in the input&quot;</span>);</div>
 <div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;    <span class="keywordflow">return</span> MINUS_ONE_RAISED_TO_POWER_N * std::sin(n * this-&gt;x) / (n * n * n);</div>
 <div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;}</div>
+<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160; </div>
+<div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> K&gt;</div>
+<div class="line"><a name="l00976"></a><span class="lineno"><a class="line" href="classln2__series.html">  976</a></span>&#160;<span class="keyword">class </span><a class="code" href="classln2__series.html">ln2_series</a> : <span class="keyword">public</span> <a class="code" href="classseries__base.html">series_base</a>&lt;T, K&gt;</div>
+<div class="line"><a name="l00977"></a><span class="lineno">  977</span>&#160;{</div>
+<div class="line"><a name="l00978"></a><span class="lineno">  978</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00979"></a><span class="lineno">  979</span>&#160;    <a class="code" href="classln2__series.html">ln2_series</a>();</div>
+<div class="line"><a name="l00980"></a><span class="lineno">  980</span>&#160; </div>
+<div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;    <span class="comment">//ln2_series(T x);</span></div>
+<div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160; </div>
+<div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;    [[nodiscard]] constexpr <span class="keyword">virtual</span> T <a class="code" href="classln2__series.html#a830ae447b919a7a08469ce86fc6f9a0a">a_n</a>(<span class="keyword">const</span> K n) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;};</div>
+<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160; </div>
+<div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> K&gt;</div>
+<div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160;<a class="code" href="classln2__series.html">ln2_series&lt;T, K&gt;::ln2_series</a>() : <a class="code" href="classseries__base.html">series_base</a>&lt;T, K&gt;(0, std::log(2)) {}</div>
+<div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160; </div>
+<div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> K&gt;</div>
+<div class="line"><a name="l01001"></a><span class="lineno"><a class="line" href="classln2__series.html#a830ae447b919a7a08469ce86fc6f9a0a"> 1001</a></span>&#160;constexpr T <a class="code" href="classln2__series.html#a830ae447b919a7a08469ce86fc6f9a0a">ln2_series&lt;T, K&gt;::a_n</a>(<span class="keyword">const</span> K n)<span class="keyword"> const</span></div>
+<div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160;    <span class="keywordflow">if</span> (n &lt; 0)</div>
+<div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;        <span class="keywordflow">throw</span> std::domain_error(<span class="stringliteral">&quot;negative integer in the input&quot;</span>);</div>
+<div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;    <span class="keywordflow">return</span> -MINUS_ONE_RAISED_TO_POWER_N / n;</div>
+<div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;}</div>
+<div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160; </div>
+<div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> K&gt;</div>
+<div class="line"><a name="l01014"></a><span class="lineno"><a class="line" href="classone__series.html"> 1014</a></span>&#160;<span class="keyword">class </span><a class="code" href="classone__series.html">one_series</a> : <span class="keyword">public</span> <a class="code" href="classseries__base.html">series_base</a>&lt;T, K&gt;</div>
+<div class="line"><a name="l01015"></a><span class="lineno"> 1015</span>&#160;{</div>
+<div class="line"><a name="l01016"></a><span class="lineno"> 1016</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l01017"></a><span class="lineno"> 1017</span>&#160;    <a class="code" href="classone__series.html">one_series</a>();</div>
+<div class="line"><a name="l01018"></a><span class="lineno"> 1018</span>&#160; </div>
+<div class="line"><a name="l01024"></a><span class="lineno"> 1024</span>&#160;    <span class="comment">//ln2_series(T x);</span></div>
+<div class="line"><a name="l01025"></a><span class="lineno"> 1025</span>&#160; </div>
+<div class="line"><a name="l01032"></a><span class="lineno"> 1032</span>&#160;    [[nodiscard]] constexpr <span class="keyword">virtual</span> T <a class="code" href="classone__series.html#a4033113e815768983133d3608f9582a0">a_n</a>(<span class="keyword">const</span> K n) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l01033"></a><span class="lineno"> 1033</span>&#160;};</div>
+<div class="line"><a name="l01034"></a><span class="lineno"> 1034</span>&#160; </div>
+<div class="line"><a name="l01035"></a><span class="lineno"> 1035</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> K&gt;</div>
+<div class="line"><a name="l01036"></a><span class="lineno"> 1036</span>&#160;<a class="code" href="classone__series.html">one_series&lt;T, K&gt;::one_series</a>() : <a class="code" href="classseries__base.html">series_base</a>&lt;T, K&gt;(0, 1) {}</div>
+<div class="line"><a name="l01037"></a><span class="lineno"> 1037</span>&#160; </div>
+<div class="line"><a name="l01038"></a><span class="lineno"> 1038</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> K&gt;</div>
+<div class="line"><a name="l01039"></a><span class="lineno"><a class="line" href="classone__series.html#a4033113e815768983133d3608f9582a0"> 1039</a></span>&#160;constexpr T <a class="code" href="classone__series.html#a4033113e815768983133d3608f9582a0">one_series&lt;T, K&gt;::a_n</a>(<span class="keyword">const</span> K n)<span class="keyword"> const</span></div>
+<div class="line"><a name="l01040"></a><span class="lineno"> 1040</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l01041"></a><span class="lineno"> 1041</span>&#160;    <span class="keywordflow">if</span> (n &lt; 0)</div>
+<div class="line"><a name="l01042"></a><span class="lineno"> 1042</span>&#160;        <span class="keywordflow">throw</span> std::domain_error(<span class="stringliteral">&quot;negative integer in the input&quot;</span>);</div>
+<div class="line"><a name="l01043"></a><span class="lineno"> 1043</span>&#160;    <span class="keywordflow">return</span> 1 / (n * n + n) ;</div>
+<div class="line"><a name="l01044"></a><span class="lineno"> 1044</span>&#160;}</div>
+<div class="line"><a name="l01045"></a><span class="lineno"> 1045</span>&#160; </div>
+<div class="line"><a name="l01051"></a><span class="lineno"> 1051</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> K&gt;</div>
+<div class="line"><a name="l01052"></a><span class="lineno"> 1052</span>&#160;<span class="keyword">class </span><a class="code" href="classone__series.html">one_series</a> : <span class="keyword">public</span> <a class="code" href="classseries__base.html">series_base</a>&lt;T, K&gt;</div>
+<div class="line"><a name="l01053"></a><span class="lineno"> 1053</span>&#160;{</div>
+<div class="line"><a name="l01054"></a><span class="lineno"> 1054</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l01055"></a><span class="lineno"> 1055</span>&#160;    <a class="code" href="classone__series.html">one_series</a>();</div>
+<div class="line"><a name="l01056"></a><span class="lineno"> 1056</span>&#160; </div>
+<div class="line"><a name="l01062"></a><span class="lineno"> 1062</span>&#160;    <span class="comment">//ln2_series(T x);</span></div>
+<div class="line"><a name="l01063"></a><span class="lineno"> 1063</span>&#160; </div>
+<div class="line"><a name="l01070"></a><span class="lineno"><a class="line" href="classone__series.html#a768a7e88ec0b84be247f5e5da0e7722d"> 1070</a></span>&#160;    [[nodiscard]] constexpr <span class="keyword">virtual</span> T <a class="code" href="classone__series.html#a768a7e88ec0b84be247f5e5da0e7722d">a_n</a>(<span class="keyword">const</span> K n) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l01071"></a><span class="lineno"> 1071</span>&#160;};</div>
+<div class="line"><a name="l01072"></a><span class="lineno"> 1072</span>&#160; </div>
+<div class="line"><a name="l01073"></a><span class="lineno"> 1073</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> K&gt;</div>
+<div class="line"><a name="l01074"></a><span class="lineno"> 1074</span>&#160;<a class="code" href="classone__series.html">one_series&lt;T, K&gt;::one_series</a>() : <a class="code" href="classseries__base.html">series_base</a>&lt;T, K&gt;(0, 1) {}</div>
+<div class="line"><a name="l01075"></a><span class="lineno"> 1075</span>&#160; </div>
+<div class="line"><a name="l01076"></a><span class="lineno"> 1076</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> K&gt;</div>
+<div class="line"><a name="l01077"></a><span class="lineno"> 1077</span>&#160;constexpr T <a class="code" href="classone__series.html#a4033113e815768983133d3608f9582a0">one_series&lt;T, K&gt;::a_n</a>(<span class="keyword">const</span> K n)<span class="keyword"> const</span></div>
+<div class="line"><a name="l01078"></a><span class="lineno"> 1078</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l01079"></a><span class="lineno"> 1079</span>&#160;    <span class="keywordflow">if</span> (n &lt; 0)</div>
+<div class="line"><a name="l01080"></a><span class="lineno"> 1080</span>&#160;        <span class="keywordflow">throw</span> std::domain_error(<span class="stringliteral">&quot;negative integer in the input&quot;</span>);</div>
+<div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160;    <span class="keywordflow">return</span> 1 / (n * n + n);</div>
+<div class="line"><a name="l01082"></a><span class="lineno"> 1082</span>&#160;}</div>
+<div class="line"><a name="l01083"></a><span class="lineno"> 1083</span>&#160; </div>
+<div class="line"><a name="l01089"></a><span class="lineno"> 1089</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> K&gt;</div>
+<div class="line"><a name="l01090"></a><span class="lineno"><a class="line" href="classminus__one__quarter__series.html"> 1090</a></span>&#160;<span class="keyword">class </span><a class="code" href="classminus__one__quarter__series.html">minus_one_quarter_series</a> : <span class="keyword">public</span> <a class="code" href="classseries__base.html">series_base</a>&lt;T, K&gt;</div>
+<div class="line"><a name="l01091"></a><span class="lineno"> 1091</span>&#160;{</div>
+<div class="line"><a name="l01092"></a><span class="lineno"> 1092</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l01093"></a><span class="lineno"> 1093</span>&#160;    <a class="code" href="classminus__one__quarter__series.html">minus_one_quarter_series</a>();</div>
+<div class="line"><a name="l01094"></a><span class="lineno"> 1094</span>&#160; </div>
+<div class="line"><a name="l01100"></a><span class="lineno"> 1100</span>&#160;    <span class="comment">//ln2_series(T x);</span></div>
+<div class="line"><a name="l01101"></a><span class="lineno"> 1101</span>&#160; </div>
+<div class="line"><a name="l01108"></a><span class="lineno"> 1108</span>&#160;    [[nodiscard]] constexpr <span class="keyword">virtual</span> T <a class="code" href="classminus__one__quarter__series.html#a972f3f2d9fdda992b57680cf549c339a">a_n</a>(<span class="keyword">const</span> K n) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l01109"></a><span class="lineno"> 1109</span>&#160;};</div>
+<div class="line"><a name="l01110"></a><span class="lineno"> 1110</span>&#160; </div>
+<div class="line"><a name="l01111"></a><span class="lineno"> 1111</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> K&gt;</div>
+<div class="line"><a name="l01112"></a><span class="lineno"> 1112</span>&#160;<a class="code" href="classminus__one__quarter__series.html">minus_one_quarter_series&lt;T, K&gt;::minus_one_quarter_series</a>() : <a class="code" href="classseries__base.html">series_base</a>&lt;T, K&gt;(0, -0.25) {}</div>
+<div class="line"><a name="l01113"></a><span class="lineno"> 1113</span>&#160; </div>
+<div class="line"><a name="l01114"></a><span class="lineno"> 1114</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> K&gt;</div>
+<div class="line"><a name="l01115"></a><span class="lineno"><a class="line" href="classminus__one__quarter__series.html#a972f3f2d9fdda992b57680cf549c339a"> 1115</a></span>&#160;constexpr T <a class="code" href="classminus__one__quarter__series.html#a972f3f2d9fdda992b57680cf549c339a">minus_one_quarter_series&lt;T, K&gt;::a_n</a>(<span class="keyword">const</span> K n)<span class="keyword"> const</span></div>
+<div class="line"><a name="l01116"></a><span class="lineno"> 1116</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l01117"></a><span class="lineno"> 1117</span>&#160;    <span class="keywordflow">if</span> (n &lt; 0)</div>
+<div class="line"><a name="l01118"></a><span class="lineno"> 1118</span>&#160;        <span class="keywordflow">throw</span> std::domain_error(<span class="stringliteral">&quot;negative integer in the input&quot;</span>);</div>
+<div class="line"><a name="l01119"></a><span class="lineno"> 1119</span>&#160;    <span class="keywordflow">return</span> MINUS_ONE_RAISED_TO_POWER_N / (n * n + 2 * n);</div>
+<div class="line"><a name="l01120"></a><span class="lineno"> 1120</span>&#160;}</div>
 <div class="ttc" id="aclassbin__series_html"><div class="ttname"><a href="classbin__series.html">bin_series</a></div><div class="ttdoc">Binomial series ( (1+x)^a maclaurin series)</div><div class="ttdef"><b>Definition:</b> series.h:383</div></div>
 <div class="ttc" id="aclassbin__series_html_a61b070b49b3d46bdea578ed5d220a813"><div class="ttname"><a href="classbin__series.html#a61b070b49b3d46bdea578ed5d220a813">bin_series::a_n</a></div><div class="ttdeci">constexpr virtual T a_n(const K n) const</div><div class="ttdoc">Computes the nth term of the Binomial series.</div><div class="ttdef"><b>Definition:</b> series.h:420</div></div>
 <div class="ttc" id="aclasscos__series_html"><div class="ttname"><a href="classcos__series.html">cos_series</a></div><div class="ttdoc">Maclaurin series of cosine function.</div><div class="ttdef"><b>Definition:</b> series.h:231</div></div>
@@ -673,10 +761,17 @@ $(document).ready(function(){initNavTree('series_8h_source.html',''); initResiza
 <div class="ttc" id="aclassinverse__sqrt__1m4x__series_html_a7661b05467fc4bf1254af81799dcc0d4"><div class="ttname"><a href="classinverse__sqrt__1m4x__series.html#a7661b05467fc4bf1254af81799dcc0d4">inverse_sqrt_1m4x_series::a_n</a></div><div class="ttdeci">constexpr virtual T a_n(const K n) const</div><div class="ttdoc">Computes the nth term of the Maclaurin series of (1 - 4x) ^ (-1/2)</div><div class="ttdef"><b>Definition:</b> series.h:879</div></div>
 <div class="ttc" id="aclassln1mx__series_html"><div class="ttname"><a href="classln1mx__series.html">ln1mx_series</a></div><div class="ttdoc">Maclaurin series of -ln(1 - x)</div><div class="ttdef"><b>Definition:</b> series.h:476</div></div>
 <div class="ttc" id="aclassln1mx__series_html_ae58a6fa22787d74d21b917499a9eb936"><div class="ttname"><a href="classln1mx__series.html#ae58a6fa22787d74d21b917499a9eb936">ln1mx_series::a_n</a></div><div class="ttdeci">constexpr virtual T a_n(const K n) const</div><div class="ttdoc">Computes the nth term of the Maclaurin series of -ln(1 - x)</div><div class="ttdef"><b>Definition:</b> series.h:504</div></div>
+<div class="ttc" id="aclassln2__series_html"><div class="ttname"><a href="classln2__series.html">ln2_series</a></div><div class="ttdoc">Numerical series representation of ln(2)</div><div class="ttdef"><b>Definition:</b> series.h:977</div></div>
+<div class="ttc" id="aclassln2__series_html_a830ae447b919a7a08469ce86fc6f9a0a"><div class="ttname"><a href="classln2__series.html#a830ae447b919a7a08469ce86fc6f9a0a">ln2_series::a_n</a></div><div class="ttdeci">constexpr virtual T a_n(const K n) const</div><div class="ttdoc">Parameterized constructor to initialize the series with function argument and sum.</div><div class="ttdef"><b>Definition:</b> series.h:1001</div></div>
 <div class="ttc" id="aclassm__fact__1mx__mp1__inverse__series_html"><div class="ttname"><a href="classm__fact__1mx__mp1__inverse__series.html">m_fact_1mx_mp1_inverse_series</a></div><div class="ttdoc">Maclaurin series of m! / (1 - x) ^ (m + 1)</div><div class="ttdef"><b>Definition:</b> series.h:806</div></div>
 <div class="ttc" id="aclassm__fact__1mx__mp1__inverse__series_html_a75073520bb8c83c9cec0e9d4d7d7f2c0"><div class="ttname"><a href="classm__fact__1mx__mp1__inverse__series.html#a75073520bb8c83c9cec0e9d4d7d7f2c0">m_fact_1mx_mp1_inverse_series::a_n</a></div><div class="ttdeci">constexpr virtual T a_n(const K n) const</div><div class="ttdoc">Computes the nth term of the Maclaurin series of m! / (1 - x) ^ (m + 1)</div><div class="ttdef"><b>Definition:</b> series.h:837</div></div>
 <div class="ttc" id="aclassmean__sinh__sin__series_html"><div class="ttname"><a href="classmean__sinh__sin__series.html">mean_sinh_sin_series</a></div><div class="ttdoc">Maclaurin series of (sinh(x) + sin(x)) / 2.</div><div class="ttdef"><b>Definition:</b> series.h:518</div></div>
 <div class="ttc" id="aclassmean__sinh__sin__series_html_acc3a7f6de4559c5e2705e7b6ab454b7a"><div class="ttname"><a href="classmean__sinh__sin__series.html#acc3a7f6de4559c5e2705e7b6ab454b7a">mean_sinh_sin_series::a_n</a></div><div class="ttdeci">constexpr virtual T a_n(const K n) const</div><div class="ttdoc">Computes the nth term of the Maclaurin series of (sinh(x) + sin(x)) / 2.</div><div class="ttdef"><b>Definition:</b> series.h:542</div></div>
+<div class="ttc" id="aclassminus__one__quarter__series_html"><div class="ttname"><a href="classminus__one__quarter__series.html">minus_one_quarter_series</a></div><div class="ttdoc">Numerical series representation of -1/4.</div><div class="ttdef"><b>Definition:</b> series.h:1091</div></div>
+<div class="ttc" id="aclassminus__one__quarter__series_html_a972f3f2d9fdda992b57680cf549c339a"><div class="ttname"><a href="classminus__one__quarter__series.html#a972f3f2d9fdda992b57680cf549c339a">minus_one_quarter_series::a_n</a></div><div class="ttdeci">constexpr virtual T a_n(const K n) const</div><div class="ttdoc">Parameterized constructor to initialize the series with function argument and sum.</div><div class="ttdef"><b>Definition:</b> series.h:1115</div></div>
+<div class="ttc" id="aclassone__series_html"><div class="ttname"><a href="classone__series.html">one_series</a></div><div class="ttdoc">Numerical series representation of 1.</div><div class="ttdef"><b>Definition:</b> series.h:1015</div></div>
+<div class="ttc" id="aclassone__series_html_a4033113e815768983133d3608f9582a0"><div class="ttname"><a href="classone__series.html#a4033113e815768983133d3608f9582a0">one_series::a_n</a></div><div class="ttdeci">constexpr virtual T a_n(const K n) const</div><div class="ttdoc">Parameterized constructor to initialize the series with function argument and sum.</div><div class="ttdef"><b>Definition:</b> series.h:1039</div></div>
+<div class="ttc" id="aclassone__series_html_a768a7e88ec0b84be247f5e5da0e7722d"><div class="ttname"><a href="classone__series.html#a768a7e88ec0b84be247f5e5da0e7722d">one_series::a_n</a></div><div class="ttdeci">constexpr virtual T a_n(const K n) const</div><div class="ttdoc">Parameterized constructor to initialize the series with function argument and sum.</div></div>
 <div class="ttc" id="aclassone__twelfth__3x2__pi2__series_html"><div class="ttname"><a href="classone__twelfth__3x2__pi2__series.html">one_twelfth_3x2_pi2_series</a></div><div class="ttdoc">Trigonometric series of 1/12 * (3x^2 - pi^2)</div><div class="ttdef"><b>Definition:</b> series.h:893</div></div>
 <div class="ttc" id="aclassone__twelfth__3x2__pi2__series_html_ab72ca4ade67e2b30d9b3f8b56b86bd77"><div class="ttname"><a href="classone__twelfth__3x2__pi2__series.html#ab72ca4ade67e2b30d9b3f8b56b86bd77">one_twelfth_3x2_pi2_series::a_n</a></div><div class="ttdeci">constexpr virtual T a_n(const K n) const</div><div class="ttdoc">Computes the nth term of the Trigonometric series of 1/12 * (3x^2 - pi^2)</div><div class="ttdef"><b>Definition:</b> series.h:921</div></div>
 <div class="ttc" id="aclassseries__base_html"><div class="ttname"><a href="classseries__base.html">series_base</a></div><div class="ttdoc">Abstract class for series.</div><div class="ttdef"><b>Definition:</b> series.h:39</div></div>
