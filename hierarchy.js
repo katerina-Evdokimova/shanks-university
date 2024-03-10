@@ -22,7 +22,6 @@ var hierarchy =
       [ "mean_sinh_sin_series< T, K >", "classmean__sinh__sin__series.html", null ],
       [ "minus_one_quarter_series< T, K >", "classminus__one__quarter__series.html", null ],
       [ "one_series< T, K >", "classone__series.html", null ],
-      [ "one_series< T, K >", "classone__series.html", null ],
       [ "one_twelfth_3x2_pi2_series< T, K >", "classone__twelfth__3x2__pi2__series.html", null ],
       [ "sin_series< T, K >", "classsin__series.html", null ],
       [ "sinh_series< T, K >", "classsinh__series.html", null ],

@@ -20,7 +20,10 @@ var test__framework_8h =
       [ "m_fact_1mx_mp1_inverse_series_id", "test__framework_8h.html#abd3004dc55b711f12ec6257f7fd57563adef30a14fff7cf1789c14f8d39aa7058", null ],
       [ "inverse_sqrt_1m4x_series_id", "test__framework_8h.html#abd3004dc55b711f12ec6257f7fd57563a42f7eb09a43eb5e832b81bb507c5d4c2", null ],
       [ "one_twelfth_3x2_pi2_series_id", "test__framework_8h.html#abd3004dc55b711f12ec6257f7fd57563a12179b88a2b721a9013e04640f67eaef", null ],
-      [ "x_twelfth_x2_pi2_series_id", "test__framework_8h.html#abd3004dc55b711f12ec6257f7fd57563a65650be969060d35b493103b0fead748", null ]
+      [ "x_twelfth_x2_pi2_series_id", "test__framework_8h.html#abd3004dc55b711f12ec6257f7fd57563a65650be969060d35b493103b0fead748", null ],
+      [ "ln2_series_id", "test__framework_8h.html#abd3004dc55b711f12ec6257f7fd57563a3abda461f2d5f2975eaab6ad49616ccb", null ],
+      [ "one_series_id", "test__framework_8h.html#abd3004dc55b711f12ec6257f7fd57563a9edb43545395b17b19a344655378e83a", null ],
+      [ "minus_one_quarter_series_id", "test__framework_8h.html#abd3004dc55b711f12ec6257f7fd57563a2b07432d96a63e134296fe3f697bc584", null ]
     ] ],
     [ "test_function_id_t", "test__framework_8h.html#a1fe18b1abe7e268a664edc8919084d9e", [
       [ "null_test_function_id", "test__framework_8h.html#a1fe18b1abe7e268a664edc8919084d9ea6c051ba542d39f7e96009cbaf69180fd", null ],

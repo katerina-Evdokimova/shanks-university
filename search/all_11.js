@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_7eseries_5fbase_56',['~series_base',['../classseries__base.html#afdc26ab18de2d8d9a67e02442cd4013e',1,'series_base']]]
+  ['Метод_20Шенкса_20_28shanks_20transform_29_20на_20c_2b_2b_56',['Метод Шенкса (Shanks Transform) на C++',['../index.html',1,'']]]
 ];
