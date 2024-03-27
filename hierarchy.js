@@ -23,8 +23,12 @@ var hierarchy =
       [ "minus_one_quarter_series< T, K >", "classminus__one__quarter__series.html", null ],
       [ "one_series< T, K >", "classone__series.html", null ],
       [ "one_twelfth_3x2_pi2_series< T, K >", "classone__twelfth__3x2__pi2__series.html", null ],
+      [ "pi_3_series< T, K >", "classpi__3__series.html", null ],
+      [ "pi_4_series< T, K >", "classpi__4__series.html", null ],
+      [ "pi_squared_6_minus_one_series< T, K >", "classpi__squared__6__minus__one__series.html", null ],
       [ "sin_series< T, K >", "classsin__series.html", null ],
       [ "sinh_series< T, K >", "classsinh__series.html", null ],
+      [ "three_minus_pi_series< T, K >", "classthree__minus__pi__series.html", null ],
       [ "x_1mx_squared_series< T, K >", "classx__1mx__squared__series.html", null ],
       [ "x_twelfth_x2_pi2_series< T, K >", "classx__twelfth__x2__pi2__series.html", null ],
       [ "xmb_Jb_two_series< T, K >", "classxmb__Jb__two__series.html", null ]

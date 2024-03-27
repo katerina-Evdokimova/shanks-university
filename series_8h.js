@@ -23,6 +23,10 @@ var series_8h =
     [ "ln2_series", "classln2__series.html", "classln2__series" ],
     [ "one_series", "classone__series.html", "classone__series" ],
     [ "minus_one_quarter_series", "classminus__one__quarter__series.html", "classminus__one__quarter__series" ],
+    [ "pi_3_series", "classpi__3__series.html", "classpi__3__series" ],
+    [ "pi_4_series", "classpi__4__series.html", "classpi__4__series" ],
+    [ "pi_squared_6_minus_one_series", "classpi__squared__6__minus__one__series.html", "classpi__squared__6__minus__one__series" ],
+    [ "three_minus_pi_series", "classthree__minus__pi__series.html", "classthree__minus__pi__series" ],
     [ "NO_SERIES_EXPRESSION_GIVEN", "series_8h.html#a4e39687831ca335e062cb165b0f12c96", null ],
     [ "NO_X_GIVEN", "series_8h.html#abae30b0b2a6e7d520403e0cc8f02d4ce", null ]
 ];
