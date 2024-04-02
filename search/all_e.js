@@ -1,14 +1,7 @@
 var searchData=
 [
-  ['s_5fn_35',['S_n',['../classseries__base.html#a0a269db583d457001d0ff0265f28a5f3',1,'series_base']]],
-  ['series_36',['series',['../classseries__acceleration.html#a79e096bcc3434265a9c99522a41ff820',1,'series_acceleration']]],
-  ['series_2eh_37',['series.h',['../series_8h.html',1,'']]],
-  ['series_5facceleration_38',['series_acceleration',['../classseries__acceleration.html',1,'series_acceleration&lt; T, K, series_templ &gt;'],['../classseries__acceleration.html#a1df90a926913831d683a8845a45bdbab',1,'series_acceleration::series_acceleration()']]],
-  ['series_5facceleration_2eh_39',['series_acceleration.h',['../series__acceleration_8h.html',1,'']]],
-  ['series_5fbase_40',['series_base',['../classseries__base.html',1,'series_base&lt; T, K &gt;'],['../classseries__base.html#a42b6c38ba4fb197990696a62ff2c949c',1,'series_base::series_base(T x, T sum)'],['../classseries__base.html#a911b9398ad76348f28e4f6a57e26039a',1,'series_base::series_base(T x=0)']]],
-  ['shanks_5ftransform_41',['shanks_transform',['../classshanks__transform.html',1,'shanks_transform&lt; T, K, series_templ &gt;'],['../classshanks__transform.html#a7895e7732ab2b125ab53e9244b478508',1,'shanks_transform::shanks_transform()']]],
-  ['shanks_5ftransform_5falternating_42',['shanks_transform_alternating',['../classshanks__transform__alternating.html',1,'shanks_transform_alternating&lt; T, K, series_templ &gt;'],['../classshanks__transform__alternating.html#ab52133bb8db98faf07c8c3a48ad1b65b',1,'shanks_transform_alternating::shanks_transform_alternating()']]],
-  ['sin_5fseries_43',['sin_series',['../classsin__series.html',1,'sin_series&lt; T, K &gt;'],['../classsin__series.html#a7eafc845053598147175f51ef919e968',1,'sin_series::sin_series()']]],
-  ['sinh_5fseries_44',['sinh_series',['../classsinh__series.html',1,'sinh_series&lt; T, K &gt;'],['../classsinh__series.html#a8aea5c52fc43a52220c55a7a4065845f',1,'sinh_series::sinh_series()']]],
-  ['sum_45',['sum',['../classseries__base.html#a6d335f2f5f2ac0decb157a7d54a19087',1,'series_base']]]
+  ['test_5fframework_2eh_45',['test_framework.h',['../test__framework_8h.html',1,'']]],
+  ['test_5ffunctions_2eh_46',['test_functions.h',['../test__functions_8h.html',1,'']]],
+  ['three_5fminus_5fpi_5fseries_47',['three_minus_pi_series',['../classthree__minus__pi__series.html',1,'']]],
+  ['transformation_5fremainders_48',['transformation_remainders',['../test__functions_8h.html#a09131e414941f7e761b103b19768ceed',1,'test_functions.h']]]
 ];

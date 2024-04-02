@@ -23,7 +23,11 @@ var test__framework_8h =
       [ "x_twelfth_x2_pi2_series_id", "test__framework_8h.html#abd3004dc55b711f12ec6257f7fd57563a65650be969060d35b493103b0fead748", null ],
       [ "ln2_series_id", "test__framework_8h.html#abd3004dc55b711f12ec6257f7fd57563a3abda461f2d5f2975eaab6ad49616ccb", null ],
       [ "one_series_id", "test__framework_8h.html#abd3004dc55b711f12ec6257f7fd57563a9edb43545395b17b19a344655378e83a", null ],
-      [ "minus_one_quarter_series_id", "test__framework_8h.html#abd3004dc55b711f12ec6257f7fd57563a2b07432d96a63e134296fe3f697bc584", null ]
+      [ "minus_one_quarter_series_id", "test__framework_8h.html#abd3004dc55b711f12ec6257f7fd57563a2b07432d96a63e134296fe3f697bc584", null ],
+      [ "pi_3_series_id", "test__framework_8h.html#abd3004dc55b711f12ec6257f7fd57563ac8a3bb33554e64b91b2b923cac951de7", null ],
+      [ "pi_4_series_id", "test__framework_8h.html#abd3004dc55b711f12ec6257f7fd57563a2bd642bcbe842b43211f845fafa0ec52", null ],
+      [ "pi_squared_6_minus_one_series_id", "test__framework_8h.html#abd3004dc55b711f12ec6257f7fd57563a8ae35a458c7ade5141d3aca4e5df7551", null ],
+      [ "three_minus_pi_series_id", "test__framework_8h.html#abd3004dc55b711f12ec6257f7fd57563a5f6b2af1905fc8a89296ce083bd6f7a9", null ]
     ] ],
     [ "test_function_id_t", "test__framework_8h.html#a1fe18b1abe7e268a664edc8919084d9e", [
       [ "null_test_function_id", "test__framework_8h.html#a1fe18b1abe7e268a664edc8919084d9ea6c051ba542d39f7e96009cbaf69180fd", null ],

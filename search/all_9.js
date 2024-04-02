@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['ln1mx_5fseries_20',['ln1mx_series',['../classln1mx__series.html',1,'ln1mx_series&lt; T, K &gt;'],['../classln1mx__series.html#a576262e04da81d016c0b7ff468da8f9c',1,'ln1mx_series::ln1mx_series()']]],
-  ['ln2_5fseries_21',['ln2_series',['../classln2__series.html',1,'']]]
+  ['m_5ffact_5f1mx_5fmp1_5finverse_5fseries_21',['m_fact_1mx_mp1_inverse_series',['../classm__fact__1mx__mp1__inverse__series.html',1,'m_fact_1mx_mp1_inverse_series&lt; T, K &gt;'],['../classm__fact__1mx__mp1__inverse__series.html#ad9133e5087c075ea0004d4291fd194db',1,'m_fact_1mx_mp1_inverse_series::m_fact_1mx_mp1_inverse_series()']]],
+  ['main_2ecpp_22',['main.cpp',['../main_8cpp.html',1,'']]],
+  ['mean_5fsinh_5fsin_5fseries_23',['mean_sinh_sin_series',['../classmean__sinh__sin__series.html',1,'mean_sinh_sin_series&lt; T, K &gt;'],['../classmean__sinh__sin__series.html#affb3220de11c00a141c623f081b982fe',1,'mean_sinh_sin_series::mean_sinh_sin_series()']]],
+  ['minus_5fone_5fquarter_5fseries_24',['minus_one_quarter_series',['../classminus__one__quarter__series.html',1,'']]],
+  ['minus_5fone_5fraised_5fto_5fpower_5fn_25',['minus_one_raised_to_power_n',['../classseries__base.html#a3ee7c9e7cc0d5174cbc2b93dd6b3633c',1,'series_base']]]
 ];

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['get_5fsum_105',['get_sum',['../classseries__base.html#ac91ad1dbe9e427aadddd4fd431cdadc5',1,'series_base']]],
-  ['get_5fx_106',['get_x',['../classseries__base.html#aba7a21aad35788dddecc08f3906d3d0b',1,'series_base']]]
+  ['half_5fasin_5ftwo_5fx_5fseries_105',['half_asin_two_x_series',['../classhalf__asin__two__x__series.html#a85be079f7ae4b17811d6788690e429aa',1,'half_asin_two_x_series']]]
 ];

@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['test_5fframework_2eh_46',['test_framework.h',['../test__framework_8h.html',1,'']]],
-  ['test_5ffunctions_2eh_47',['test_functions.h',['../test__functions_8h.html',1,'']]],
-  ['three_5fminus_5fpi_5fseries_48',['three_minus_pi_series',['../classthree__minus__pi__series.html',1,'']]],
-  ['transformation_5fremainders_49',['transformation_remainders',['../test__functions_8h.html#a09131e414941f7e761b103b19768ceed',1,'test_functions.h']]]
+  ['x_49',['x',['../classseries__base.html#affe93b6bae5f228e08d56b16518a86be',1,'series_base']]],
+  ['x_5f1mx_5fsquared_5fseries_50',['x_1mx_squared_series',['../classx__1mx__squared__series.html',1,'x_1mx_squared_series&lt; T, K &gt;'],['../classx__1mx__squared__series.html#aeffeeb6e47e6b82704eaadd69c8aa427',1,'x_1mx_squared_series::x_1mx_squared_series()']]],
+  ['x_5ftwelfth_5fx2_5fpi2_5fseries_51',['x_twelfth_x2_pi2_series',['../classx__twelfth__x2__pi2__series.html',1,'x_twelfth_x2_pi2_series&lt; T, K &gt;'],['../classx__twelfth__x2__pi2__series.html#a214c2ec01bb4bbe95bf60d18fd360b37',1,'x_twelfth_x2_pi2_series::x_twelfth_x2_pi2_series()']]],
+  ['xmb_5fjb_5ftwo_5fseries_52',['xmb_Jb_two_series',['../classxmb__Jb__two__series.html',1,'xmb_Jb_two_series&lt; T, K &gt;'],['../classxmb__Jb__two__series.html#ad01f9bb790d5e6377da032e47edd8acb',1,'xmb_Jb_two_series::xmb_Jb_two_series()']]]
 ];

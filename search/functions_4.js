@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['fact_103',['fact',['../classseries__base.html#a18625b0a00e5855fdb1302008b5dda73',1,'series_base']]],
-  ['four_5farctan_5fseries_104',['four_arctan_series',['../classfour__arctan__series.html#a2516a73be1cfe8e830a543e0d63c5ae8',1,'four_arctan_series']]]
+  ['get_5fsum_103',['get_sum',['../classseries__base.html#ab99eee502832656ea006ed521673af4d',1,'series_base']]],
+  ['get_5fx_104',['get_x',['../classseries__base.html#a363e0c7ecd194dc11eb4985cc2fd4756',1,'series_base']]]
 ];
