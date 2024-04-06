@@ -27,6 +27,10 @@ var series_8h =
     [ "pi_4_series", "classpi__4__series.html", "classpi__4__series" ],
     [ "pi_squared_6_minus_one_series", "classpi__squared__6__minus__one__series.html", "classpi__squared__6__minus__one__series" ],
     [ "three_minus_pi_series", "classthree__minus__pi__series.html", "classthree__minus__pi__series" ],
+    [ "one_twelfth_series", "classone__twelfth__series.html", "classone__twelfth__series" ],
+    [ "eighth_pi_m_one_third_series", "classeighth__pi__m__one__third__series.html", "classeighth__pi__m__one__third__series" ],
+    [ "one_third_pi_squared_m_nine_series", "classone__third__pi__squared__m__nine__series.html", "classone__third__pi__squared__m__nine__series" ],
+    [ "four_ln2_m_3_series", "classfour__ln2__m__3__series.html", "classfour__ln2__m__3__series" ],
     [ "NO_SERIES_EXPRESSION_GIVEN", "series_8h.html#a4e39687831ca335e062cb165b0f12c96", null ],
     [ "NO_X_GIVEN", "series_8h.html#abae30b0b2a6e7d520403e0cc8f02d4ce", null ]
 ];
