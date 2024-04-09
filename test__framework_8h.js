@@ -27,7 +27,11 @@ var test__framework_8h =
       [ "pi_3_series_id", "test__framework_8h.html#abd3004dc55b711f12ec6257f7fd57563ac8a3bb33554e64b91b2b923cac951de7", null ],
       [ "pi_4_series_id", "test__framework_8h.html#abd3004dc55b711f12ec6257f7fd57563a2bd642bcbe842b43211f845fafa0ec52", null ],
       [ "pi_squared_6_minus_one_series_id", "test__framework_8h.html#abd3004dc55b711f12ec6257f7fd57563a8ae35a458c7ade5141d3aca4e5df7551", null ],
-      [ "three_minus_pi_series_id", "test__framework_8h.html#abd3004dc55b711f12ec6257f7fd57563a5f6b2af1905fc8a89296ce083bd6f7a9", null ]
+      [ "three_minus_pi_series_id", "test__framework_8h.html#abd3004dc55b711f12ec6257f7fd57563a5f6b2af1905fc8a89296ce083bd6f7a9", null ],
+      [ "one_twelfth_series_id", "test__framework_8h.html#abd3004dc55b711f12ec6257f7fd57563a540848240f70f186cb7b609b12fd6ef1", null ],
+      [ "eighth_pi_m_one_third_series_id", "test__framework_8h.html#abd3004dc55b711f12ec6257f7fd57563a1649932f51826f985772470846db1766", null ],
+      [ "one_third_pi_squared_m_nine_series_id", "test__framework_8h.html#abd3004dc55b711f12ec6257f7fd57563a1370aab6e77ecc3803347fc20af0f3d9", null ],
+      [ "four_ln2_m_3_series_id", "test__framework_8h.html#abd3004dc55b711f12ec6257f7fd57563adb8508be4951908501299d0f0ed243cd", null ]
     ] ],
     [ "test_function_id_t", "test__framework_8h.html#a1fe18b1abe7e268a664edc8919084d9e", [
       [ "null_test_function_id", "test__framework_8h.html#a1fe18b1abe7e268a664edc8919084d9ea6c051ba542d39f7e96009cbaf69180fd", null ],
