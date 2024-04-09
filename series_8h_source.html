@@ -306,7 +306,7 @@ $(document).ready(function(){initNavTree('series_8h_source.html',''); initResiza
 <div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> K&gt;</div>
 <div class="line"><a name="l00416"></a><span class="lineno"><a class="line" href="classbin__series.html#ad1ffb02d85904d979c420fcac63a9876">  416</a></span>&#160;<a class="code" href="classbin__series.html">bin_series&lt;T, K&gt;::bin_series</a>(T x, T alpha) : <a class="code" href="classseries__base.html">series_base</a>&lt;T, K&gt;(x, std::pow(1 + x, alpha)), alpha(alpha)</div>
 <div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;{</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    <span class="keywordflow">if</span> (std::abs(<a class="code" href="classseries__base.html#affe93b6bae5f228e08d56b16518a86be">x</a>) &gt;= 1)</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    <span class="keywordflow">if</span> (std::abs(<a class="code" href="classseries__base.html#affe93b6bae5f228e08d56b16518a86be">x</a>) &gt; 1)</div>
 <div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;        <span class="keywordflow">throw</span> std::domain_error(<span class="stringliteral">&quot;series diverge&quot;</span>);</div>
 <div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;}</div>
 <div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160; </div>
@@ -483,7 +483,7 @@ $(document).ready(function(){initNavTree('series_8h_source.html',''); initResiza
 <div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> K&gt;</div>
 <div class="line"><a name="l00709"></a><span class="lineno"><a class="line" href="classinverse__1mx__series.html#ab211c37dedb9094bb8b1652d1b6086b1">  709</a></span>&#160;<a class="code" href="classinverse__1mx__series.html">inverse_1mx_series&lt;T, K&gt;::inverse_1mx_series</a>(T x) : <a class="code" href="classseries__base.html">series_base</a>&lt;T, K&gt;(x, 1 / (1 - x))</div>
 <div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;{</div>
-<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;    <span class="keywordflow">if</span> (std::abs(this-&gt;x) &gt; 1 || this-&gt;x == 1)</div>
+<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;    <span class="keywordflow">if</span> (std::abs(this-&gt;x) &gt;= 1)</div>
 <div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;        <span class="keywordflow">throw</span> std::domain_error(<span class="stringliteral">&quot;series diverge&quot;</span>);</div>
 <div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;}</div>
 <div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160; </div>
