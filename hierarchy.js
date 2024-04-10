@@ -6,11 +6,13 @@ var hierarchy =
       [ "shanks_transform_alternating< T, K, series_templ >", "classshanks__transform__alternating.html", null ]
     ] ],
     [ "series_base< T, K >", "classseries__base.html", [
+      [ "Lambert_W_0_series< T, K >", "classLambert__W__0__series.html", null ],
       [ "bin_series< T, K >", "classbin__series.html", null ],
       [ "cos_series< T, K >", "classcos__series.html", null ],
       [ "cosh_series< T, K >", "classcosh__series.html", null ],
       [ "eighth_pi_m_one_third_series< T, K >", "classeighth__pi__m__one__third__series.html", null ],
       [ "erf_series< T, K >", "classerf__series.html", null ],
+      [ "exp_m_cos_x_sinsin_x_series< T, K >", "classexp__m__cos__x__sinsin__x__series.html", null ],
       [ "exp_series< T, K >", "classexp__series.html", null ],
       [ "exp_squared_erf_series< T, K >", "classexp__squared__erf__series.html", null ],
       [ "four_arctan_series< T, K >", "classfour__arctan__series.html", null ],
