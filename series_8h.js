@@ -31,7 +31,6 @@ var series_8h =
     [ "eighth_pi_m_one_third_series", "classeighth__pi__m__one__third__series.html", "classeighth__pi__m__one__third__series" ],
     [ "one_third_pi_squared_m_nine_series", "classone__third__pi__squared__m__nine__series.html", "classone__third__pi__squared__m__nine__series" ],
     [ "four_ln2_m_3_series", "classfour__ln2__m__3__series.html", "classfour__ln2__m__3__series" ],
-    [ "Lambert_W_0_series", "classLambert__W__0__series.html", "classLambert__W__0__series" ],
     [ "exp_m_cos_x_sinsin_x_series", "classexp__m__cos__x__sinsin__x__series.html", "classexp__m__cos__x__sinsin__x__series" ],
     [ "NO_SERIES_EXPRESSION_GIVEN", "series_8h.html#a4e39687831ca335e062cb165b0f12c96", null ],
     [ "NO_X_GIVEN", "series_8h.html#abae30b0b2a6e7d520403e0cc8f02d4ce", null ]

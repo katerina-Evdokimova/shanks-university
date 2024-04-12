@@ -131,294 +131,296 @@ $(document).ready(function(){initNavTree('test__framework_8h_source.html',''); i
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    eighth_pi_m_one_third_series_id,</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    one_third_pi_squared_m_nine_series_id,</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    four_ln2_m_3_series_id,</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    Lambert_W_0_series_id,</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    exp_m_cos_x_sinsin_x_series_id</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">enum</span> test_function_id_t {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    null_test_function_id, </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    cmp_sum_and_transform_id, </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    cmp_a_n_and_transform_id, </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    transformation_remainder_id, </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    cmp_transformations_id,</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    eval_transform_time_id</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> print_series_info()</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;Which series&#39; convergence would you like to accelerate?&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="stringliteral">&quot;List of currently avaiable series:&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="stringliteral">&quot;1 - exp_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="stringliteral">&quot;2 - cos_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="stringliteral">&quot;3 - sin_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="stringliteral">&quot;4 - cosh_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="stringliteral">&quot;5 - sinh_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="stringliteral">&quot;6 - bin_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="stringliteral">&quot;7 - four_arctan_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="stringliteral">&quot;8 - ln1mx_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="stringliteral">&quot;9 - mean_sinh_sin_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="stringliteral">&quot;10 - exp_squared_erf_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="stringliteral">&quot;11 - xmb_Jb_two_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="stringliteral">&quot;12 - half_asin_two_x_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="stringliteral">&quot;13 - inverse_1mx_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="stringliteral">&quot;14 - x_1mx_squared_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="stringliteral">&quot;15 - erf_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="stringliteral">&quot;16 - m_fact_1mx_mp1_inverse_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="stringliteral">&quot;17 - inverse_sqrt_1m4x_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="stringliteral">&quot;18 - one_twelfth_3x2_pi2_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="stringliteral">&quot;19 - x_twelfth_x2_pi2_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="stringliteral">&quot;20 - ln2_series_id&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="stringliteral">&quot;21 - one_series_id&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="stringliteral">&quot;22 - minus_one_quarter_series_id&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="stringliteral">&quot;23 - pi_3_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="stringliteral">&quot;24 - pi_4_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="stringliteral">&quot;25 - pi_squared_6_minus_one_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="stringliteral">&quot;26 - three_minus_pi_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="stringliteral">&quot;27 - one_twelfth_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="stringliteral">&quot;28 - eighth_pi_m_one_third_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="stringliteral">&quot;29 - one_third_pi_squared_m_nine_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="stringliteral">&quot;30 - four_ln2_m_3_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="stringliteral">&quot;31 - Lambert_W_0_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="stringliteral">&quot;32 - exp_m_cos_x_sinsin_x_series&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> print_transformation_info()</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;{</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;Which transformation would you like to test?&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="stringliteral">&quot;List of currently avaiable series:&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="stringliteral">&quot;1 - Shanks Transformation&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="stringliteral">&quot;2 - Epsilon Algorithm&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> print_test_function_info()</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;{</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;Which function would you like to use for testing?&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="stringliteral">&quot;List of currently avaiable functions:&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="stringliteral">&quot;1 - cmp_sum_and_transform - showcases the difference between the transformed partial sum and the nontransformed one&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="stringliteral">&quot;2 - cmp_a_n_and_transform - showcases the difference between series&#39; terms and transformed ones&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="stringliteral">&quot;3 - transformation_remainders - showcases the difference between series&#39; sum and transformed partial sum&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="stringliteral">&quot;4 - cmp_transformations - showcases the difference between convergence of sums accelerated by different transformations&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="stringliteral">&quot;5 - eval_transform_time - evaluates the time it takes to transform series&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;}</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> K&gt;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> main_testing_function()</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;{</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="comment">//choosing series</span></div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    print_series_info();</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    std::unique_ptr&lt;series_base&lt;T, K&gt;&gt; series;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keywordtype">int</span> series_id = 0;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    std::cin &gt;&gt; series_id;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="comment">//choosing x</span></div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;Enter x - the argument for the functional series&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    T x = 0;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    std::cin &gt;&gt; x;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="comment">//choosing series (cont.)</span></div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    std::set&lt;int&gt; alternating_series = { 2, 3, 7, 11, 15, 18, 19, 20, 21, 24, 26, 28, 30, 31, 32 };</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordflow">switch</span> (series_id)</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    {</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordflow">case</span> series_id_t::exp_series_id:</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classexp__series.html">exp_series&lt;T, K&gt;</a>(x));</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordflow">case</span> series_id_t::cos_series_id:</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classcos__series.html">cos_series&lt;T, K&gt;</a>(x));</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordflow">case</span> series_id_t::sin_series_id:</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classsin__series.html">sin_series&lt;T, K&gt;</a>(x));</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keywordflow">case</span> series_id_t::cosh_series_id:</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classcosh__series.html">cosh_series&lt;T, K&gt;</a>(x));</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordflow">case</span> series_id_t::sinh_series_id:</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classsinh__series.html">sinh_series&lt;T, K&gt;</a>(x));</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="keywordflow">case</span> series_id_t::bin_series_id:</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        T alpha;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Enter the value for constant alpha for the series&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        std::cin &gt;&gt; alpha;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classbin__series.html">bin_series&lt;T, K&gt;</a>(x, alpha));</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="keywordflow">case</span> series_id_t::four_arctan_series_id:</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classfour__arctan__series.html">four_arctan_series&lt;T, K&gt;</a>(x));</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keywordflow">case</span> series_id_t::ln1mx_series_id:</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classln1mx__series.html">ln1mx_series&lt;T, K&gt;</a>(x));</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keywordflow">case</span> series_id_t::mean_sinh_sin_series_id:</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classmean__sinh__sin__series.html">mean_sinh_sin_series&lt;T, K&gt;</a>(x));</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keywordflow">case</span> series_id_t::exp_squared_erf_series_id:</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classexp__squared__erf__series.html">exp_squared_erf_series&lt;T, K&gt;</a>(x));</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordflow">case</span> series_id_t::xmb_Jb_two_series_id:</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        K b;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Enter the value for constant b for the series&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        std::cin &gt;&gt; b;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classxmb__Jb__two__series.html">xmb_Jb_two_series&lt;T, K&gt;</a>(x, b));</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordflow">case</span> series_id_t::half_asin_two_x_series_id:</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classhalf__asin__two__x__series.html">half_asin_two_x_series&lt;T, K&gt;</a>(x));</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keywordflow">case</span> series_id_t::inverse_1mx_series_id:</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classinverse__1mx__series.html">inverse_1mx_series&lt;T, K&gt;</a>(x));</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="keywordflow">case</span> series_id_t::x_1mx_squared_series_id:</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classx__1mx__squared__series.html">x_1mx_squared_series&lt;T, K&gt;</a>(x));</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="keywordflow">case</span> series_id_t::erf_series_id:</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classerf__series.html">erf_series&lt;T, K&gt;</a>(x));</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="keywordflow">case</span> series_id_t::m_fact_1mx_mp1_inverse_series_id:</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        T m;</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Enter the value for constant m for the series&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        std::cin &gt;&gt; m;</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classm__fact__1mx__mp1__inverse__series.html">m_fact_1mx_mp1_inverse_series&lt;T, K&gt;</a>(x, m));</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <span class="keywordflow">case</span> series_id_t::inverse_sqrt_1m4x_series_id:</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classinverse__sqrt__1m4x__series.html">inverse_sqrt_1m4x_series&lt;T, K&gt;</a>(x));</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <span class="keywordflow">case</span> series_id_t::one_twelfth_3x2_pi2_series_id:</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classone__twelfth__3x2__pi2__series.html">one_twelfth_3x2_pi2_series&lt;T, K&gt;</a>(x));</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <span class="keywordflow">break</span>; </div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keywordflow">case</span> series_id_t::x_twelfth_x2_pi2_series_id:</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classx__twelfth__x2__pi2__series.html">x_twelfth_x2_pi2_series&lt;T, K&gt;</a>(x));</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="keywordflow">case</span> series_id_t::ln2_series_id:</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classln2__series.html">ln2_series&lt;T, K&gt;</a>());</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="keywordflow">case</span> series_id_t::one_series_id:</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classone__series.html">one_series&lt;T, K&gt;</a>());</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keywordflow">case</span> series_id_t::minus_one_quarter_series_id:</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classminus__one__quarter__series.html">minus_one_quarter_series&lt;T, K&gt;</a>());</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="keywordflow">case</span> series_id_t::pi_3_series_id:</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classpi__3__series.html">pi_3_series&lt;T, K&gt;</a>());</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="keywordflow">case</span> series_id_t::pi_4_series_id:</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classpi__4__series.html">pi_4_series&lt;T, K&gt;</a>());</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keywordflow">case</span> series_id_t::pi_squared_6_minus_one_series_id:</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classpi__squared__6__minus__one__series.html">pi_squared_6_minus_one_series&lt;T, K&gt;</a>());</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    <span class="keywordflow">case</span> series_id_t::three_minus_pi_series_id:</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classthree__minus__pi__series.html">three_minus_pi_series&lt;T, K&gt;</a>());</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <span class="keywordflow">case</span> series_id_t::one_twelfth_series_id:</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classone__twelfth__series.html">one_twelfth_series&lt;T, K&gt;</a>());</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="keywordflow">case</span> series_id_t::eighth_pi_m_one_third_series_id:</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classeighth__pi__m__one__third__series.html">eighth_pi_m_one_third_series&lt;T, K&gt;</a>());</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="keywordflow">case</span> series_id_t::one_third_pi_squared_m_nine_series_id:</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classone__third__pi__squared__m__nine__series.html">one_third_pi_squared_m_nine_series&lt;T, K&gt;</a>());</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="keywordflow">case</span> series_id_t::four_ln2_m_3_series_id:</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classfour__ln2__m__3__series.html">four_ln2_m_3_series&lt;T, K&gt;</a>());</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        <span class="keywordflow">throw</span> std::domain_error(<span class="stringliteral">&quot;wrong series_id&quot;</span>);</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    }</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160; </div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <span class="comment">//choosing transformation</span></div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    print_transformation_info();</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="keywordtype">int</span> transformation_id = 0;</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    std::cin &gt;&gt; transformation_id;</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    std::unique_ptr&lt;<a class="code" href="classseries__acceleration.html">series_acceleration</a>&lt;T, K, decltype(series.get())&gt;&gt; transform;</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="keywordflow">switch</span> (transformation_id)</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    {</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="keywordflow">case</span> transformation_id_t::shanks_transformation_id:</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        <span class="keywordflow">if</span> (alternating_series.contains(series_id))</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;            transform.reset(<span class="keyword">new</span> <a class="code" href="classshanks__transform__alternating.html">shanks_transform_alternating</a>&lt;T, K, decltype(series.get())&gt;(series.get()));</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;            transform.reset(<span class="keyword">new</span> <a class="code" href="classshanks__transform.html">shanks_transform</a>&lt;T, K, decltype(series.get())&gt;(series.get()));</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <span class="keywordflow">case</span> transformation_id_t::epsilon_algorithm_id:</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        transform.reset(<span class="keyword">new</span> <a class="code" href="classepsilon__algorithm.html">epsilon_algorithm</a>&lt;T, K, decltype(series.get())&gt;(series.get()));</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        <span class="keywordflow">throw</span> std::domain_error(<span class="stringliteral">&quot;wrong transformation_id&quot;</span>);</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    }</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160; </div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <span class="comment">//choosing testing function</span></div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    print_test_function_info();</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <span class="keywordtype">int</span> function_id = 0;</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    std::cin &gt;&gt; function_id;</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    <span class="keywordtype">int</span> n = 0;</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <span class="keywordtype">int</span> order = 0;</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;Enter n and order:&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    std::cin &gt;&gt; n &gt;&gt; order;</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="keywordflow">switch</span> (function_id)</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    {</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="keywordflow">case</span> test_function_id_t::cmp_sum_and_transform_id:</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        cmp_sum_and_transform(n, order, std::move(series.get()), std::move(transform.get()));</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="keywordflow">case</span> test_function_id_t::cmp_a_n_and_transform_id:</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        cmp_a_n_and_transform(n, order, std::move(series.get()), std::move(transform.get()));</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <span class="keywordflow">case</span> test_function_id_t::transformation_remainder_id:</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        <a class="code" href="test__functions_8h.html#a09131e414941f7e761b103b19768ceed">transformation_remainders</a>(n, order, std::move(series.get()), std::move(transform.get()));</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="keywordflow">case</span> test_function_id_t::cmp_transformations_id:</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    {</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        <span class="comment">/*std::cout &lt;&lt; &quot;choose the type of the other&quot;;*/</span> <span class="comment">//so far we&#39;ve only got 2 transformations</span></div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        std::unique_ptr&lt;<a class="code" href="classseries__acceleration.html">series_acceleration</a>&lt;T, K, decltype(series.get())&gt;&gt; transform2;</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        <span class="keywordflow">if</span> (transformation_id == 1)</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;            transform2.reset(<span class="keyword">new</span> <a class="code" href="classepsilon__algorithm.html">epsilon_algorithm</a>&lt;T, K, decltype(series.get())&gt;(series.get()));</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        <span class="keywordflow">else</span> <span class="comment">//transformation_id is 2</span></div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        {</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;            <span class="keywordflow">if</span> (alternating_series.contains(series_id))</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                transform2.reset(<span class="keyword">new</span> <a class="code" href="classshanks__transform__alternating.html">shanks_transform_alternating</a>&lt;T, K, decltype(series.get())&gt;(series.get()));</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;                transform2.reset(<span class="keyword">new</span> <a class="code" href="classshanks__transform.html">shanks_transform</a>&lt;T, K, decltype(series.get())&gt;(series.get()));</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        }</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        <a class="code" href="test__functions_8h.html#a41361a2d753a0262be172e1ce3206b82">cmp_transformations</a>(n, order, std::move(series.get()), std::move(transform.get()), std::move(transform2.get()));</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    }</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    <span class="keywordflow">case</span> test_function_id_t::eval_transform_time_id:</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        <a class="code" href="test__functions_8h.html#a21b2a4a0e524e40c8484b066d0834d94">eval_transform_time</a>(n, order, std::move(series.get()), std::move(transform.get()));</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        <span class="keywordflow">throw</span> std::domain_error(<span class="stringliteral">&quot;wrong function_id&quot;</span>);</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    }</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;}</div>
-<div class="ttc" id="aclassbin__series_html"><div class="ttname"><a href="classbin__series.html">bin_series</a></div><div class="ttdoc">Binomial series ( (1+x)^a maclaurin series)</div><div class="ttdef"><b>Definition:</b> series.h:386</div></div>
-<div class="ttc" id="aclasscos__series_html"><div class="ttname"><a href="classcos__series.html">cos_series</a></div><div class="ttdoc">Maclaurin series of cosine function.</div><div class="ttdef"><b>Definition:</b> series.h:234</div></div>
-<div class="ttc" id="aclasscosh__series_html"><div class="ttname"><a href="classcosh__series.html">cosh_series</a></div><div class="ttdoc">Maclaurin series of hyperbolic cosine.</div><div class="ttdef"><b>Definition:</b> series.h:310</div></div>
-<div class="ttc" id="aclasseighth__pi__m__one__third__series_html"><div class="ttname"><a href="classeighth__pi__m__one__third__series.html">eighth_pi_m_one_third_series</a></div><div class="ttdoc">Numerical series representation of pi/8 - 1/3.</div><div class="ttdef"><b>Definition:</b> series.h:1243</div></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    exp_m_cos_x_sinsin_x_series_id</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">enum</span> test_function_id_t {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    null_test_function_id, </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    cmp_sum_and_transform_id, </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    cmp_a_n_and_transform_id, </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    transformation_remainder_id, </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    cmp_transformations_id,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    eval_transform_time_id</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;};</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> print_series_info()</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;Which series&#39; convergence would you like to accelerate?&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="stringliteral">&quot;List of currently avaiable series:&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="stringliteral">&quot;1 - exp_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="stringliteral">&quot;2 - cos_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="stringliteral">&quot;3 - sin_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="stringliteral">&quot;4 - cosh_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="stringliteral">&quot;5 - sinh_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="stringliteral">&quot;6 - bin_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="stringliteral">&quot;7 - four_arctan_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="stringliteral">&quot;8 - ln1mx_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="stringliteral">&quot;9 - mean_sinh_sin_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="stringliteral">&quot;10 - exp_squared_erf_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="stringliteral">&quot;11 - xmb_Jb_two_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="stringliteral">&quot;12 - half_asin_two_x_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="stringliteral">&quot;13 - inverse_1mx_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="stringliteral">&quot;14 - x_1mx_squared_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="stringliteral">&quot;15 - erf_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="stringliteral">&quot;16 - m_fact_1mx_mp1_inverse_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="stringliteral">&quot;17 - inverse_sqrt_1m4x_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="stringliteral">&quot;18 - one_twelfth_3x2_pi2_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="stringliteral">&quot;19 - x_twelfth_x2_pi2_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="stringliteral">&quot;20 - ln2_series_id&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="stringliteral">&quot;21 - one_series_id&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="stringliteral">&quot;22 - minus_one_quarter_series_id&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="stringliteral">&quot;23 - pi_3_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="stringliteral">&quot;24 - pi_4_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="stringliteral">&quot;25 - pi_squared_6_minus_one_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="stringliteral">&quot;26 - three_minus_pi_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="stringliteral">&quot;27 - one_twelfth_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="stringliteral">&quot;28 - eighth_pi_m_one_third_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="stringliteral">&quot;29 - one_third_pi_squared_m_nine_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="stringliteral">&quot;30 - four_ln2_m_3_series&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="stringliteral">&quot;31 - exp_m_cos_x_sinsin_x_series&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> print_transformation_info()</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;{</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;Which transformation would you like to test?&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="stringliteral">&quot;List of currently avaiable series:&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="stringliteral">&quot;1 - Shanks Transformation&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="stringliteral">&quot;2 - Epsilon Algorithm&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> print_test_function_info()</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;{</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;Which function would you like to use for testing?&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="stringliteral">&quot;List of currently avaiable functions:&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="stringliteral">&quot;1 - cmp_sum_and_transform - showcases the difference between the transformed partial sum and the nontransformed one&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="stringliteral">&quot;2 - cmp_a_n_and_transform - showcases the difference between series&#39; terms and transformed ones&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="stringliteral">&quot;3 - transformation_remainders - showcases the difference between series&#39; sum and transformed partial sum&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="stringliteral">&quot;4 - cmp_transformations - showcases the difference between convergence of sums accelerated by different transformations&quot;</span> &lt;&lt; std::endl &lt;&lt;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="stringliteral">&quot;5 - eval_transform_time - evaluates the time it takes to transform series&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;}</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> K&gt;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> main_testing_function()</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;{</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="comment">//choosing series</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    print_series_info();</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    std::unique_ptr&lt;series_base&lt;T, K&gt;&gt; series;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordtype">int</span> series_id = 0;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    std::cin &gt;&gt; series_id;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="comment">//choosing x</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;Enter x - the argument for the functional series&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    T x = 0;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    std::cin &gt;&gt; x;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="comment">//choosing series (cont.)</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    std::set&lt;int&gt; alternating_series = { 2, 3, 7, 11, 15, 18, 19, 20, 21, 24, 26, 28, 30, 31};</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordflow">switch</span> (series_id)</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    {</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordflow">case</span> series_id_t::exp_series_id:</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classexp__series.html">exp_series&lt;T, K&gt;</a>(x));</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordflow">case</span> series_id_t::cos_series_id:</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classcos__series.html">cos_series&lt;T, K&gt;</a>(x));</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keywordflow">case</span> series_id_t::sin_series_id:</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classsin__series.html">sin_series&lt;T, K&gt;</a>(x));</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordflow">case</span> series_id_t::cosh_series_id:</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classcosh__series.html">cosh_series&lt;T, K&gt;</a>(x));</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordflow">case</span> series_id_t::sinh_series_id:</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classsinh__series.html">sinh_series&lt;T, K&gt;</a>(x));</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordflow">case</span> series_id_t::bin_series_id:</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        T alpha;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Enter the value for constant alpha for the series&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        std::cin &gt;&gt; alpha;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classbin__series.html">bin_series&lt;T, K&gt;</a>(x, alpha));</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordflow">case</span> series_id_t::four_arctan_series_id:</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classfour__arctan__series.html">four_arctan_series&lt;T, K&gt;</a>(x));</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keywordflow">case</span> series_id_t::ln1mx_series_id:</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classln1mx__series.html">ln1mx_series&lt;T, K&gt;</a>(x));</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="keywordflow">case</span> series_id_t::mean_sinh_sin_series_id:</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classmean__sinh__sin__series.html">mean_sinh_sin_series&lt;T, K&gt;</a>(x));</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordflow">case</span> series_id_t::exp_squared_erf_series_id:</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classexp__squared__erf__series.html">exp_squared_erf_series&lt;T, K&gt;</a>(x));</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keywordflow">case</span> series_id_t::xmb_Jb_two_series_id:</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        K b;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Enter the value for constant b for the series&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        std::cin &gt;&gt; b;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classxmb__Jb__two__series.html">xmb_Jb_two_series&lt;T, K&gt;</a>(x, b));</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keywordflow">case</span> series_id_t::half_asin_two_x_series_id:</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classhalf__asin__two__x__series.html">half_asin_two_x_series&lt;T, K&gt;</a>(x));</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="keywordflow">case</span> series_id_t::inverse_1mx_series_id:</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classinverse__1mx__series.html">inverse_1mx_series&lt;T, K&gt;</a>(x));</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keywordflow">case</span> series_id_t::x_1mx_squared_series_id:</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classx__1mx__squared__series.html">x_1mx_squared_series&lt;T, K&gt;</a>(x));</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="keywordflow">case</span> series_id_t::erf_series_id:</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classerf__series.html">erf_series&lt;T, K&gt;</a>(x));</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keywordflow">case</span> series_id_t::m_fact_1mx_mp1_inverse_series_id:</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        T m;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Enter the value for constant m for the series&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        std::cin &gt;&gt; m;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classm__fact__1mx__mp1__inverse__series.html">m_fact_1mx_mp1_inverse_series&lt;T, K&gt;</a>(x, m));</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="keywordflow">case</span> series_id_t::inverse_sqrt_1m4x_series_id:</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classinverse__sqrt__1m4x__series.html">inverse_sqrt_1m4x_series&lt;T, K&gt;</a>(x));</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <span class="keywordflow">case</span> series_id_t::one_twelfth_3x2_pi2_series_id:</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classone__twelfth__3x2__pi2__series.html">one_twelfth_3x2_pi2_series&lt;T, K&gt;</a>(x));</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        <span class="keywordflow">break</span>; </div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="keywordflow">case</span> series_id_t::x_twelfth_x2_pi2_series_id:</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classx__twelfth__x2__pi2__series.html">x_twelfth_x2_pi2_series&lt;T, K&gt;</a>(x));</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keywordflow">case</span> series_id_t::ln2_series_id:</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classln2__series.html">ln2_series&lt;T, K&gt;</a>());</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <span class="keywordflow">case</span> series_id_t::one_series_id:</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classone__series.html">one_series&lt;T, K&gt;</a>());</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="keywordflow">case</span> series_id_t::minus_one_quarter_series_id:</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classminus__one__quarter__series.html">minus_one_quarter_series&lt;T, K&gt;</a>());</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <span class="keywordflow">case</span> series_id_t::pi_3_series_id:</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classpi__3__series.html">pi_3_series&lt;T, K&gt;</a>());</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <span class="keywordflow">case</span> series_id_t::pi_4_series_id:</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classpi__4__series.html">pi_4_series&lt;T, K&gt;</a>());</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    <span class="keywordflow">case</span> series_id_t::pi_squared_6_minus_one_series_id:</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classpi__squared__6__minus__one__series.html">pi_squared_6_minus_one_series&lt;T, K&gt;</a>());</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="keywordflow">case</span> series_id_t::three_minus_pi_series_id:</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classthree__minus__pi__series.html">three_minus_pi_series&lt;T, K&gt;</a>());</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <span class="keywordflow">case</span> series_id_t::one_twelfth_series_id:</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classone__twelfth__series.html">one_twelfth_series&lt;T, K&gt;</a>());</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="keywordflow">case</span> series_id_t::eighth_pi_m_one_third_series_id:</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classeighth__pi__m__one__third__series.html">eighth_pi_m_one_third_series&lt;T, K&gt;</a>());</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keywordflow">case</span> series_id_t::one_third_pi_squared_m_nine_series_id:</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classone__third__pi__squared__m__nine__series.html">one_third_pi_squared_m_nine_series&lt;T, K&gt;</a>());</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keywordflow">case</span> series_id_t::four_ln2_m_3_series_id:</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classfour__ln2__m__3__series.html">four_ln2_m_3_series&lt;T, K&gt;</a>());</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="keywordflow">case</span> series_id_t::exp_m_cos_x_sinsin_x_series_id:</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        series.reset(<span class="keyword">new</span> <a class="code" href="classexp__m__cos__x__sinsin__x__series.html">exp_m_cos_x_sinsin_x_series&lt;T, K&gt;</a>());</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        <span class="keywordflow">throw</span> std::domain_error(<span class="stringliteral">&quot;wrong series_id&quot;</span>);</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    }</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160; </div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="comment">//choosing transformation</span></div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    print_transformation_info();</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="keywordtype">int</span> transformation_id = 0;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    std::cin &gt;&gt; transformation_id;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    std::unique_ptr&lt;<a class="code" href="classseries__acceleration.html">series_acceleration</a>&lt;T, K, decltype(series.get())&gt;&gt; transform;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="keywordflow">switch</span> (transformation_id)</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    {</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keywordflow">case</span> transformation_id_t::shanks_transformation_id:</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        <span class="keywordflow">if</span> (alternating_series.contains(series_id))</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;            transform.reset(<span class="keyword">new</span> <a class="code" href="classshanks__transform__alternating.html">shanks_transform_alternating</a>&lt;T, K, decltype(series.get())&gt;(series.get()));</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;            transform.reset(<span class="keyword">new</span> <a class="code" href="classshanks__transform.html">shanks_transform</a>&lt;T, K, decltype(series.get())&gt;(series.get()));</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <span class="keywordflow">case</span> transformation_id_t::epsilon_algorithm_id:</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        transform.reset(<span class="keyword">new</span> <a class="code" href="classepsilon__algorithm.html">epsilon_algorithm</a>&lt;T, K, decltype(series.get())&gt;(series.get()));</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        <span class="keywordflow">throw</span> std::domain_error(<span class="stringliteral">&quot;wrong transformation_id&quot;</span>);</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    }</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160; </div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <span class="comment">//choosing testing function</span></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    print_test_function_info();</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="keywordtype">int</span> function_id = 0;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    std::cin &gt;&gt; function_id;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <span class="keywordtype">int</span> n = 0;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="keywordtype">int</span> order = 0;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;Enter n and order:&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    std::cin &gt;&gt; n &gt;&gt; order;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <span class="keywordflow">switch</span> (function_id)</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    {</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="keywordflow">case</span> test_function_id_t::cmp_sum_and_transform_id:</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        cmp_sum_and_transform(n, order, std::move(series.get()), std::move(transform.get()));</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <span class="keywordflow">case</span> test_function_id_t::cmp_a_n_and_transform_id:</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        cmp_a_n_and_transform(n, order, std::move(series.get()), std::move(transform.get()));</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keywordflow">case</span> test_function_id_t::transformation_remainder_id:</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        <a class="code" href="test__functions_8h.html#a09131e414941f7e761b103b19768ceed">transformation_remainders</a>(n, order, std::move(series.get()), std::move(transform.get()));</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <span class="keywordflow">case</span> test_function_id_t::cmp_transformations_id:</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    {</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        <span class="comment">/*std::cout &lt;&lt; &quot;choose the type of the other&quot;;*/</span> <span class="comment">//so far we&#39;ve only got 2 transformations</span></div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        std::unique_ptr&lt;<a class="code" href="classseries__acceleration.html">series_acceleration</a>&lt;T, K, decltype(series.get())&gt;&gt; transform2;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        <span class="keywordflow">if</span> (transformation_id == 1)</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;            transform2.reset(<span class="keyword">new</span> <a class="code" href="classepsilon__algorithm.html">epsilon_algorithm</a>&lt;T, K, decltype(series.get())&gt;(series.get()));</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        <span class="keywordflow">else</span> <span class="comment">//transformation_id is 2</span></div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        {</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;            <span class="keywordflow">if</span> (alternating_series.contains(series_id))</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;                transform2.reset(<span class="keyword">new</span> <a class="code" href="classshanks__transform__alternating.html">shanks_transform_alternating</a>&lt;T, K, decltype(series.get())&gt;(series.get()));</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;                transform2.reset(<span class="keyword">new</span> <a class="code" href="classshanks__transform.html">shanks_transform</a>&lt;T, K, decltype(series.get())&gt;(series.get()));</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        }</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        <a class="code" href="test__functions_8h.html#a41361a2d753a0262be172e1ce3206b82">cmp_transformations</a>(n, order, std::move(series.get()), std::move(transform.get()), std::move(transform2.get()));</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    }</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <span class="keywordflow">case</span> test_function_id_t::eval_transform_time_id:</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        <a class="code" href="test__functions_8h.html#a21b2a4a0e524e40c8484b066d0834d94">eval_transform_time</a>(n, order, std::move(series.get()), std::move(transform.get()));</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        <span class="keywordflow">throw</span> std::domain_error(<span class="stringliteral">&quot;wrong function_id&quot;</span>);</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    }</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;}</div>
+<div class="ttc" id="aclassbin__series_html"><div class="ttname"><a href="classbin__series.html">bin_series</a></div><div class="ttdoc">Binomial series ( (1+x)^a maclaurin series)</div><div class="ttdef"><b>Definition:</b> series.h:387</div></div>
+<div class="ttc" id="aclasscos__series_html"><div class="ttname"><a href="classcos__series.html">cos_series</a></div><div class="ttdoc">Maclaurin series of cosine function.</div><div class="ttdef"><b>Definition:</b> series.h:235</div></div>
+<div class="ttc" id="aclasscosh__series_html"><div class="ttname"><a href="classcosh__series.html">cosh_series</a></div><div class="ttdoc">Maclaurin series of hyperbolic cosine.</div><div class="ttdef"><b>Definition:</b> series.h:311</div></div>
+<div class="ttc" id="aclasseighth__pi__m__one__third__series_html"><div class="ttname"><a href="classeighth__pi__m__one__third__series.html">eighth_pi_m_one_third_series</a></div><div class="ttdoc">Numerical series representation of pi/8 - 1/3.</div><div class="ttdef"><b>Definition:</b> series.h:1244</div></div>
 <div class="ttc" id="aclassepsilon__algorithm_html"><div class="ttname"><a href="classepsilon__algorithm.html">epsilon_algorithm</a></div><div class="ttdoc">Epsilon Algorithm class template.</div><div class="ttdef"><b>Definition:</b> epsilon_algorithm.h:20</div></div>
-<div class="ttc" id="aclasserf__series_html"><div class="ttname"><a href="classerf__series.html">erf_series</a></div><div class="ttdoc">Maclaurin series of sqrt(pi) * erf(x) / 2.</div><div class="ttdef"><b>Definition:</b> series.h:772</div></div>
-<div class="ttc" id="aclassexp__series_html"><div class="ttname"><a href="classexp__series.html">exp_series</a></div><div class="ttdoc">Maclaurin series of exponent.</div><div class="ttdef"><b>Definition:</b> series.h:196</div></div>
-<div class="ttc" id="aclassexp__squared__erf__series_html"><div class="ttname"><a href="classexp__squared__erf__series.html">exp_squared_erf_series</a></div><div class="ttdoc">Maclaurin series of exp(x^2)*erf(x) where erf(x) is error function of x.</div><div class="ttdef"><b>Definition:</b> series.h:559</div></div>
-<div class="ttc" id="aclassfour__arctan__series_html"><div class="ttname"><a href="classfour__arctan__series.html">four_arctan_series</a></div><div class="ttdoc">Maclaurin series of arctan multiplied by four.</div><div class="ttdef"><b>Definition:</b> series.h:437</div></div>
-<div class="ttc" id="aclassfour__ln2__m__3__series_html"><div class="ttname"><a href="classfour__ln2__m__3__series.html">four_ln2_m_3_series</a></div><div class="ttdoc">Numerical series representation of 4 * ln2 - 3.</div><div class="ttdef"><b>Definition:</b> series.h:1305</div></div>
-<div class="ttc" id="aclasshalf__asin__two__x__series_html"><div class="ttname"><a href="classhalf__asin__two__x__series.html">half_asin_two_x_series</a></div><div class="ttdoc">Maclaurin series of 0.5 * asin(2x) where asin(x) is inverse sine of x.</div><div class="ttdef"><b>Definition:</b> series.h:645</div></div>
-<div class="ttc" id="aclassinverse__1mx__series_html"><div class="ttname"><a href="classinverse__1mx__series.html">inverse_1mx_series</a></div><div class="ttdoc">Maclaurin series of 1 / (1 - x)</div><div class="ttdef"><b>Definition:</b> series.h:688</div></div>
-<div class="ttc" id="aclassinverse__sqrt__1m4x__series_html"><div class="ttname"><a href="classinverse__sqrt__1m4x__series.html">inverse_sqrt_1m4x_series</a></div><div class="ttdoc">Maclaurin series of (1 - 4x) ^ (-1/2)</div><div class="ttdef"><b>Definition:</b> series.h:864</div></div>
-<div class="ttc" id="aclassln1mx__series_html"><div class="ttname"><a href="classln1mx__series.html">ln1mx_series</a></div><div class="ttdoc">Maclaurin series of -ln(1 - x)</div><div class="ttdef"><b>Definition:</b> series.h:479</div></div>
-<div class="ttc" id="aclassln2__series_html"><div class="ttname"><a href="classln2__series.html">ln2_series</a></div><div class="ttdoc">Numerical series representation of ln(2)</div><div class="ttdef"><b>Definition:</b> series.h:991</div></div>
-<div class="ttc" id="aclassm__fact__1mx__mp1__inverse__series_html"><div class="ttname"><a href="classm__fact__1mx__mp1__inverse__series.html">m_fact_1mx_mp1_inverse_series</a></div><div class="ttdoc">Maclaurin series of m! / (1 - x) ^ (m + 1)</div><div class="ttdef"><b>Definition:</b> series.h:813</div></div>
-<div class="ttc" id="aclassmean__sinh__sin__series_html"><div class="ttname"><a href="classmean__sinh__sin__series.html">mean_sinh_sin_series</a></div><div class="ttdoc">Maclaurin series of (sinh(x) + sin(x)) / 2.</div><div class="ttdef"><b>Definition:</b> series.h:521</div></div>
-<div class="ttc" id="aclassminus__one__quarter__series_html"><div class="ttname"><a href="classminus__one__quarter__series.html">minus_one_quarter_series</a></div><div class="ttdoc">Numerical series representation of -1/4.</div><div class="ttdef"><b>Definition:</b> series.h:1057</div></div>
-<div class="ttc" id="aclassone__series_html"><div class="ttname"><a href="classone__series.html">one_series</a></div><div class="ttdoc">Numerical series representation of 1.</div><div class="ttdef"><b>Definition:</b> series.h:1022</div></div>
-<div class="ttc" id="aclassone__third__pi__squared__m__nine__series_html"><div class="ttname"><a href="classone__third__pi__squared__m__nine__series.html">one_third_pi_squared_m_nine_series</a></div><div class="ttdoc">Numerical series representation of (pi^2 - 9) / 3.</div><div class="ttdef"><b>Definition:</b> series.h:1274</div></div>
-<div class="ttc" id="aclassone__twelfth__3x2__pi2__series_html"><div class="ttname"><a href="classone__twelfth__3x2__pi2__series.html">one_twelfth_3x2_pi2_series</a></div><div class="ttdoc">Trigonometric series of 1/12 * (3x^2 - pi^2)</div><div class="ttdef"><b>Definition:</b> series.h:907</div></div>
-<div class="ttc" id="aclassone__twelfth__series_html"><div class="ttname"><a href="classone__twelfth__series.html">one_twelfth_series</a></div><div class="ttdoc">Numerical series representation of 1/12.</div><div class="ttdef"><b>Definition:</b> series.h:1212</div></div>
-<div class="ttc" id="aclasspi__3__series_html"><div class="ttname"><a href="classpi__3__series.html">pi_3_series</a></div><div class="ttdoc">Numerical series representation of pi/3.</div><div class="ttdef"><b>Definition:</b> series.h:1088</div></div>
-<div class="ttc" id="aclasspi__4__series_html"><div class="ttname"><a href="classpi__4__series.html">pi_4_series</a></div><div class="ttdoc">Numerical series representation of pi/4.</div><div class="ttdef"><b>Definition:</b> series.h:1119</div></div>
-<div class="ttc" id="aclasspi__squared__6__minus__one__series_html"><div class="ttname"><a href="classpi__squared__6__minus__one__series.html">pi_squared_6_minus_one_series</a></div><div class="ttdoc">Numerical series representation of pi^2 / 6 - 1.</div><div class="ttdef"><b>Definition:</b> series.h:1150</div></div>
+<div class="ttc" id="aclasserf__series_html"><div class="ttname"><a href="classerf__series.html">erf_series</a></div><div class="ttdoc">Maclaurin series of sqrt(pi) * erf(x) / 2.</div><div class="ttdef"><b>Definition:</b> series.h:773</div></div>
+<div class="ttc" id="aclassexp__m__cos__x__sinsin__x__series_html"><div class="ttname"><a href="classexp__m__cos__x__sinsin__x__series.html">exp_m_cos_x_sinsin_x_series</a></div><div class="ttdoc">Maclaurin series of exp(-cos(x)) * sin(sin(x))</div><div class="ttdef"><b>Definition:</b> series.h:1337</div></div>
+<div class="ttc" id="aclassexp__series_html"><div class="ttname"><a href="classexp__series.html">exp_series</a></div><div class="ttdoc">Maclaurin series of exponent.</div><div class="ttdef"><b>Definition:</b> series.h:197</div></div>
+<div class="ttc" id="aclassexp__squared__erf__series_html"><div class="ttname"><a href="classexp__squared__erf__series.html">exp_squared_erf_series</a></div><div class="ttdoc">Maclaurin series of exp(x^2)*erf(x) where erf(x) is error function of x.</div><div class="ttdef"><b>Definition:</b> series.h:560</div></div>
+<div class="ttc" id="aclassfour__arctan__series_html"><div class="ttname"><a href="classfour__arctan__series.html">four_arctan_series</a></div><div class="ttdoc">Maclaurin series of arctan multiplied by four.</div><div class="ttdef"><b>Definition:</b> series.h:438</div></div>
+<div class="ttc" id="aclassfour__ln2__m__3__series_html"><div class="ttname"><a href="classfour__ln2__m__3__series.html">four_ln2_m_3_series</a></div><div class="ttdoc">Numerical series representation of 4 * ln2 - 3.</div><div class="ttdef"><b>Definition:</b> series.h:1306</div></div>
+<div class="ttc" id="aclasshalf__asin__two__x__series_html"><div class="ttname"><a href="classhalf__asin__two__x__series.html">half_asin_two_x_series</a></div><div class="ttdoc">Maclaurin series of 0.5 * asin(2x) where asin(x) is inverse sine of x.</div><div class="ttdef"><b>Definition:</b> series.h:646</div></div>
+<div class="ttc" id="aclassinverse__1mx__series_html"><div class="ttname"><a href="classinverse__1mx__series.html">inverse_1mx_series</a></div><div class="ttdoc">Maclaurin series of 1 / (1 - x)</div><div class="ttdef"><b>Definition:</b> series.h:689</div></div>
+<div class="ttc" id="aclassinverse__sqrt__1m4x__series_html"><div class="ttname"><a href="classinverse__sqrt__1m4x__series.html">inverse_sqrt_1m4x_series</a></div><div class="ttdoc">Maclaurin series of (1 - 4x) ^ (-1/2)</div><div class="ttdef"><b>Definition:</b> series.h:865</div></div>
+<div class="ttc" id="aclassln1mx__series_html"><div class="ttname"><a href="classln1mx__series.html">ln1mx_series</a></div><div class="ttdoc">Maclaurin series of -ln(1 - x)</div><div class="ttdef"><b>Definition:</b> series.h:480</div></div>
+<div class="ttc" id="aclassln2__series_html"><div class="ttname"><a href="classln2__series.html">ln2_series</a></div><div class="ttdoc">Numerical series representation of ln(2)</div><div class="ttdef"><b>Definition:</b> series.h:992</div></div>
+<div class="ttc" id="aclassm__fact__1mx__mp1__inverse__series_html"><div class="ttname"><a href="classm__fact__1mx__mp1__inverse__series.html">m_fact_1mx_mp1_inverse_series</a></div><div class="ttdoc">Maclaurin series of m! / (1 - x) ^ (m + 1)</div><div class="ttdef"><b>Definition:</b> series.h:814</div></div>
+<div class="ttc" id="aclassmean__sinh__sin__series_html"><div class="ttname"><a href="classmean__sinh__sin__series.html">mean_sinh_sin_series</a></div><div class="ttdoc">Maclaurin series of (sinh(x) + sin(x)) / 2.</div><div class="ttdef"><b>Definition:</b> series.h:522</div></div>
+<div class="ttc" id="aclassminus__one__quarter__series_html"><div class="ttname"><a href="classminus__one__quarter__series.html">minus_one_quarter_series</a></div><div class="ttdoc">Numerical series representation of -1/4.</div><div class="ttdef"><b>Definition:</b> series.h:1058</div></div>
+<div class="ttc" id="aclassone__series_html"><div class="ttname"><a href="classone__series.html">one_series</a></div><div class="ttdoc">Numerical series representation of 1.</div><div class="ttdef"><b>Definition:</b> series.h:1023</div></div>
+<div class="ttc" id="aclassone__third__pi__squared__m__nine__series_html"><div class="ttname"><a href="classone__third__pi__squared__m__nine__series.html">one_third_pi_squared_m_nine_series</a></div><div class="ttdoc">Numerical series representation of (pi^2 - 9) / 3.</div><div class="ttdef"><b>Definition:</b> series.h:1275</div></div>
+<div class="ttc" id="aclassone__twelfth__3x2__pi2__series_html"><div class="ttname"><a href="classone__twelfth__3x2__pi2__series.html">one_twelfth_3x2_pi2_series</a></div><div class="ttdoc">Trigonometric series of 1/12 * (3x^2 - pi^2)</div><div class="ttdef"><b>Definition:</b> series.h:908</div></div>
+<div class="ttc" id="aclassone__twelfth__series_html"><div class="ttname"><a href="classone__twelfth__series.html">one_twelfth_series</a></div><div class="ttdoc">Numerical series representation of 1/12.</div><div class="ttdef"><b>Definition:</b> series.h:1213</div></div>
+<div class="ttc" id="aclasspi__3__series_html"><div class="ttname"><a href="classpi__3__series.html">pi_3_series</a></div><div class="ttdoc">Numerical series representation of pi/3.</div><div class="ttdef"><b>Definition:</b> series.h:1089</div></div>
+<div class="ttc" id="aclasspi__4__series_html"><div class="ttname"><a href="classpi__4__series.html">pi_4_series</a></div><div class="ttdoc">Numerical series representation of pi/4.</div><div class="ttdef"><b>Definition:</b> series.h:1120</div></div>
+<div class="ttc" id="aclasspi__squared__6__minus__one__series_html"><div class="ttname"><a href="classpi__squared__6__minus__one__series.html">pi_squared_6_minus_one_series</a></div><div class="ttdoc">Numerical series representation of pi^2 / 6 - 1.</div><div class="ttdef"><b>Definition:</b> series.h:1151</div></div>
 <div class="ttc" id="aclassseries__acceleration_html"><div class="ttname"><a href="classseries__acceleration.html">series_acceleration</a></div><div class="ttdoc">Base class series_acceleration.</div><div class="ttdef"><b>Definition:</b> series_acceleration.h:30</div></div>
 <div class="ttc" id="aclassshanks__transform__alternating_html"><div class="ttname"><a href="classshanks__transform__alternating.html">shanks_transform_alternating</a></div><div class="ttdoc">Shanks transformation for alternating series class.</div><div class="ttdef"><b>Definition:</b> shanks_transformation.h:106</div></div>
 <div class="ttc" id="aclassshanks__transform_html"><div class="ttname"><a href="classshanks__transform.html">shanks_transform</a></div><div class="ttdoc">Shanks transformation for non-alternating series class.</div><div class="ttdef"><b>Definition:</b> shanks_transformation.h:18</div></div>
-<div class="ttc" id="aclasssin__series_html"><div class="ttname"><a href="classsin__series.html">sin_series</a></div><div class="ttdoc">Maclaurin series of sine function.</div><div class="ttdef"><b>Definition:</b> series.h:272</div></div>
-<div class="ttc" id="aclasssinh__series_html"><div class="ttname"><a href="classsinh__series.html">sinh_series</a></div><div class="ttdoc">Maclaurin series of sinh function.</div><div class="ttdef"><b>Definition:</b> series.h:348</div></div>
-<div class="ttc" id="aclassthree__minus__pi__series_html"><div class="ttname"><a href="classthree__minus__pi__series.html">three_minus_pi_series</a></div><div class="ttdoc">Numerical series representation of 3 - pi.</div><div class="ttdef"><b>Definition:</b> series.h:1181</div></div>
-<div class="ttc" id="aclassx__1mx__squared__series_html"><div class="ttname"><a href="classx__1mx__squared__series.html">x_1mx_squared_series</a></div><div class="ttdoc">Maclaurin series of x / (1 - x)^2.</div><div class="ttdef"><b>Definition:</b> series.h:730</div></div>
-<div class="ttc" id="aclassx__twelfth__x2__pi2__series_html"><div class="ttname"><a href="classx__twelfth__x2__pi2__series.html">x_twelfth_x2_pi2_series</a></div><div class="ttdoc">Trigonometric series of x/12 * (x^2 - pi^2)</div><div class="ttdef"><b>Definition:</b> series.h:949</div></div>
-<div class="ttc" id="aclassxmb__Jb__two__series_html"><div class="ttname"><a href="classxmb__Jb__two__series.html">xmb_Jb_two_series</a></div><div class="ttdoc">Maclaurin series of x^(-b) * J_b(2x) where J_b(x) is Bessel function of the first kind of order b.</div><div class="ttdef"><b>Definition:</b> series.h:600</div></div>
+<div class="ttc" id="aclasssin__series_html"><div class="ttname"><a href="classsin__series.html">sin_series</a></div><div class="ttdoc">Maclaurin series of sine function.</div><div class="ttdef"><b>Definition:</b> series.h:273</div></div>
+<div class="ttc" id="aclasssinh__series_html"><div class="ttname"><a href="classsinh__series.html">sinh_series</a></div><div class="ttdoc">Maclaurin series of sinh function.</div><div class="ttdef"><b>Definition:</b> series.h:349</div></div>
+<div class="ttc" id="aclassthree__minus__pi__series_html"><div class="ttname"><a href="classthree__minus__pi__series.html">three_minus_pi_series</a></div><div class="ttdoc">Numerical series representation of 3 - pi.</div><div class="ttdef"><b>Definition:</b> series.h:1182</div></div>
+<div class="ttc" id="aclassx__1mx__squared__series_html"><div class="ttname"><a href="classx__1mx__squared__series.html">x_1mx_squared_series</a></div><div class="ttdoc">Maclaurin series of x / (1 - x)^2.</div><div class="ttdef"><b>Definition:</b> series.h:731</div></div>
+<div class="ttc" id="aclassx__twelfth__x2__pi2__series_html"><div class="ttname"><a href="classx__twelfth__x2__pi2__series.html">x_twelfth_x2_pi2_series</a></div><div class="ttdoc">Trigonometric series of x/12 * (x^2 - pi^2)</div><div class="ttdef"><b>Definition:</b> series.h:950</div></div>
+<div class="ttc" id="aclassxmb__Jb__two__series_html"><div class="ttname"><a href="classxmb__Jb__two__series.html">xmb_Jb_two_series</a></div><div class="ttdoc">Maclaurin series of x^(-b) * J_b(2x) where J_b(x) is Bessel function of the first kind of order b.</div><div class="ttdef"><b>Definition:</b> series.h:601</div></div>
 <div class="ttc" id="aepsilon__algorithm_8h_html"><div class="ttname"><a href="epsilon__algorithm_8h.html">epsilon_algorithm.h</a></div><div class="ttdoc">This file contains the declaration of the Epsilon Algorithm class.</div></div>
 <div class="ttc" id="atest__functions_8h_html"><div class="ttname"><a href="test__functions_8h.html">test_functions.h</a></div><div class="ttdoc">This file contains the testing functions.</div></div>
 <div class="ttc" id="atest__functions_8h_html_a09131e414941f7e761b103b19768ceed"><div class="ttname"><a href="test__functions_8h.html#a09131e414941f7e761b103b19768ceed">transformation_remainders</a></div><div class="ttdeci">void transformation_remainders(const int n, const int order, const series_templ &amp;&amp;series, const transform_type &amp;&amp;test)</div><div class="ttdoc">Function that prints out the remainders At first it prints out the type of transformation,...</div><div class="ttdef"><b>Definition:</b> test_functions.h:98</div></div>

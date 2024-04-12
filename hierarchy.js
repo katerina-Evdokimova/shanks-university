@@ -6,7 +6,6 @@ var hierarchy =
       [ "shanks_transform_alternating< T, K, series_templ >", "classshanks__transform__alternating.html", null ]
     ] ],
     [ "series_base< T, K >", "classseries__base.html", [
-      [ "Lambert_W_0_series< T, K >", "classLambert__W__0__series.html", null ],
       [ "bin_series< T, K >", "classbin__series.html", null ],
       [ "cos_series< T, K >", "classcos__series.html", null ],
       [ "cosh_series< T, K >", "classcosh__series.html", null ],

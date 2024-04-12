@@ -14,7 +14,6 @@ var annotated_dup =
     [ "half_asin_two_x_series", "classhalf__asin__two__x__series.html", "classhalf__asin__two__x__series" ],
     [ "inverse_1mx_series", "classinverse__1mx__series.html", "classinverse__1mx__series" ],
     [ "inverse_sqrt_1m4x_series", "classinverse__sqrt__1m4x__series.html", "classinverse__sqrt__1m4x__series" ],
-    [ "Lambert_W_0_series", "classLambert__W__0__series.html", "classLambert__W__0__series" ],
     [ "ln1mx_series", "classln1mx__series.html", "classln1mx__series" ],
     [ "ln2_series", "classln2__series.html", "classln2__series" ],
     [ "m_fact_1mx_mp1_inverse_series", "classm__fact__1mx__mp1__inverse__series.html", "classm__fact__1mx__mp1__inverse__series" ],

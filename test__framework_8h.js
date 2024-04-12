@@ -32,7 +32,6 @@ var test__framework_8h =
       [ "eighth_pi_m_one_third_series_id", "test__framework_8h.html#abd3004dc55b711f12ec6257f7fd57563a1649932f51826f985772470846db1766", null ],
       [ "one_third_pi_squared_m_nine_series_id", "test__framework_8h.html#abd3004dc55b711f12ec6257f7fd57563a1370aab6e77ecc3803347fc20af0f3d9", null ],
       [ "four_ln2_m_3_series_id", "test__framework_8h.html#abd3004dc55b711f12ec6257f7fd57563adb8508be4951908501299d0f0ed243cd", null ],
-      [ "Lambert_W_0_series_id", "test__framework_8h.html#abd3004dc55b711f12ec6257f7fd57563abb1c13440e34c9503e0c0df479bacfad", null ],
       [ "exp_m_cos_x_sinsin_x_series_id", "test__framework_8h.html#abd3004dc55b711f12ec6257f7fd57563adbab6b0c3dd5f1bc76c1954254a8081e", null ]
     ] ],
     [ "test_function_id_t", "test__framework_8h.html#a1fe18b1abe7e268a664edc8919084d9e", [
