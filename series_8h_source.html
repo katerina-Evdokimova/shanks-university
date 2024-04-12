@@ -895,7 +895,7 @@ $(document).ready(function(){initNavTree('series_8h_source.html',''); initResiza
 <div class="line"><a name="l01362"></a><span class="lineno"> 1362</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l01363"></a><span class="lineno"> 1363</span>&#160;    <span class="keywordflow">if</span> (n &lt; 0)</div>
 <div class="line"><a name="l01364"></a><span class="lineno"> 1364</span>&#160;        <span class="keywordflow">throw</span> std::domain_error(<span class="stringliteral">&quot;negative integer in the input&quot;</span>);</div>
-<div class="line"><a name="l01365"></a><span class="lineno"> 1365</span>&#160;    <span class="keywordflow">return</span> this-&gt;minus_one_raised_to_power_n(n) * std::sin(n * x) / this-&gt;fact(n);</div>
+<div class="line"><a name="l01365"></a><span class="lineno"> 1365</span>&#160;    <span class="keywordflow">return</span> this-&gt;minus_one_raised_to_power_n(n) * std::sin(n * this-&gt;x) / this-&gt;fact(n);</div>
 <div class="line"><a name="l01366"></a><span class="lineno"> 1366</span>&#160;}</div>
 <div class="ttc" id="aclassbin__series_html"><div class="ttname"><a href="classbin__series.html">bin_series</a></div><div class="ttdoc">Binomial series ( (1+x)^a maclaurin series)</div><div class="ttdef"><b>Definition:</b> series.h:387</div></div>
 <div class="ttc" id="aclassbin__series_html_ab5b21052d013afa4570406b1c6fb2e4e"><div class="ttname"><a href="classbin__series.html#ab5b21052d013afa4570406b1c6fb2e4e">bin_series::operator()</a></div><div class="ttdeci">constexpr virtual T operator()(K n) const</div><div class="ttdoc">Computes the nth term of the Binomial series.</div><div class="ttdef"><b>Definition:</b> series.h:424</div></div>
