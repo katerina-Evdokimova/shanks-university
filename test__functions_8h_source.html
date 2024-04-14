@@ -206,7 +206,7 @@ $(document).ready(function(){initNavTree('test__functions_8h_source.html',''); i
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            diff_2 = series-&gt;get_sum() - test_2-&gt;operator()(i, order);</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            std::cout &lt;&lt; <span class="stringliteral">&quot;The transformation #1: S - T_&quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot; : &quot;</span> &lt;&lt; diff_1 &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            std::cout &lt;&lt; <span class="stringliteral">&quot;The transformation #2: S - T_&quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot; : &quot;</span> &lt;&lt; diff_2 &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <span class="keywordflow">if</span> (std::abs(diff_1) &gt; std::abs(diff_2))</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <span class="keywordflow">if</span> (std::abs(diff_1) &lt; std::abs(diff_2))</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                std::cout &lt;&lt; <span class="stringliteral">&quot;The transformation #1 is faster&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                std::cout &lt;&lt; <span class="stringliteral">&quot;The transformation #2 is faster&quot;</span> &lt;&lt; std::endl;</div>
