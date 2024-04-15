@@ -70,10 +70,12 @@ T epsilon_algorithm<T, K, series_templ>::operator()(const K n, const int order) 
 		e1->erase(e1->begin());
 	}
 
-	if (!std::isfinite((*e0)[n-1]))
+	const auto result = (*e0)[n - 1];
+
+	if (!std::isfinite(result))
 		throw std::overflow_error("division by zero");
 
 	delete e0; delete e1;
 
-	return (*e0)[n-1];
+	return result;
 }
