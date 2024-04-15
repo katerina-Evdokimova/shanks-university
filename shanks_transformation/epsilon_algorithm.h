@@ -73,5 +73,7 @@ T epsilon_algorithm<T, K, series_templ>::operator()(const K n, const int order) 
 	if (!std::isfinite((*e0)[n-1]))
 		throw std::overflow_error("division by zero");
 
+	delete e0; delete e1;
+
 	return (*e0)[n-1];
 }
