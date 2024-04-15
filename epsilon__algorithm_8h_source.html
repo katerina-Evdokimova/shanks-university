@@ -116,11 +116,11 @@ $(document).ready(function(){initNavTree('epsilon__algorithm_8h_source.html','')
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (order == 0)</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">return</span> this-&gt;series-&gt;S_n(n);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    std::vector&lt;T&gt; e0(m + n + 1, 0);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    std::vector&lt;T&gt; e1(m + n, 0);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    std::vector&lt;T&gt;* e0 = <span class="keyword">new</span> std::vector&lt;T&gt;(m + n + 1, 0);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    std::vector&lt;T&gt;* e1 = <span class="keyword">new</span> std::vector&lt;T&gt;(m + n, 0);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = m + n; j &gt;= 0; --j)</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        e0[j] = this-&gt;series-&gt;S_n(j);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        (*e0)[j] = this-&gt;series-&gt;S_n(j);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">int</span> max_ind = m + n;</div>
@@ -128,20 +128,18 @@ $(document).ready(function(){initNavTree('epsilon__algorithm_8h_source.html','')
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    {</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; max_ind; ++j)</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keywordflow">if</span> (!std::isfinite(e0[j + 1] - e0[j]))</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                <span class="keywordflow">throw</span> std::overflow_error(<span class="stringliteral">&quot;division by zero&quot;</span>);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            e1[j] += 1.0 / (e0[j + 1] - e0[j]);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        --max_ind;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        std::swap(e0, e1);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        e1.erase(e1.begin());</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">if</span> (!std::isfinite(e0[n-1]))</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">throw</span> std::overflow_error(<span class="stringliteral">&quot;division by zero&quot;</span>);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">return</span> e0[n-1];</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            (*e1)[j] += 1.0 / ((*e0)[j + 1] - (*e0)[j]);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        --max_ind;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        std::swap(e0, e1);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        e1-&gt;erase(e1-&gt;begin());</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">if</span> (!std::isfinite((*e0)[n-1]))</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">throw</span> std::overflow_error(<span class="stringliteral">&quot;division by zero&quot;</span>);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">return</span> (*e0)[n-1];</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
 <div class="ttc" id="aclassepsilon__algorithm_html"><div class="ttname"><a href="classepsilon__algorithm.html">epsilon_algorithm</a></div><div class="ttdoc">Epsilon Algorithm class template.</div><div class="ttdef"><b>Definition:</b> epsilon_algorithm.h:20</div></div>
 <div class="ttc" id="aclassepsilon__algorithm_html_a704d1d36236997f38d2c4d7d1057a131"><div class="ttname"><a href="classepsilon__algorithm.html#a704d1d36236997f38d2c4d7d1057a131">epsilon_algorithm::epsilon_algorithm</a></div><div class="ttdeci">epsilon_algorithm(const series_templ &amp;series)</div><div class="ttdoc">Parameterized constructor to initialize the Epsilon Algorithm.</div><div class="ttdef"><b>Definition:</b> epsilon_algorithm.h:41</div></div>
 <div class="ttc" id="aclassepsilon__algorithm_html_afe49c0aa063f036e12aad48cc3a32914"><div class="ttname"><a href="classepsilon__algorithm.html#afe49c0aa063f036e12aad48cc3a32914">epsilon_algorithm::operator()</a></div><div class="ttdeci">T operator()(const K n, const int order) const</div><div class="ttdoc">Shanks multistep epsilon algorithm. Computes the partial sum after the transformation using the Epsil...</div><div class="ttdef"><b>Definition:</b> epsilon_algorithm.h:44</div></div>
