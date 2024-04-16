@@ -1189,7 +1189,7 @@ public:
 	* @param n The number of the term
 	* @return nth term of the series
 	*/
-	[[nodiscard]] constexpr virtual T operator()(K n) const const;
+	[[nodiscard]] constexpr virtual T operator()(K n) const;
 };
 
 template <typename T, typename K>
@@ -1220,7 +1220,7 @@ public:
 	* @param n The number of the term
 	* @return nth term of the series
 	*/
-	[[nodiscard]] constexpr virtual T operator()(K n) const const;
+	[[nodiscard]] constexpr virtual T operator()(K n) const;
 };
 
 template <typename T, typename K>
@@ -1251,7 +1251,7 @@ public:
 	* @param n The number of the term
 	* @return nth term of the series
 	*/
-	[[nodiscard]] constexpr virtual T operator()(K n) const const;
+	[[nodiscard]] constexpr virtual T operator()(K n) const;
 };
 
 template <typename T, typename K>
@@ -1282,7 +1282,7 @@ public:
 	* @param n The number of the term
 	* @return nth term of the series
 	*/
-	[[nodiscard]] constexpr virtual T operator()(K n) const const;
+	[[nodiscard]] constexpr virtual T operator()(K n) const;
 };
 
 template <typename T, typename K>
@@ -1313,7 +1313,7 @@ public:
 	* @param n The number of the term
 	* @return nth term of the series
 	*/
-	[[nodiscard]] constexpr virtual T operator()(K n) const const;
+	[[nodiscard]] constexpr virtual T operator()(K n) const;
 };
 
 template <typename T, typename K>

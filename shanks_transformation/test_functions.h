@@ -192,7 +192,6 @@ void eval_transform_time(const int n, const int order, const series_templ&& seri
 		}
 	}
 	const auto end_time = std::chrono::system_clock::now();
-	std::cout << "It took " << static_cast<std::chrono::duration<double>>(end_time - start_time) << " to perform these transformations" << std::endl;
+	const std::chrono::duration<double, std::milli> diff = end_time - start_time;
+	std::cout << "It took " << diff << " to perform these transformations" << std::endl;
 }
-
-//TO DO make a function to compare shanks_transformation and shanks_transformation for alternating series
