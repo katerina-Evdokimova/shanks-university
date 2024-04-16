@@ -61,7 +61,7 @@ T epsilon_algorithm<T, K, series_templ>::operator()(const K n, const int order) 
 	int max_ind = m + n;
 	for (int i = 0; i < m; ++i)
 	{
-		for (int j = 0; j < max_ind; ++j)
+		for (int j = n-1; j < max_ind; ++j)
 		{
 			(*e1)[j] += 1.0 / ((*e0)[j + 1] - (*e0)[j]);
 		}
