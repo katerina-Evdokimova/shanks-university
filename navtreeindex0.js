@@ -156,6 +156,8 @@ var NAVTREEINDEX0 =
 "index.html#autotoc_md2":[0,1],
 "index.html#autotoc_md3":[0,2],
 "index.html#autotoc_md4":[0,3],
+"index.html#autotoc_md5":[0,4],
+"index.html#autotoc_md6":[0,5],
 "main_8cpp.html":[2,0,0,1],
 "main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe":[2,0,0,1,0],
 "pages.html":[],
