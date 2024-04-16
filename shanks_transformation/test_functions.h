@@ -193,5 +193,5 @@ void eval_transform_time(const int n, const int order, const series_templ&& seri
 	}
 	const auto end_time = std::chrono::system_clock::now();
 	const std::chrono::duration<double, std::milli> diff = end_time - start_time;
-	std::cout << "It took " << diff << " to perform these transformations" << std::endl;
+	std::cout << "It took " << diff.count() << " to perform these transformations" << std::endl;
 }
