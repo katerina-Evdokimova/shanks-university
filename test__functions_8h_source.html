@@ -244,7 +244,7 @@ $(document).ready(function(){initNavTree('test__functions_8h_source.html',''); i
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    }</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> end_time = std::chrono::system_clock::now();</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keyword">const</span> std::chrono::duration&lt;double, std::milli&gt; diff = end_time - start_time;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;It took &quot;</span> &lt;&lt; diff &lt;&lt; <span class="stringliteral">&quot; to perform these transformations&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;It took &quot;</span> &lt;&lt; diff.count() &lt;&lt; <span class="stringliteral">&quot; to perform these transformations&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;}</div>
 <div class="ttc" id="aseries_8h_html"><div class="ttname"><a href="series_8h.html">series.h</a></div><div class="ttdoc">This file contains series base class and derived classes of various serieses (e.g....</div></div>
 <div class="ttc" id="aseries__acceleration_8h_html"><div class="ttname"><a href="series__acceleration_8h.html">series_acceleration.h</a></div><div class="ttdoc">This file contains the declaration of the base class series_acceleration.</div></div>
